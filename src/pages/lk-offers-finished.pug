@@ -1,0 +1,36 @@
+extends ../templates/default
+
+include ../components/offer-card/offer-card
+include ../components/profile-center/profile-center
+include ../components/profile-page/profile-page
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +profile-page({})
+    +profile-center({
+      select: true,
+      title: 'Выполненные заказы',
+      pagination: true,
+    })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })
+      +offer-card({
+        finished: true,
+      })

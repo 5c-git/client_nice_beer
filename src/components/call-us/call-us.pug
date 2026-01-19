@@ -1,0 +1,40 @@
+include ../socials/socials
+
+div.call-us
+  div.call-us__block
+    h2.call-us__title Телефоны
+    div.call-us__contacts
+      div.call-us__contact
+        span.call-us__contact-name Отдел оптовых продаж:
+        a(href="tel:+79155428282").call-us__contact-link +7 (915) 542-82-82
+      div.call-us__contact
+        span.call-us__contact-name Офис:
+        a(href="tel:+79999999999").call-us__contact-link +7 999 999 99 99
+
+  div.call-us__block
+    h2.visually-hidden.call-us__title Заказать Обратный звонок
+    div.call-us__request
+      button(type='button').button.call-us__request-toggle Заказать Обратный звонок
+      div.call-us__hidden
+        form(action='#' method='post').call-us__form
+          div.call-us__field
+            div.validator__error-container
+            label(for='phone').validator__description.call-us__label Контактный телефон #[em(class='star') *]
+            input(type='tel' inputmode="tel" id='phone' name='phone' autocomplete='off' placeholder='Введите номер телефона').validator__phone.call-us__input
+          div.call-us__field
+            div.validator__error-container
+            label(for='message').validator__description.call-us__label Сообщение#[em(class='star') *]
+            textarea(id='message' name='message' autocomplete='off' autocapitalize='off' placeholder='Введите сообщение'  maxlength='1000').validator__required.call-us__textarea
+          div.call-us__field
+            p.call-us__legal Нажимая кнопку «Заказать», Вы даёте согласие на #[a(href='#' target='_blank') обработку персональных данных].
+          div.call-us__field
+            div.call-us__buttons
+              button(type='submit').button.call-us__submit Заказать
+
+  div.call-us__block.call-us__block--links
+    h2.call-us__title Напишите нам
+    +socials({
+      modal: true,
+    })
+    a(href='#').button Контакты
+    span.call-us__time Мы на связи с 9:00 до 21:00

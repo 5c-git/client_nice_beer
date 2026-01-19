@@ -1,0 +1,49 @@
+.cart-amount {
+  display: flex;
+
+  @media (max-width: $phone) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button {
+    max-width: 250px;
+
+    @media (max-width: $phone) {
+      max-width: unset;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    background-color: $white-1;
+    flex-grow: 1;
+
+    @media (max-width: $phone) {
+      padding: 9px;
+    }
+  }
+
+  &__block {
+    text-align: left;
+
+    &--total {
+      text-align: right;
+    }
+  }
+
+  &__name {
+    @include DТекст12inter-reg;
+    margin: 0;
+  }
+
+  &__value {
+    @include DЗаголовок25-Заголовок4;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+//- ОБРАЗЕЦ ФОРМЫ
+
+section.form-lk.FORM-ID
+
+  section.form-lk__content
+    h2 Заголовок формы
+    p И другой различный контент
+    form#FORM-ID.validator
+      input.form-lk__text.v-text(type="text" name="name" maxlength="225" placeholder="Ваше имя*")
+      input.form-lk__text.v-text(type="text" name="surname" maxlength="225" placeholder="Ваша фамилия*")
+      input.form-lk__phone.v-phone.mask(type="tel" name="phone" autocomplete="off" inputmode="tel" placeholder="Телефон*")
+      input.form-lk__text(required type="email" placeholder="E-mail*")
+      textarea.form-lk__textarea.v-textarea(type="text" name="comment" maxlength="225" placeholder="Комментарий")
+      input.form-lk__text.v-password(type="password" name="password" maxlength="225" id="password" placeholder="Введите пароль")
+      input.form-lk__text.v-password(type="password" name="confirm-password" maxlength="225" id="confirm-password" data-bouncer-match="#password" placeholder="Повторите пароль")
+      button.form-lk__submit(type="submit") Отправить
+    
+    p Нажимая на кнопку “Оставить заявку”, вы подтверждаете свое согласие на обработку пользовательских данных
+  
+  section.form-lk__greetings
+    h2 Спасибо, ваша заявка успешно отправлена.
+  
+  section.form-lk__fail
+    h2 Возникла ошибка, повторите попытку позже.
+    button.form-lk__reset Вернуться к форме

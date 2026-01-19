@@ -1,0 +1,18 @@
+.VerificationCodeInput {
+  display: flex;
+  gap: 12px;
+
+  &__input {
+    width: 48px;
+    height: 56px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+
+    &:focus {
+      border-color: #000;
+    }
+  }
+}

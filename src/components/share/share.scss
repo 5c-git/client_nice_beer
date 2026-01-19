@@ -1,0 +1,106 @@
+.share {
+  position: relative;
+
+  &__list {
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: $dark-blue-1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-image 0.3s;
+    cursor: pointer;
+
+    @media (max-width: $phone) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--fb {
+      background-image: url("../assets/images/icon-fb.svg");
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          background-image: url("../assets/images/icon-fb--hover.svg");
+        }
+      }
+    }
+
+    &--vk {
+      background-image: url("../assets/images/icon-vk.svg");
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          background-image: url("../assets/images/icon-vk--hover.svg");
+        }
+      }
+    }
+
+    &--insta {
+      background-image: url("../assets/images/icon-insta.svg");
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          background-image: url("../assets/images/icon-insta--hover.svg");
+        }
+      }
+    }
+
+    &--copy {
+      background-image: url("../assets/images/icon-share.svg");
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          background-image: url("../assets/images/icon-share--hover.svg");
+        }
+      }
+    }
+  }
+
+  &__message {
+    @include DТекст14inter-reg;
+    position: absolute;
+    right: 0;
+    margin-top: 6px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: 1px solid $dark-blue-1;
+    background-color: $white-1;
+    transition:
+      visibility 0.3s,
+      opacity 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 25px 40px rgba(17 17 17 / 20%);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+
+    @media (max-width: $tablet) {
+      right: unset;
+      left: 0;
+    }
+
+    &--active {
+      visibility: initial;
+      opacity: unset;
+    }
+  }
+}

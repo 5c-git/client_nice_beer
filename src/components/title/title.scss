@@ -1,0 +1,77 @@
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: $phone) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  & + .site-nav {
+    margin-top: 30px;
+
+    @media (max-width: $phone) {
+      margin-top: 20px;
+    }
+  }
+
+  & + .layout,
+  & + .catalog {
+    margin-top: 30px;
+
+    @media (max-width: $phone) {
+      margin-top: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__text {
+    @include DЗаголовок50-Заголовок1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    word-break: break-word;
+  }
+
+  &__after {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    p {
+      @include DТекст14inter-reg;
+      margin: 0;
+      padding-bottom: 6px;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &--small {
+    .title__text {
+      @media (max-width: $phone) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &--hidden {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,401 @@
+$main-font: "IBM Plex Sans";
+$title-font: "Circe";
+$icon-font: "Inter";
+
+$white-1: #ffffff;
+
+$grey-1: #fafafa;
+$grey-2: #fafafa;
+$grey-3: #faf9fa;
+$grey-4: #d1d1d1;
+$grey-5: #f0f0f0;
+$grey-6: #f0f0f0;
+$grey-7: #888888;
+$grey-8: #888888;
+
+$light-blue-1: #ceddf0;
+$dark-blue-1: #212121;
+
+$blue-1: #43626D;
+
+$orange-1: #f8b814;
+
+$red-1: #ea4410;
+$light-red-1: #e45945;
+
+$green-1: #43626D;
+$light-green-1: #0077c5;
+
+$black-1: #212121;
+$black-2: #353535;
+
+$desktop: 1300px;
+$tablet: 991px;
+$desktop-only: $tablet + 1;
+$phone: 767px;
+
+$transition-time: 0.3s;
+$article-width: auto;
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin noimg {
+  padding-top: 56.25%;
+  // border: 1px solid $grey-7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/images/no-image.svg");
+
+  &:has(img) {
+    padding: 0;
+    border: 0;
+    background-image: unset;
+  }
+}
+
+@mixin Shadow-cards {
+  // box-shadow: 0 0 12px rgba(60, 60, 60, 0.18);
+  // filter: drop-shadow(0 0 12px rgba(60, 60, 60, 0.18));
+  filter: drop-shadow(0 -10px 30px rgba(0, 0, 0, 0.05));
+}
+
+@mixin Shadow {
+  filter: drop-shadow(0 30px 30px rgba($color: #000000, $alpha: 10%));
+}
+
+@mixin DЗаголовок50-Заголовок1 {
+  font-family: $title-font;
+  font-size: 80px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media (max-width: $desktop) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  @media (max-width: $phone) {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: unset;
+  }
+}
+
+@mixin DЗаголовок40-Заголовок2 {
+  font-family: $title-font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  @media (max-width: $phone) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@mixin DЗаголовок30-Заголовок3 {
+  font-family: $title-font;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  @media (max-width: $phone) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@mixin DЗаголовок25-Заголовок4 {
+  font-family: $title-font;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media (max-width: $phone) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@mixin DЗаголовок20-Заголовок5 {
+  font-family: $title-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  @media (max-width: $phone) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@mixin DЗаголовок16-заголовоктовара {
+  font-family: $title-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin DТекст30-Ценавкарточкетовара {
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 35px;
+
+  @media (max-width: $phone) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст18inter-bold {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@mixin DТекст18inter-med {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст18inter-reg {
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст16inter-bold {
+  font-family: $main-font;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст16inter-med {
+  font-family: $main-font;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст16inter-reg {
+  font-family: $main-font;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст15inter-med {
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст15inter-reg {
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin DТекст14inter-bold {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@mixin DТекст14inter-med {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@mixin DТекст14inter-reg {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@mixin DТекст13-Крошки {
+  font-family: $main-font;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (max-width: $phone) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@mixin DТекст12inter-reg {
+  font-family: $main-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+
+  @media (max-width: $phone) {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+@mixin DТекст9-Шильдик {
+  font-family: $main-font;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin slider-arrow {
+  font-family: $icon-font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+
+  @media (max-width: $phone) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@mixin MЗаголовок18-Заголовок5 {
+  font-family: $title-font;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin MТекст16Inter-reg {
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@mixin MТекст16Inter-med {
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+@mixin MТекст14Inter-reg {
+  font-family: $main-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin MТекст14Inter-med {
+  font-family: $main-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

@@ -1,0 +1,101 @@
+include ../item-card/item-card
+include ../top-filters/top-filters
+include ../catalog-amount/catalog-amount
+
+mixin catalog(props)
+  section.catalog
+    div.container 
+      div.catalog__wrapper
+        div.catalog__sidebar
+
+          if props.empty
+            +catalog-amount({
+              empty: true,
+            })
+          else
+            +catalog-amount({})
+
+        div.catalog__main
+          include ../catalog-tabs/catalog-tabs
+
+          div.catalog__filter
+            button(type='button').catalog__filter-open
+              svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+                use(href='#icon-filter')
+              span Фильтры
+            div.catalog__overlay
+            div.catalog__filter-main
+              div.catalog__filter-head
+                div.container
+                  p.catalog__filter-title Фильтры
+                  button(type='button' aria-label='Закрыть фильтр').catalog__filter-close
+                    span 
+              div.catalog__filter-body
+                div.container
+                  include ../bx-filter/bx-filter
+
+          +top-filters({
+            view: true,
+          })
+
+          div.catalog__list
+            +item-card({
+              ver1: true,
+              action: true,
+            })
+            +item-card({
+              ver2: true,
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+            +item-card({
+              ver2: true,
+              action: true,
+            })
+            +item-card({
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+            +item-card({
+              ver1: true,
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+            +item-card({
+              action: true,
+            })
+            +item-card({
+              ver1: true,
+              action: true,
+            })
+            +item-card({
+              ver2: true,
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+            +item-card({
+              ver2: true,
+              action: true,
+            })
+            +item-card({
+              ver3: true,
+              action: true,
+            })
+
+          include ../pagination/pagination

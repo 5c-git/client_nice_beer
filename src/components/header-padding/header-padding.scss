@@ -1,0 +1,7 @@
+.header-padding {
+  padding-top: 80px;
+
+  @media (max-width: $phone) {
+    padding-top: 60px;
+  }
+}

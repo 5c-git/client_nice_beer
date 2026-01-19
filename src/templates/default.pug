@@ -1,0 +1,202 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="theme-color" content="#231f20")
+
+    <link rel="preload" href="./assets/fonts/Inter/Inter-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Inter/Inter-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/bebasneue/BebasNeuePro-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/ibm/IBMPlexSans.woff" as="font" crossorigin="anonymous">
+    //- favicons
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    //- favicons
+
+    title brew2b
+
+    //- место для подключения стилей jquery библиотек
+    //- link(href='libsJQ/test.css' rel='stylesheet')
+
+  body
+    block mixins
+      include ../components/title/title
+      include ../components/alert/alert
+      include ../components/video/video
+      include ../components/map/map
+      include ../components/modal/modal
+      include ../components/layout/layout
+      include ../components/layout-header/layout-header
+      //- include ../components/tooltip/tooltip
+
+    block header
+      include ../components/header/header
+    
+    main
+      block main
+
+    block footer
+      include ../components/footer/footer
+      include ../components/up/up
+      include ../components/widget/widget
+    
+    include ../components/alert-wrapper/alert-wrapper
+
+    template#promotion-alert
+      include ../components/promotion-alert/promotion-alert
+
+    template#notice
+      include ../components/notice/notice
+
+    template#modal--city
+      +modal({
+        city: true,
+      })
+
+    template#modal--notify
+      +modal({
+        notify: true,
+      })
+
+    template#alert--notify
+      +alert({
+        notify: true,
+      })
+
+    template#alert--request
+      +alert({
+        request: true,
+      })
+
+    template#alert--error
+      +alert({
+        error: true,
+      })
+
+    template#alert--subscribe
+      +alert({
+        subscribe: true,
+      })
+
+    template#alert--like
+      +alert({
+        like: true,
+      })
+
+    template#modal--dislike
+      +modal({
+        dislike: true,
+      })
+
+    template#alert--dislike
+      +alert({
+        dislike: true,
+      })
+
+    template#alert--cart
+      +alert({
+        cart: true,
+      })
+
+    template#modal--discart
+      +modal({
+        discart: true,
+      })
+
+    template#alert--discart
+      +alert({
+        discart: true,
+      })
+
+    template#alert--confirm-email
+      +alert({
+        confirmEmail: true,
+      })
+
+    template#alert--repeat
+      +alert({
+        repeat: true,
+      })
+
+    template#modal--cancel
+      +modal({
+        cancel: true,
+      })
+
+    template#modal--delete
+      +modal({
+        delete: true,
+      })
+
+    template#alert--cancel
+      +alert({
+        cancel: true,
+      })
+
+    template#modal--change
+      +modal({
+        change: true,
+      })
+
+    template#alert--save
+      +alert({
+        save: true,
+      })
+
+    template#alert--add
+      +alert({
+        addOrganization: true,
+      })
+
+    template#alert--mobileSuccess
+      +alert({
+        mobileSuccess: true,
+      })
+
+    template#alert--fio
+      +alert({
+        fio: true,
+      })
+
+    template#alert--email
+      +alert({
+        email: true,
+      })
+
+    template#alert--organization-deleted
+      +alert({
+        deleted: true,
+      })
+
+    template#cookie
+      include ../components/cookie/cookie
+
+    template#modal--call-us
+      +modal({
+        callUs: true,
+      })
+
+    template#modal--product
+      +modal({
+        product: true,
+      })
+
+    template#modal--authorization
+      +modal({
+        authorization: true,
+      })
+
+    //- jQuery скрипты
+    script(src='libsJQ/jquery.min.js')
+    script(src='libsJQ/map-pins.js')
+    script(src='libsJQ/jquery.suggestions.min.js')
+    block meta

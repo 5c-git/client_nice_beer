@@ -1,0 +1,17 @@
+extends ../templates/default
+
+include ../components/profile-form/profile-form
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +title({
+    title: 'Запрос пароля',
+  })
+
+  +layout({
+    variant: 'layout--tight',
+  })
+    +profile-form({
+      askpassword: true,
+    })

@@ -1,0 +1,21 @@
+@import 'src/utils/utils';
+
+.Select {
+  @include zero;
+
+  &__label {
+    @include DТекст14inter-reg;
+    display: block;
+    margin-bottom: 3px;
+    color: $dark-blue-1;
+
+    &--required {
+      position: relative;
+
+      &:after {
+        color: $light-red-1;
+        content: '*';
+      }
+    }
+  }
+}

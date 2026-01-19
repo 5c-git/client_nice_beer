@@ -1,0 +1,9 @@
+extends ../templates/default
+
+include ../components/profile-page/profile-page
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +profile-page({})
+    include ../react/providers/pages/lk/personal-data/personal-data

@@ -1,0 +1,117 @@
+header.header
+
+  div.header__overlay
+
+  div.header__padding
+  div.header__fixed
+    div.header__inner
+      div.container 
+        div.header__wrapper
+          a(href="#").header__logo
+            img(src="./assets/images/logo-header.png" width='120' height='52' alt="")
+
+          nav.header__nav
+
+            ul.header__list
+              li.header__item
+                div.header__sub
+                  div.container
+                    ul.header__sub-list
+                      li.header__sub-item
+                        a(href="#").header__link Крафтовое пиво
+                      li.header__sub-item
+                        a(href="#").header__link Локальное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Сидр
+                      li.header__sub-item
+                        a(href="#").header__link Импортное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Безалкогольные напитки
+                      li.header__sub-item
+                        a(href="#").header__link Медовуха
+
+                a(href="").header__link Каталог
+
+              li.header__item
+                div.header__sub
+                  div.container
+                    ul.header__sub-list
+                      li.header__sub-item
+                        a(href="#").header__link Крафтовое пиво
+                      li.header__sub-item
+                        a(href="#").header__link Локальное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Сидр
+                      li.header__sub-item
+                        a(href="#").header__link Импортное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Безалкогольные напитки
+                      li.header__sub-item
+                        a(href="#").header__link Медовуха
+                      li.header__sub-item
+                        a(href="#").header__link Крафтовое пиво
+                      li.header__sub-item
+                        a(href="#").header__link Локальное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Сидр
+                      li.header__sub-item
+                        a(href="#").header__link Импортное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Безалкогольные напитки
+                      li.header__sub-item
+                        a(href="#").header__link Медовуха
+
+                a(href="").header__link Услуги
+
+              li.header__item
+                div.header__sub
+                  div.container
+                    ul.header__sub-list
+                      li.header__sub-item
+                        a(href="#").header__link Крафтовое пиво
+                      li.header__sub-item
+                        a(href="#").header__link Локальное пиво
+                      li.header__sub-item
+                        a(href="#").header__link Сидр
+
+                a(href="").header__link Партнерам
+
+              li.header__item
+                div.header__sub
+                  div.container
+                    ul.header__sub-list
+                      li.header__sub-item
+                        a(href="#").header__link Безалкогольные напитки
+                      li.header__sub-item
+                        a(href="#").header__link Медовуха
+
+                a(href="").header__link О Компании
+
+            div.header__actions
+              a(href="#" data-type='call-us').button-request.header__action
+                svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
+                  use(href='#icon-header-phone')
+
+              a(href="#" data-count='28').header__action
+                svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  use(href='#icon-header-cart')
+
+              a(href="#" data-type='authorization').button-request.header__action
+                svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  use(href='#icon-header-user')
+
+              a.header__action.header__action--search
+                svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  use(href='#icon-header-search')
+
+              button(type='button').header__burger
+                span
+
+    div.header__dropdown 
+      include ../header-dropdown/header-dropdown
+
+    div.header__mobile-nav
+      include ../mobile-nav/mobile-nav
+
+    div.header__search
+      include ../header-search/header-search

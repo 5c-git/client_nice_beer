@@ -1,0 +1,29 @@
+extends ../templates/default
+
+include ../components/watched/watched
+include ../components/tabs/tabs
+include ../components/post-title/post-title
+include ../components/tags/tags
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Результаты поиска',
+  })
+  
+  include ../components/search/search
+  
+  +post-title({
+    text: 'Всего совпадений: 11 882',
+  })
+
+  +tabs({
+    ver1: true,
+  })
+  
+  +tags({})
+  
+  +watched({
+    title: 'Вы смотрели',
+  })

@@ -1,0 +1,17 @@
+extends ../templates/default
+
+include ../components/offer/offer
+include ../components/payment/payment
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +offer({
+    fail: true,
+  })
+
+  //- +payment({
+  //-   fail: true,
+  //- })
+
+  include ../react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider

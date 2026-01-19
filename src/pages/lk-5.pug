@@ -1,0 +1,42 @@
+extends ../templates/default
+
+include ../components/profile-accordion/profile-accordion
+include ../components/profile-info-card/profile-info-card
+include ../components/profile-center/profile-center
+include ../components/profile-page/profile-page
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +profile-page({})
+    +profile-center({
+      title: 'Представители организации',
+      add: '+ Добавить представителя',
+    })
+      h3.profile-center__legend Может понадобится заголовок
+
+      +profile-accordion({
+        title: 'Ге́нри Уи́льям Да́лглиш Ка́вилл',
+        info: 'какая-то доп инфа',
+      })
+        +profile-info-card({
+          member: true,
+        })
+
+      +profile-accordion({
+        title: 'Скарлетт Йоханссон',
+        info: 'инфа',
+      })
+        +profile-info-card({
+          member: true,
+        })
+
+      h3.profile-center__legend заголовок
+
+      +profile-accordion({
+        title: 'Бурунов Сергей Александрович',
+        info: 'какая-то инфа',
+      })
+        +profile-info-card({
+          member: true,
+        })

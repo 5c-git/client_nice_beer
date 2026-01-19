@@ -1,0 +1,21 @@
+extends ../templates/default
+
+include ../components/tabs/tabs
+include ../components/post-title/post-title
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Результаты поиска',
+  })
+  
+  include ../components/search/search
+  
+  +post-title({
+    text: 'Всего совпадений: 11 882',
+  })
+
+  +tabs({
+    ver1: true,
+  })

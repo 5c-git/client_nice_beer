@@ -1,0 +1,21 @@
+extends ../templates/default
+
+include ../components/watched/watched
+include ../components/empty/empty
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Результаты поиска',
+  })
+  
+  include ../components/search/search
+
+  +empty({})
+
+  include ../react/providers/pages/search-1/RequestSearchProvider/RequestSearchProvider
+  
+  +watched({
+    title: 'Вы смотрели',
+  })

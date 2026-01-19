@@ -1,0 +1,16 @@
+extends ../templates/default
+
+include ../components/profile-form/profile-form
+include ../components/profile-center/profile-center
+include ../components/profile-page/profile-page
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +profile-page({})
+    +profile-center({
+      title: 'Добавить представителя организации',
+    })
+      +profile-form({
+        addMember: true,
+      })

@@ -1,0 +1,153 @@
+.footer {
+  position: relative;
+  color: $white-1;
+  background-color: $black-1;
+
+  @media print {
+    display: none;
+  }
+
+  &__main {
+    padding-top: 18px;
+    padding-bottom: 22px;
+
+    @media (max-width: $phone) {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    display: block;
+    transition: opacity 0.3s;
+    flex-shrink: 0;
+
+      @media (max-width: $phone) {
+        width: 120px;
+      }
+
+    &[href]:hover {
+      @media (min-width: $desktop-only) {
+        opacity: 0.5;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 30px;
+    row-gap: 10px;
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+
+    &--main {
+      column-gap: 40px;
+      row-gap: 10px;
+
+      @media (max-width: $phone) {
+        flex-direction: unset;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+
+      .footer {
+        &__link {
+          @include DЗаголовок25-Заголовок4;
+        }
+      }
+    }
+  }
+
+  &__text {
+    @include DТекст16inter-reg;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  &__link {
+    @include DТекст16inter-reg;
+    margin: 0;
+    text-decoration: none;
+    color: $white-1;
+    transition: color 0.3s;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        color: $green-1;
+      }
+    }
+
+    svg {
+      display: block;
+      fill: currentcolor;
+    }
+  }
+
+  &__bottom {
+    padding-top: 9px;
+    padding-bottom: 11px;
+    background-color: $black-2;
+
+    @media (max-width: $phone) {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .footer {
+      &__link {
+        @include DТекст15inter-reg;
+      }
+
+      &__text {
+        @include DТекст15inter-reg;
+        margin: 0;
+      }
+    }
+  }
+
+  &__socials {
+    display: none;
+
+    @media (max-width: $phone) {
+      display: unset;
+    }
+  }
+}

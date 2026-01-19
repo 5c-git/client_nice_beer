@@ -1,0 +1,69 @@
+mixin slider(props)
+
+  include ../partner-card/partner-card
+
+  div.slider
+    div.swiper.slider__swiper
+      ul.swiper-wrapper.slider__list
+
+        if props.partners
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-1.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-2.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-3.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-4.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-5.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-3.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-4.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-5.png',
+            })
+
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-1.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-2.png',
+            })
+          
+          li.swiper-slide.slider__item
+            +partner-card({
+              src: './assets/images/partner-logo-3.png',
+            })
+
+
+    div.slider__scrollbar
+    div.slider__buttons
+      button(type='button' aria-label='Предыдущий слайд.').slider__button.slider__button--prev ←
+      button(type='button' aria-label='Следующий слайд.').slider__button.slider__button--next →

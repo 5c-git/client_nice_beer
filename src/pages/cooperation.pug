@@ -1,0 +1,27 @@
+extends ../templates/default
+
+include ../components/article/article
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Сотрудничество',
+  })
+
+  +layout-header({
+    about: true,
+  })
+
+  +layout({})
+    +article({
+      article: true,
+    })
+  
+  include ../components/team/team
+  
+  include ../components/projects/projects
+  
+  include ../components/advantages/advantages
+
+  include ../react/providers/pages/cooperation/RequestCooperationProvider/RequestCooperationProvider

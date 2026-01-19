@@ -1,0 +1,66 @@
+extends ../templates/default
+
+include ../components/profile-accordion/profile-accordion
+include ../components/profile-info-card/profile-info-card
+include ../components/profile-center/profile-center
+include ../components/profile-page/profile-page
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +profile-page({})
+    +profile-center({
+      title: 'Мои организации',
+      add: '+ Добавить организацю',
+    })
+      h3.profile-center__legend Может понадобится заголовок
+
+      +profile-accordion({
+        title: 'ПАО Сбербанк',
+        info: '7707083893 ФИО ответственный',
+      })
+        +profile-info-card({
+          organization: true,
+        })
+
+      +profile-accordion({
+        title: 'Окционерное общество подпольного движения черепашек ниндзя поедающих пиццу 4 сыра',
+        info: '88855566625 Сплинтер мутант-крыса',
+      })
+        +profile-info-card({
+          organization: true,
+        })
+
+      h3.profile-center__legend Или не понадобится
+
+      +profile-accordion({
+        title: 'ПАО Сбербанк',
+        info: '7707083893 Шредер с Технодрома',
+      })
+        +profile-info-card({
+          organization: true,
+        })
+
+      +profile-accordion({
+        title: 'Окционерное общество подпольного движения анти-черепашки ниндзя',
+        info: '88855566625 Кренг',
+      })
+        +profile-info-card({
+          organization: true,
+        })
+
+      +profile-accordion({
+        title: 'ПАО Сбербанк',
+        info: '7707083893 Бибоб',
+      })
+        +profile-info-card({
+          organization: true,
+        })
+
+      +profile-accordion({
+        title: 'Окционерное общество подпольного движения черепашек ниндзя поедающих пиццу 4 сыра',
+        info: '88855566625 Сплинтер мутант',
+      })
+        +profile-info-card({
+          organization: true,
+        })

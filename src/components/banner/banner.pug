@@ -1,0 +1,51 @@
+section.banner
+  div.container 
+    div.banner__wrapper
+      div.swiper.banner__slider
+        <!-- Картинки для слайдера должны быть одинаковых размеров. Высота будет автоматическая. -->
+        ul.swiper-wrapper.banner__slider-list
+
+          li.swiper-slide.banner__slider-item
+            a(href="#").banner__slider-link
+              picture 
+                source(media="(max-width: 767px)", srcset='./assets/images/banner/banner-2.jpg')
+                img(src='./assets/images/banner/banner-2.jpg' alt="")
+              div.banner__slider-content
+                <!-- Если надо выделить цветов в заголовке кусок, то оборачиваем в 'em'. -->
+                p.banner__slider-title Доставим за 1-2 часа
+                p.banner__slider-text 01.01.2021 — 01.01.2021
+
+          li.swiper-slide.banner__slider-item
+            a(href="#").banner__slider-link
+              picture 
+                source(media="(max-width: 767px)", srcset='./assets/images/banner/banner-1.jpg')
+                img(src='./assets/images/banner/banner-1.jpg' alt="")
+              div.banner__slider-content
+                <!-- Если надо выделить цветов в заголовке кусок, то оборачиваем в 'em'. -->
+                p.banner__slider-title Доставим за 3-5 часа
+                p.banner__slider-text 11.11.2021 — 13.08.2022
+
+          li.swiper-slide.banner__slider-item
+            a(href="#").banner__slider-link
+              picture 
+                source(media="(max-width: 767px)", srcset='./assets/images/banner/banner-3.jpg')
+                img(src='./assets/images/banner/banner-3.jpg' alt="")
+              div.banner__slider-content
+                <!-- Если надо выделить цветов в заголовке кусок, то оборачиваем в 'em'. -->
+                p.banner__slider-title Доставим за 2-15 часа
+                p.banner__slider-text 05.05.2023 — 23.05.2024
+
+          li.swiper-slide.banner__slider-item
+            a(href="#").banner__slider-link
+              picture 
+                source(media="(max-width: 767px)", srcset='./assets/images/banner/banner-5.jpg')
+                img(src='./assets/images/banner/banner-5.jpg' alt="")
+              div.banner__slider-content
+                <!-- Если надо выделить цветов в заголовке кусок, то оборачиваем в 'em'. -->
+                p.banner__slider-title Доставим за 1-2 часа
+                p.banner__slider-text 01.01.2021 — 01.01.2021
+
+        div.banner__slider-buttons
+          button(type='button' aria-label='Предыдущий слайд.').banner__slider-button.banner__slider-button--prev ←
+          button(type='button' aria-label='Следующий слайд.').banner__slider-button.banner__slider-button--next →
+        div.banner__slider-pagination

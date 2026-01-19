@@ -1,0 +1,52 @@
+include ../item-card/item-card
+include ../top-filters/top-filters
+
+mixin layout(props)
+
+  if props.sidebar
+    section.layout.layout--sidebar
+      div.container 
+        div.layout__wrapper
+          if props.title
+            div.layout__head
+              h2.layout__title=props.title
+              if props.link
+                a(href="#").layout__all
+                  span.layout__all-text=props.link
+                  span.layout__all-arrow →
+          div.layout__content
+            div.layout__sidebar
+              if props.promotions
+                include ../sidebar-nav/sidebar-nav
+
+            div.layout__main
+              if props.favorites 
+                +top-filters({})
+              div.layout__list
+                block
+
+              if props.pagination
+                include ../pagination/pagination
+
+
+  else
+    section.layout(
+      class=props.variant
+      id=props.id
+    )
+      div.container 
+        div.layout__wrapper
+          if props.title
+            div.layout__head
+              h2.layout__title=props.title
+              if props.link
+                a(href="#").layout__all
+                  span.layout__all-text=props.link
+                  span.layout__all-arrow →
+          if props.sort
+            +top-filters({})
+          div.layout__list
+            block
+
+          if props.pagination
+            include ../pagination/pagination

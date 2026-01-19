@@ -1,0 +1,19 @@
+extends ../templates/default
+
+include ../components/watched/watched
+include ../components/post-title/post-title
+include ../components/catalog/catalog
+
+block main
+
+  include ../components/banner/banner
+
+  +post-title({
+    text: 'Найдено 1043 результатов',
+  })
+
+  +catalog({})
+  
+  +watched({
+    title: 'Вы смотрели',
+  })

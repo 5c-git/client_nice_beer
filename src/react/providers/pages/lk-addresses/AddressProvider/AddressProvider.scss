@@ -1,0 +1,244 @@
+@import 'src/utils/utils';
+
+.AddressProvider {
+  @include zero;
+
+  .Editable {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .Modal__container {
+    overflow-y: auto;
+  }
+
+  .react-dadata__container {
+    position: relative;
+
+    @media(max-width: $phone) {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      width: 10px;
+      height: 15px;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url('../assets/images/icon-map.svg');
+      content: '';
+    }
+  }
+
+  .react-dadata__input {
+    @include DТекст16inter-reg;
+    @include zero;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    border: 1px solid $grey-6;
+    border-radius: 0;
+    color: $dark-blue-1;
+    outline: none;
+
+    &::placeholder {
+      @include DТекст16inter-reg;
+      color: $grey-8;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .react-dadata__suggestions {
+    border-radius: 0;
+  }
+
+  .react-dadata__suggestion-note {
+    @include DТекст14inter-reg;
+  }
+
+  .react-dadata__suggestion {
+    @include DТекст16inter-reg;
+
+    &:hover {
+      background-color: $grey-6;
+    }
+  }
+
+  .react-dadata--highlighted {
+    color: $blue-1;
+  }
+
+  &__item {
+    @include zero;
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  &__header {
+    @include DЗаголовок30-Заголовок3;
+    @include zero;
+    margin-bottom: 20px;
+    color: $dark-blue-1;
+
+    @media(max-width: $phone) {
+      padding-top: 17px;
+      padding-right: 50px;
+      padding-bottom: 17px;
+      padding-left: 15px;
+      border-bottom: 1px solid $grey-6;
+    }
+  }
+
+  &__heading {
+    @include DТекст18inter-bold;
+    @include zero;
+    margin-bottom: 15px;
+    color: $dark-blue-1;
+
+    @media(max-width: $phone) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    @include DТекст14inter-reg;
+    @include zero;
+    margin-bottom: 5px;
+    color: $dark-blue-1;
+
+    @media(max-width: $phone) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-left: auto;
+
+    @media(max-width: $phone) {
+      margin-left: unset;
+    }
+    @media(max-width: 425px) {
+      width: 48%;
+    }
+  }
+
+  &__add {
+    margin-top: 30px;
+
+    @media(max-width: 425px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__delete {
+    @include zero;
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+  }
+
+  &__delete-navigation {
+    @include zero;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__question {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  &__delete-text {
+    @include DТекст16inter-reg;
+    @include zero;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $dark-blue-1;
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width: $phone) {
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: 13px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-top: 1px solid $grey-6;
+      column-gap: 10px;
+    }
+  }
+
+  &__modal {
+
+    .Modal__container {
+      @media(max-width: $phone) {
+        max-width: unset;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .Modal__close {
+      @media(max-width: $phone) {
+        top: 20px;
+        right: 15px;
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    &--nooverflow {
+
+      .Modal__container {
+        overflow-y: initial;
+      }
+    }
+  }
+
+  &__cancel {
+    display: none;
+
+    @media(max-width: $phone) {
+      display: initial;
+    }
+  }
+}

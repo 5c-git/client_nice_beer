@@ -1,0 +1,48 @@
+.request {
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__field {
+    
+  }
+
+  &__legal {
+    @include DТекст16inter-reg;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: $grey-8;
+    gap: 10px;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: $light-green-1;
+      transition: text-decoration-color 0.3s;
+      text-decoration-color: $light-green-1;
+
+      &:hover {
+        @media(min-width: $desktop-only) {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+
+    .field {
+      margin-bottom: auto;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+include ../item-card/item-card
+include ../top-filters/top-filters
+
+mixin profile-center(props)
+  div.profile-center
+    div.profile-center__top 
+      h2.profile-center__title=props.title 
+      if props.select
+        select(name="profile").profile-center__select
+          option(value="0") Все заказы
+          option(value="1") Заказ на физ. лицо
+          option(value="2") ООО Еще одна организация
+          option(value="3") ООО Еще одна организация с длинным названием
+          option(value="4") Digital-агентство 5 УГЛОВ
+    div.profile-center__main
+
+      if props.sort
+        +top-filters({})
+
+      if props.items
+        div.profile-center__list
+          +item-card({
+            ver1: true,
+            action: true,
+          })
+          +item-card({
+            ver2: true,
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+          +item-card({
+            ver2: true,
+            action: true,
+          })
+          +item-card({
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+          +item-card({
+            ver1: true,
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+          +item-card({
+            action: true,
+          })
+          +item-card({
+            ver1: true,
+            action: true,
+          })
+          +item-card({
+            ver2: true,
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+          +item-card({
+            ver2: true,
+            action: true,
+          })
+          +item-card({
+            ver3: true,
+            action: true,
+          })
+
+      block
+
+      if props.pagination
+        include ../pagination/pagination
+
+      if props.add
+        div.profile-center__action
+          a(href="#").button!=props.add 

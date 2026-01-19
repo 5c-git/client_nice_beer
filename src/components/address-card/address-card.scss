@@ -1,0 +1,68 @@
+.address-card {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__title {
+    @include DТекст16inter-reg;
+    margin: 0;
+  }
+
+  &__text {
+    @include DТекст16inter-reg;
+    margin: 0;
+    color: $grey-8;
+
+    a {
+      color: $light-green-1;
+      transition: text-decoration-color 0.3s;
+      text-decoration-color: $light-green-1;
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: grid;
+    align-items: center;
+    margin-top: 20px;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    grid-column: 1 / -1;
+
+    @media (max-width: $tablet) {
+      margin-top: 10px;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: $tablet) {
+      order: -1;
+    }
+    @media (max-width: $phone) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+}

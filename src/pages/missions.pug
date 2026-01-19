@@ -1,0 +1,23 @@
+extends ../templates/default
+
+include ../components/article/article
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Миссия и ценности',
+  })
+
+  +layout-header({
+    missions: true,
+  })
+
+  +layout({})
+    +article({
+      article: true,
+    })
+  
+  include ../components/team/team
+  
+  include ../components/projects/projects

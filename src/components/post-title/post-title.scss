@@ -1,0 +1,24 @@
+.post-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  & + .layout,
+  & + .catalog {
+    margin-top: 30px;
+
+    @media (max-width: $phone) {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    @include DТекст15inter-reg;
+    margin: 0;
+    color: $grey-8;
+  }
+}

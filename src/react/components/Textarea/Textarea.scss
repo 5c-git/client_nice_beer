@@ -1,0 +1,55 @@
+@import 'src/utils/utils';
+
+.Textarea {
+
+  &__field {
+    @include DТекст16inter-reg;
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    margin: 0;
+    padding-top: 11px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    border: 1px solid $grey-6;
+    color: $dark-blue-1;
+    background-color: $white-1;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &::placeholder {
+      @include DТекст16inter-reg;
+      color: $grey-8;
+    }
+  }
+
+  &__label {
+    @include DТекст14inter-reg;
+    display: block;
+    margin-bottom: 3px;
+    color: $dark-blue-1;
+
+    &--required {
+      position: relative;
+
+      &:after {
+        color: $red-1;
+        content: '*';
+      }
+    }
+  }
+
+  &--error {
+
+    .Textarea__label {
+      color: $red-1;
+    }
+
+    .Textarea__field {
+      border-color: $red-1;
+    }
+  }
+}

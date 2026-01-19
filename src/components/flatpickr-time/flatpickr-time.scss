@@ -1,0 +1,20 @@
+.flatpickr-time {
+  border: 0 !important;
+  border-radius: 0;
+
+  input {
+    @include DТекст16inter-reg;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top: 2px dotted $grey-8;
+    background-color: $white-1;
+    gap: 15px;
+  }
+}

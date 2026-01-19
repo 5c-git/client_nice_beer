@@ -1,0 +1,77 @@
+.offer {
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  @media (max-width: $phone) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: $light-green-1;
+    transition: text-decoration-color 0.3s;
+    text-decoration-color: $light-green-1;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__banner {
+    margin-bottom: 30px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: block;
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+
+      @media (max-width: $phone) {
+        width: 70px;
+      }
+    }
+  }
+
+  &__title {
+    @include DЗаголовок50-Заголовок1;
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    word-break: break-word;
+
+    @media (max-width: $phone) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 5px;
+    }
+
+    b {
+      @include DТекст18inter-bold;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__comment {
+    margin: 0;
+    color: $grey-8;
+  }
+}

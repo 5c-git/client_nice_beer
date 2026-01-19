@@ -1,0 +1,79 @@
+.button {
+  @include DЗаголовок25-Заголовок4;
+  display: inline-grid;
+  width: 100%;
+  max-width: 540px;
+  min-height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 12px;
+  padding-right: 5px;
+  padding-bottom: 13px;
+  padding-left: 5px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-blue-1;
+  background-color: $grey-5;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+  grid-auto-flow: column;
+  gap: 5px;
+  cursor: pointer;
+
+  @media (max-width: $phone) {
+    min-height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):not(.button--disabled):not(.button--active):not(.button--blue):hover {
+    @media (min-width: $desktop-only) {
+      color: $white-1;
+      background-color: $blue-1;
+    }
+  }
+
+  &:not(:disabled):not(.button--disabled):not(.button--active):not(.button--blue):active {
+    box-shadow: inset 1px 1px 4px $grey-8;
+  }
+
+  svg {
+    fill: currentcolor;
+    stroke: currentcolor;
+  }
+
+  &--blue {
+    color: $white-1;
+    background-color: $blue-1;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        color: $dark-blue-1;
+        background-color: $grey-5;
+        border-color: $blue-1;
+      }
+    }
+  }
+
+  &--active {
+    color: $white-1;
+    background-color: $blue-1;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

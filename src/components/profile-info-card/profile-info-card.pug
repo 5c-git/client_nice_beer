@@ -1,0 +1,107 @@
+mixin profile-info-card(props)
+  if props.address
+    div.profile-info-card
+      div.profile-info-card__wrapper
+        div.profile-info-card__item.profile-info-card__item--wide
+          p.profile-info-card__title Название торговой точки
+          p.profile-info-card__text Домик Наф-Наф
+        div.profile-info-card__item.profile-info-card__item--wide
+          p.profile-info-card__title Код ЕГАИС
+          p.profile-info-card__text 332244884499
+        div.profile-info-card__item
+          p.profile-info-card__title Рабочие дни:
+          p.profile-info-card__text пнд, втр, срд
+        div.profile-info-card__item
+          p.profile-info-card__title Время: 
+          p.profile-info-card__text 09:55 - 17:55
+        div.profile-info-card__item
+          p.profile-info-card__title Телефон: 
+          p.profile-info-card__text
+            a(href="tel:79255556677") +7 (925) 555 66 77
+        div.profile-info-card__item
+          p.profile-info-card__title Е-мейл: 
+          p.profile-info-card__text
+            a(href="mailto:kawabanga@splinter.ru") kawabanga@splinter.ru
+
+      div.profile-info-card__footer
+        div.profile-info-card__links 
+          p.profile-info-card__text
+            a(href="#").profile-info-card__action Редактировать
+          p.profile-info-card__text
+            a(href="#" data-type='delete' data-id="45" data-test='pew-pew').button-request.profile-info-card__action Удалить
+
+
+  if props.organization
+    div.profile-info-card
+      div.profile-info-card__wrapper
+
+        div.profile-info-card__field
+          span.profile-info-card__label ИНН компании
+          div.profile-info-card__input 7729671176
+
+        div.profile-info-card__field
+          span.profile-info-card__label КПП компании
+          div.profile-info-card__input 130001001
+          
+        div.profile-info-card__field
+          span.profile-info-card__label ОГРН компании
+          div.profile-info-card__input 5107746036261
+          
+        div.profile-info-card__field
+          span.profile-info-card__label Краткое наименование компании
+          div.profile-info-card__input ООО "ПЯТЬ УГЛОВ"
+          
+        div.profile-info-card__field.profile-info-card__field--wide
+          span.profile-info-card__label Полное наименование компании
+          div.profile-info-card__input ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ПЯТЬ УГЛОВ"
+          
+        div.profile-info-card__field.profile-info-card__field--wide
+          span.profile-info-card__label Юридический адрес компании
+          div.profile-info-card__input г Саранск, ул Строительная, д 16Б, помещ 206А
+          
+        div.profile-info-card__field.profile-info-card__field--wide
+          span.profile-info-card__label Почтовый адрес компании
+          div.profile-info-card__input 430030, Респ Мордовия, г Саранск, ул Строительная, д 16Б, помещ 206А
+
+      div.profile-info-card__footer
+        div.profile-info-card__links 
+          p.profile-info-card__text
+            a(href="#").profile-info-card__action Редактировать
+          p.profile-info-card__text
+            a(href="#" data-type='delete' data-id="48" data-test='pew-pew').button-request.profile-info-card__action Удалить
+
+  if props.member
+    div.profile-info-card
+    div.profile-info-card
+      div.profile-info-card__wrapper
+          
+        div.profile-info-card__field
+          span.profile-info-card__label Фамилия
+          div.profile-info-card__input Ка́вилл
+          
+        div.profile-info-card__field
+          span.profile-info-card__label Имя
+          div.profile-info-card__input Ге́нри Уи́льям
+          
+        div.profile-info-card__field
+          span.profile-info-card__label Отчество
+          div.profile-info-card__input Да́лглиш
+          
+        div.profile-info-card__field
+          span.profile-info-card__label Название организации
+          div.profile-info-card__input ООО "ПЯТЬ УГЛОВ"
+
+        div.profile-info-card__field
+          span.profile-info-card__label Email
+          div.profile-info-card__input 253045@5corners.ru
+
+        div.profile-info-card__field
+          span.profile-info-card__label Телефон
+          div.profile-info-card__input +7 (495) 215-52-91
+
+      div.profile-info-card__footer
+        div.profile-info-card__links 
+          p.profile-info-card__text
+            a(href="#").profile-info-card__action Редактировать
+          p.profile-info-card__text
+            a(href="#" data-type='delete' data-id="22" data-test='pew-pew').button-request.profile-info-card__action Удалить

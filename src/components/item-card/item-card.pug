@@ -1,0 +1,87 @@
+mixin item-card(props)
+  if props.ver1
+    article.item-card
+      figure(data-id='3').request-modal-product.item-card__banner
+        img(src="./assets/images/promo-picture-1.jpeg" alt="1915 raspberry edition")
+      div.item-card__content
+        div.item-card__tags
+          span(style='background-color: #212121;').item-card__tag Акции 2+1
+          span(style='background-color: #3F8800;').item-card__tag Новинка
+          span(style='background-color: #ea4410;').item-card__tag Хит продаж
+        div.item-card__main
+          p.item-card__title 1915 raspberry edition
+          p.item-card__type Stout
+          ul.item-card__stats
+            li.item-card__stat #[b og] 18%
+            li.item-card__stat #[b alc] 6.2%
+        span.item-card__additive С малиной и клубникой
+
+      div.item-card__action
+        div.item-card__amount
+          p.item-card__price 240 ₽ #[span за шт.]
+          div.item-card__packaging
+            include ../packaging/packaging
+        span.item-card__where В корзину
+        
+  else if props.ver2
+    article.item-card
+      figure(data-id='12').request-modal-product.item-card__banner
+        img(src="./assets/images/promo-picture-2.jpeg" alt="Медовуха нефильтрованная, осветленная")
+      div.item-card__content
+        div.item-card__tags
+          span(style='background-color: #212121;').item-card__tag Акции 2+1
+        div.item-card__main
+          p.item-card__title Медовуха нефильтрованная, осветленная "СиВ 3"
+          p.item-card__type Barleywine
+          ul.item-card__stats
+            li.item-card__stat #[b og] 28%
+            li.item-card__stat #[b alc] 16.2%
+            li.item-card__stat #[b ibu] 60
+
+      div.item-card__action
+        div.item-card__amount
+          p.item-card__price 225 ₽ #[span за шт.]
+          div.item-card__packaging
+            include ../packaging/packaging
+        span.item-card__where В корзину
+        
+  else if props.ver3
+    article.item-card
+      figure(data-id='54').request-modal-product.item-card__banner
+        img(src="./assets/images/no-image.svg" alt="Гренадер")
+      div.item-card__content
+        div.item-card__main
+          p.item-card__title Гренадер
+          p.item-card__type Double Oatmeal Stout
+          ul.item-card__stats
+            li.item-card__stat #[b alc] 5.2%
+            li.item-card__stat #[b ibu] 20
+        span.item-card__additive С малиной и клубникой
+
+      div.item-card__action
+        div.item-card__amount
+          p.item-card__price 230 ₽ #[span за шт.]
+          div.item-card__packaging
+            include ../packaging/packaging
+        span.item-card__where В корзину
+        
+  else
+    article.item-card
+      figure(data-id='148').request-modal-product.item-card__banner
+        img(src="./assets/images/promo-picture-4.jpeg" alt="Веневитинская дева")
+      div.item-card__content
+        div.item-card__tags
+          span(style='background-color: #ea4410;').item-card__tag Хит продаж
+        div.item-card__main
+          p.item-card__title Веневитинская дева
+          p.item-card__type Russian Imperial Stout
+          ul.item-card__stats
+            li.item-card__stat #[b og] 18%
+            li.item-card__stat #[b ibu] 40
+
+      div.item-card__action
+        div.item-card__amount
+          p.item-card__price 255 ₽ #[span за шт.]
+          div.item-card__packaging
+            include ../packaging/packaging
+        span.item-card__where В корзину

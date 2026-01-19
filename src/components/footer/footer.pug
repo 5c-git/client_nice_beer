@@ -1,0 +1,52 @@
+include ../socials/socials
+
+footer.footer
+  div.footer__main
+    div.container
+      div.footer__wrapper
+
+        a(href="#").footer__logo
+          img(src="./assets/images/logo-footer.png" width='120' height='52' alt="")
+
+        nav.footer__nav
+          ul.footer__list.footer__list--main
+            li.footer__item
+              a(href="#").footer__link Пиво
+            li.footer__item
+              a(href="#").footer__link Услуги
+            li.footer__item
+              a(href="#").footer__link Партнерам
+            li.footer__item
+              a(href="#").footer__link О компании
+            li.footer__item
+              a(href="#").footer__link Контакты
+          ul.footer__list
+            li.footer__item
+              a(href="#").footer__link Санкт-Петербург, ул. Авиаторов, 30 офис 405
+            li.footer__item
+              a(href="mailto:nice@nice-beer.com").footer__link nice@nice-beer.com
+            li.footer__item
+              a(href="tel:+74951233365").footer__link +7(495)123-33-65
+
+        div.footer__socials 
+          +socials({
+            footer: true,
+          })
+
+  div.footer__bottom
+    div.container
+      div.footer__wrapper
+
+        p.footer__text &copy; 2026 nice-beer.ru. Все права защищены.
+
+        ul.footer__list
+          li.footer__item
+            a(href="#" target='_blank').footer__link Договор оферты
+          li.footer__item
+            a(href="#" target='_blank').footer__link Пользовательское соглашение
+          li.footer__item
+            a(href="#" target='_blank').footer__link Политика конфиденциальности
+          li.footer__item
+            a(href="#" target='_blank').footer__link
+              svg(width="80" height="16" viewBox="0 0 80 16" xmlns="http://www.w3.org/2000/svg")
+                use(href="#icon-5corners")

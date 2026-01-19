@@ -1,0 +1,128 @@
+.payment {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  @media (max-width: $phone) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  hr {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px dotted $grey-8;
+
+    @media (max-width: $phone) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    @include DЗаголовок40-Заголовок2;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 10px;
+    }
+
+    em {
+      font-style: normal;
+      color: $blue-1;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 15px;
+    }
+
+    b {
+      @include DТекст18inter-bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $light-green-1;
+      transition: text-decoration-color 0.3s;
+      text-decoration-color: $light-green-1;
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 30px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__comment {
+    margin: 0;
+    color: $grey-8;
+
+    br {
+      @media (max-width: $phone) {
+        display: none;
+      }
+    }
+
+    a {
+      color: $light-green-1;
+      transition: text-decoration-color 0.3s;
+      text-decoration-color: $light-green-1;
+
+      &:hover {
+        @media (min-width: $desktop-only) {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__qr {
+    img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    .button {
+      display: none;
+
+      @media (max-width: $tablet) {
+        display: inline-grid;
+      }
+    }
+
+    .payment__comment {
+      margin-top: 10px;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+}

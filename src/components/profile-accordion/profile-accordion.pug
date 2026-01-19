@@ -1,0 +1,24 @@
+mixin profile-accordion(props)
+  article.profile-accordion
+    <!-- Чтобы карточка была открыта сразу надо навесить класс '.profile-accordion--active'. -->
+    div.profile-accordion__header
+      if props.title
+        p.profile-accordion__header-title!=props.title
+      if props.info
+        p.profile-accordion__header-info!=props.info
+    div.profile-accordion__inner
+      div.profile-accordion__answer
+        
+        block
+
+
+        
+
+
+    //- div.address-card__action
+    //-   a(href="#").address-card__button
+    //-     svg(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+    //-       use(href='#icon-pencil')
+    //-   a(href="#").address-card__button
+    //-     svg(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+    //-       use(href='#icon-cross')

@@ -1,0 +1,25 @@
+.swiper {
+  .item-card {
+    width: 224px;
+
+    @media (max-width: $phone) {
+      width: 180px;
+    }
+  }
+
+  .promotion-card {
+    width: 380px;
+
+    @media (max-width: $phone) {
+      width: 290px;
+    }
+  }
+
+  .article-card {
+    width: 380px;
+
+    @media (max-width: $phone) {
+      width: 290px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+extends ../templates/default
+
+include ../components/item-card/item-card
+include ../components/watched/watched
+include ../components/promotion-card/promotion-card
+include ../components/tags/tags
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Наименование акции',
+    back: true,
+  })
+
+  +layout-header({
+    promotion: true,
+  })
+
+  +layout({
+    sidebar: true,
+    title: 'Товары участники',
+    promotions: true,
+    pagination: true,
+  })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      action: true,
+    })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+  
+  +tags({
+    title: 'Теги',
+  })
+
+  +layout({
+    variant: 'layout--grid3',
+    title: 'Другие акции',
+    link: 'Смотреть все',
+  })
+    +promotion-card({
+      src: './assets/images/image-5.jpg',
+      title: 'Финансовый мир очнулся: постоянный количественный рост бодрит',
+    })
+    +promotion-card({
+      src: './assets/images/image-15.jpg',
+      title: 'Сложно сказать, почему объем доходов населения сократился',
+    })
+    +promotion-card({
+      src: './assets/images/image-7.jpg',
+      title: 'Дурное дело нехитрое: известный инсайдер, в преддверии важного события, не позволил союзу развалиться',
+    })
+  
+  +watched({
+    title: 'Вы смотрели',
+  })

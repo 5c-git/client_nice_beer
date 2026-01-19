@@ -1,0 +1,11 @@
+extends ../templates/default
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Товары в заказе №11',
+    back: true,
+  })
+
+  include ../components/offer-details/offer-details

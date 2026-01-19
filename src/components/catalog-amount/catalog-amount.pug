@@ -1,0 +1,36 @@
+mixin catalog-amount(props)
+  if props.empty
+    aside.catalog-amount.catalog-amount--hide
+      div.catalog-amount__header
+        span Товаров: 0
+        span.catalog-amount__total 0 ₽
+
+      div.catalog-amount__body
+        div.catalog-amount__empty
+          i.catalog-amount__icon
+            svg(width="80" height="80" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+              use(href='#icon-header-user')
+          p.catalog-amount__title #[a(href="#").request-login Авторизуйтесь] чтобы видеть ценыи формировать заказы.
+          div.catalog-amount__alert
+            b Внимание!
+            p Мы законопослушны и, соблюдаем действующие законодательство и рекомендации Росалкогольрегулирования от 25.06.18, уведомляем, что размещенная на нашем «сайте» продукция не подлежит реализации дистанционным способом.
+            p Внешний вид товара может отличаться от изображения на сайте в зависимости от партии. #[br]Менеджер свяжется с вами для подтверждения.
+
+      div.catalog-amount__footer
+        button(type='button' disabled).button оформить заказ
+        span.catalog-amount__min Минимальный заказ от 10 000 ₽
+        button(type='button').catalog-amount__toggle Развернуть корзину
+
+  else
+    aside.catalog-amount
+      div.catalog-amount__header
+        span Товаров: 2322
+        span.catalog-amount__total 23 955 220 ₽
+
+      div.catalog-amount__body.catalog-amount__body--hide
+        include ../catalog-amount-card/catalog-amount-card
+
+      div.catalog-amount__footer
+        button(type='button').button оформить заказ
+        span.catalog-amount__min Минимальный заказ от 10 000 ₽
+        button(type='button').catalog-amount__toggle Свернуть корзину

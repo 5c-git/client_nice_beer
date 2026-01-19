@@ -1,0 +1,227 @@
+.item-card {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: $phone) {
+    gap: 10px;
+  }
+
+  &__banner {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: calc(385 / 240 * 100%);
+    overflow: hidden;
+    cursor: pointer;
+
+    @media (max-width: $phone) {
+      height: 220px;
+    }
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        &:before {
+          visibility: initial;
+          opacity: initial;
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-family: $icon-font;
+      font-size: 72px;
+      line-height: 96px;
+      color: $white-1;
+      background-color: rgba($color: $dark-blue-1, $alpha: 30%);
+      transition:
+        visibility 0.3s,
+        opacity 0.3s;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      content: "↗";
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    @include DТекст16inter-reg;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    gap: 5px;
+    flex-grow: 1;
+  }
+
+  &__tags {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__tag {
+    @include DТекст15inter-med;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    border-radius: 10px;
+    color: $white-1;
+
+    @media (max-width: $phone) {
+      padding-top: 2px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+      padding-left: 8px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__title {
+    @include DЗаголовок20-Заголовок5;
+    margin: 0;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    /* stylelint-disable */
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 1;
+    /* stylelint-enable */
+  }
+
+  &__type {
+    margin: 0;
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 4px;
+  }
+
+  &__stat {
+    &:not(:last-child):after {
+      margin-left: 4px;
+      content: "/";
+    }
+
+    b {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__additive {
+    margin: 0;
+    font-style: italic;
+    color: $grey-8;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+
+    @media (max-width: $phone) {
+      gap: 10px;
+    }
+  }
+
+  &__amount {
+    // display: grid;
+    // height: 40px;
+    // align-items: center;
+    // grid-template-columns: 1fr 100px;
+    // gap: 10px;
+
+    // @media(max-width: $phone) {
+    //   height: unset;
+    //   grid-template-columns: 1fr;
+    // }
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // &__packaging {
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
+
+  &__price {
+    @include DЗаголовок30-Заголовок3;
+    margin: 0;
+
+    span {
+      @include DЗаголовок20-Заголовок5;
+      margin: 0;
+    }
+  }
+
+  &__where {
+    @include DЗаголовок25-Заголовок4;
+    display: flex;
+    width: 100%;
+    min-height: 55px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    color: $dark-blue-1;
+    background-color: $grey-3;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+    pointer-events: none;
+
+    @media (max-width: $phone) {
+      min-height: 55px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &--active {
+      color: $white-1;
+      background-color: $blue-1;
+    }
+  }
+}

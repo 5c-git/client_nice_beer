@@ -1,0 +1,34 @@
+.untappd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: $phone) {
+    align-items: flex-end;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__link {
+    @include DТекст15inter-reg;
+    color: $light-green-1;
+    transition: text-decoration-color 0.3s;
+    text-decoration-color: $light-green-1;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}

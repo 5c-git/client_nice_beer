@@ -1,0 +1,80 @@
+.catalog-card {
+  @include Shadow-cards;
+  position: relative;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  background-color: $white-1;
+  overflow: hidden;
+
+  @media(max-width: $phone) {
+    height: 140px;
+  }
+
+  &__link {
+    position: absolute;
+    inset: 0;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        &:before {
+          visibility: initial;
+          opacity: initial;
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-family: $icon-font;
+      font-size: 72px;
+      line-height: 96px;
+      color: $white-1;
+      background-color: rgba($color: $dark-blue-1, $alpha: 30%);
+      transition:
+        visibility 0.3s,
+        opacity 0.3s;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      content: "↗";
+    }
+  }
+
+  &__content {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    @include DЗаголовок25-Заголовок4;
+    margin: 0;
+  }
+
+  &__banner {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: auto;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}

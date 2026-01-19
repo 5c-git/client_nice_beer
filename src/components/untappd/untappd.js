@@ -1,0 +1,1 @@
+import './untappd.scss';

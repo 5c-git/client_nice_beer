@@ -1,0 +1,46 @@
+mixin request(props)
+  include ../field/field
+
+  div.request
+    form(action="#" method='post').request__form
+      div.request__fields
+        div.request__field 
+          +field({
+            label: 'Имя',
+            type: 'text',
+            name: 'First name',
+            id: 'First name',
+            placeholder: ' ',
+            secondClass: 'validator__required',
+          })
+        div.request__field 
+          +field({
+            label: 'Имейл',
+            type: 'email',
+            name: 'Email',
+            id: 'Email',
+            placeholder: ' ',
+            secondClass: 'validator__mail',
+          })
+        div.request__field 
+          +field({
+            label: 'Сообщение',
+            textarea: true,
+            name: 'text',
+            id: 'text',
+            maxlength: '1000',
+            placeholder: ' ',
+            secondClass: 'validator__required',
+          })
+
+      div.request__legal
+        +field({
+          checkbox: true,
+          name: 'legal',
+          id: 'legal',
+          required: true,
+        })
+        p Я соглашаюсь с #[a(href='#' target='_blank') политикой конфиденциальности] и #[a(href='#' target='_blank') пользовательским соглашением].
+
+      div.request__actions
+        button(type='submit').button.button--arrow Отправить

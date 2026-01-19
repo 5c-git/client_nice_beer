@@ -1,0 +1,47 @@
+.tooltip {
+  &__button {
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 50%;
+    font-family: $main-font;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $dark-blue-1;
+    background-image: url("../assets/images/icon-question.svg");
+    outline: none;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+}
+
+.tippy-box {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid $dark-blue-1;
+  border-radius: 0;
+  color: $dark-blue-1;
+  box-shadow: 0 25px 40px rgba($color: #111111, $alpha: 20%);
+  background: $white-1;
+}
+
+.tippy-content {
+  @include DТекст14inter-reg;
+  padding: 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+  }
+}

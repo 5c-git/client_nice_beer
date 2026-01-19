@@ -1,0 +1,24 @@
+extends ../templates/default
+
+include ../components/slider/slider
+include ../components/request-wrapper/request-wrapper
+
+block main
+  include ../components/intro/intro
+
+  +layout({
+    variant: 'layout--grid3',
+    title: 'Категории',
+    link: 'Смотреть все',
+  })
+    include ../components/catalog-card/catalog-card
+
+  +layout({
+    title: 'Партнеры',
+  })
+    +slider({
+      partners: true,
+    })
+
+  +layout({})
+    +request-wrapper({})

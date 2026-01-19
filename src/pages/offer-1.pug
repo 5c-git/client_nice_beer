@@ -1,0 +1,15 @@
+extends ../templates/default
+
+include ../components/offer/offer
+include ../components/payment/payment
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+
+  +offer({
+    success: true,
+  })
+
+  +payment({
+    qr: true,
+  })

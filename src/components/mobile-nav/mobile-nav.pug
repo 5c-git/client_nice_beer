@@ -1,0 +1,101 @@
+include ../socials/socials
+
+nav.mobile-nav
+  div.container 
+
+    div.mobile-nav__top 
+      ul.mobile-nav__list 
+        li.mobile-nav__item.mobile-nav__item--sup
+          a(href="#").mobile-nav__link Корзина
+            sup 8887
+        li.mobile-nav__item.mobile-nav__item--sup
+          a(href="#").mobile-nav__link Избранное
+            sup 1200
+        li.mobile-nav__item.mobile-nav__item--sup
+          a(href="#").mobile-nav__link Сравнение
+            sup 5
+            
+    div.mobile-nav__main 
+      ul.mobile-nav__list.mobile-nav__list--big
+        li.mobile-nav__item
+          a(href="#").mobile-nav__link Каталог
+          button(type='button').mobile-nav__sub-toggle
+          ul.mobile-nav__sub-list
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Крафтовое пиво
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Локальное пиво
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Сидр
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Импортное пиво
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link О Безалкогольные напитки
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Медовуха
+
+        li.mobile-nav__item
+          a(href="#").mobile-nav__link Услуги
+          button(type='button').mobile-nav__sub-toggle
+          ul.mobile-nav__sub-list
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Клининг
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Дрожжи
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Солодовые экстракты
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Оборудование
+
+        li.mobile-nav__item
+          a(href="#").mobile-nav__link Партнерам
+          button(type='button').mobile-nav__sub-toggle
+          ul.mobile-nav__sub-list
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Сидр
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Импортное пиво
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link О Безалкогольные напитки
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Медовуха
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Клининг
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Дрожжи
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Солодовые экстракты
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Оборудование
+
+        li.mobile-nav__item
+          a(href="#").mobile-nav__link О Компании
+          button(type='button').mobile-nav__sub-toggle
+          ul.mobile-nav__sub-list
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Импортное пиво
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link О Безалкогольные напитки
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Медовуха
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Клининг
+            li.mobile-nav__sub-item
+              a(href="#").mobile-nav__link Дрожжи
+
+      div.mobile-nav__contacts
+        a(href="tel:+79164959595").mobile-nav__tel +7 916 495-95-95
+        p.mobile-nav__desc Ежедневно 10:00-19:00
+        div.mobile-nav__socials
+          +socials({
+            header: true,
+          })
+
+      div.mobile-nav__payment
+        p.mobile-nav__payment-text Принимаем к оплате:
+        ul.mobile-nav__payment-list 
+          li.mobile-nav__payment-item 
+            img(src="./assets/images/logo-visa.png" width='66' height='22' alt="")
+          li.mobile-nav__payment-item 
+            img(src="./assets/images/logo-mastercard.png" width='49' height='30' alt="")
+

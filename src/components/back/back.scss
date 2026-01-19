@@ -1,0 +1,25 @@
+.back {
+  align-self: center;
+
+  @media (max-width: $phone) {
+    align-self: unset;
+  }
+  @media print {
+    display: none;
+  }
+
+  &__link {
+    @include slider-arrow;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        color: $blue-1;
+      }
+    }
+  }
+}

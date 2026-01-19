@@ -1,0 +1,80 @@
+@import 'src/utils/utils';
+
+.Code {
+  @include zero;
+
+  &__header {
+    @include DЗаголовок30-Заголовок3;
+    @include zero;
+  }
+
+  &__text {
+    @include DТекст16inter-reg;
+    @include zero;
+    margin-top: 10px;
+    color: $dark-blue-1;
+
+    @media(max-width: $phone) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__number {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .styles_react-code-input__CRulA {
+      display: flex;
+      column-gap: 10px;
+
+      input {
+        @include DТекст18inter-bold;
+        display: flex;
+        width: 50px !important;
+        height: 60px !important;
+        align-items: center;
+        padding-right: 9px;
+        padding-left: 9px;
+        border: 1px solid $grey-6 !important;
+        text-align: center;
+        color: $dark-blue-1;
+        transition: 0.3s;
+        outline: none;
+        caret-color: $black-1 !important;
+
+        &:focus {
+          border-color: $dark-blue-1 !important;
+        }
+
+        &:first-child,
+        &:last-child {
+          border: 1px solid $grey-6;
+        }
+      }
+    }
+  }
+
+  &__button {
+    @include DТекст16inter-reg;
+    @include zero;
+    border: 0;
+    color: $light-green-1;
+    background-color: transparent;
+    transition: text-decoration-color 0.3s;
+    text-decoration-line: underline;
+    text-decoration-color: $light-green-1;
+    cursor: pointer;
+
+    &:hover {
+      @media(min-width: $desktop-only) {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+
+  &__seconds {
+    @include DТекст14inter-reg;
+    @include zero;
+    color: $grey-8;
+  }
+}

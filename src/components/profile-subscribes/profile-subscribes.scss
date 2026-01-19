@@ -1,0 +1,112 @@
+.profile-subscribes {
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  &__field {
+    position: relative;
+  }
+
+  &__buttons {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(2, 200px);
+    grid-auto-flow: column;
+    column-gap: 20px;
+
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+      column-gap: 10px;
+    }
+  }
+
+  &__label {
+    @include DТекст16inter-reg;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  &__input {
+    &:checked + .profile-subscribes__label-box {
+      background-color: $blue-1;
+      border-color: $blue-1;
+
+      &:before {
+        @include DЗаголовок25-Заголовок4;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        color: $white-1;
+        content: "✓";
+      }
+    }
+  }
+
+  &__label-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin-bottom: auto;
+    background-color: $white-1;
+    border: 1px solid $grey-6;
+    transition: all 0.3s;
+    flex-shrink: 0;
+    order: -1;
+
+    @media (max-width: $phone) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@keyframes checkbox-check {
+  0% {
+    width: 0;
+    height: 0;
+    border-color: $white-1;
+    transform: translateZ(0) rotate(45deg);
+  }
+
+  33% {
+    width: 0.2em;
+    height: 0;
+    transform: translateZ(0) rotate(45deg);
+  }
+
+  to {
+    width: 0.2em;
+    height: 0.5em;
+    border-color: $white-1;
+    transform: translate3d(0, -0.5em, 0) rotate(45deg);
+  }
+}
+@keyframes checkbox-check-some {
+  0% {
+    width: 0.2em;
+    height: 0.5em;
+    border-color: $white-1;
+    transform: translate3d(0, -0.5em, 0) rotate(45deg);
+  }
+
+  33% {
+    width: 0.1em;
+    height: 0.5em;
+    border-color: $white-1;
+    transform: translate3d(0, -0.55em, 0) rotate(60deg);
+  }
+
+  to {
+    width: 0;
+    height: 0.5em;
+    border-color: $white-1;
+    transform: translate3d(0, -0.6em, 0) rotate(90deg);
+  }
+}

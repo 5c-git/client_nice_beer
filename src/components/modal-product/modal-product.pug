@@ -1,0 +1,49 @@
+div.modal-product
+  div.modal-product__wrapper
+    figure.modal-product__banner
+      img(src="./assets/images/promo-picture-4.jpeg" alt="")
+      div.modal-product__untappd
+        include ../untappd/untappd
+    div.modal-product__content
+      div.modal-product__tags
+        span(style='background-color: #212121;').modal-product__tag Акции 2+1
+      h2.modal-product__title БРОНЕВИК
+      p.modal-product__type Russian Imperial Stout
+      ul.modal-product__stats
+        li.modal-product__stat #[b alc] 5.9%
+        li.modal-product__stat #[b og] 20%
+        li.modal-product__stat #[b ibu] 30
+      span.modal-product__description Доблестный релиз серии «Русская линия» — храбрый русский имперский стаут с копченым солодом, внушительными 5.9% алкоголя и историей бронетанковых войск на этикетке.
+
+      ul.modal-product__info
+        li.modal-product__info-item
+          span.modal-product__info-name Штрихкод:
+          span.modal-product__info-value 4640106800584
+        li.modal-product__info-item
+          span.modal-product__info-name Тип фасовки:
+          span.modal-product__info-value Банка 0,33
+        li.modal-product__info-item
+          span.modal-product__info-name Полное наименование #[br]Егаис:
+          span.modal-product__info-value Пиво светлое непастеризованное нефильтрованное неосветленное «ЛИХО ОДНОГЛАЗОЕ»
+        li.modal-product__info-item
+          span.modal-product__info-name Гиперссылка на сайт:
+          span.modal-product__info-value #[a(href='#') перейти]
+        li.modal-product__info-item
+          span.modal-product__info-name Номер декларация соответствия:
+          span.modal-product__info-value RU С-ХХ.YYYY.А.00001/ZZ
+        li.modal-product__info-item
+          span.modal-product__info-name Срок годности:
+          span.modal-product__info-value 365 дней
+
+      //- div.modal-product__sign
+      //-   i.modal-product__icon
+      //-     svg(width="80" height="80" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+      //-       use(href='#icon-header-user')
+      //-   p.modal-product__need #[a(href="#") Авторизуйтесь] чтобы видеть ценыи формировать заказы.
+
+      //- div.modal-product__action
+      //-   div.modal-product__amount
+      //-     p.modal-product__price 230 ₽ #[span за шт.]
+      //-     div.modal-product__packaging
+      //-       include ../packaging/packaging
+      //-   button(type='button').button В корзину

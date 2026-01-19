@@ -1,0 +1,135 @@
+.subscribe {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (max-width: $phone) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: grid;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    border: 1px solid $grey-4;
+    background-color: $grey-2;
+    grid-template-columns: 1fr 385px;
+    column-gap: 30px;
+    row-gap: 5px;
+
+    @media (max-width: $tablet) {
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $phone) {
+      padding-top: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      grid-template-columns: 1fr;
+      row-gap: 15px;
+    }
+  }
+
+  &__title {
+    @include DЗаголовок40-Заголовок2;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (max-width: $phone) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__post-title {
+    margin: 0;
+  }
+
+  &__form {
+    margin-bottom: 15px;
+    align-self: flex-end;
+
+    @media (max-width: $phone) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    @include DТекст14inter-reg;
+    display: block;
+    margin-bottom: 3px;
+    color: $dark-blue-1;
+  }
+
+  &__input {
+    @include DТекст16inter-reg;
+    width: 100%;
+    margin: 0;
+    padding-top: 11px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    border: 1px solid $grey-6;
+    color: $dark-blue-1;
+    background-color: $white-1;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &::placeholder {
+      @include DТекст16inter-reg;
+      color: $grey-8;
+    }
+
+    &:placeholder-shown {
+      border-color: $grey-3;
+    }
+  }
+
+  &__terms {
+    display: grid;
+    grid-template-columns: 1fr 385px;
+    column-gap: 30px;
+    row-gap: 15px;
+    grid-column: 1 / -1;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__legal {
+    @include DТекст14inter-reg;
+    max-width: 560px;
+    margin: 0;
+    padding: 0;
+    color: $grey-8;
+
+    @media (max-width: $phone) {
+      order: 1;
+    }
+  }
+
+  &__legal-link {
+    text-decoration: underline;
+    color: $blue-1;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__submit {
+    align-self: flex-start;
+  }
+}

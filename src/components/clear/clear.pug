@@ -1,0 +1,14 @@
+mixin clear(props)
+  if props.cart
+    div.clear
+      button(type='button' data-type='discart' data-id="45" data-test='pew-pew').button-request.clear__button
+        svg(width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg")
+          use(href='#icon-clear')
+        span Очистить корзину
+
+  if props.favorites
+    div.clear
+      button(type='button' data-type='dislike' data-id="45" data-test='pew-pew').button-request.clear__button
+        svg(width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg")
+          use(href='#icon-clear')
+        span Очистить всё

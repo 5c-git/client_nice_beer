@@ -1,0 +1,84 @@
+extends ../templates/default
+
+include ../components/item-card/item-card
+include ../components/tabs/tabs
+include ../components/post-title/post-title
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: '#тег_с_длинным_названием',
+    back: true,
+  })
+
+  +post-title({
+    text: 'Всего совпадений: 11 882',
+  })
+
+  +tabs({
+    ver2: true,
+  })
+  +layout({
+    variant: 'layout--grid',
+    sort: true,
+    pagination: true,
+  })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      action: true,
+    })
+    +item-card({
+      ver1: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })
+    +item-card({
+      ver2: true,
+      action: true,
+    })
+    +item-card({
+      ver3: true,
+      action: true,
+    })

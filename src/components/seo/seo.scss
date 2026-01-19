@@ -1,0 +1,53 @@
+.seo {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: $phone) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__title {
+    @include DЗаголовок40-Заголовок2;
+    margin: 0;
+    padding: 0;
+    color: $dark-blue-1;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $phone) {
+      margin-bottom: 10px;
+    }
+
+    em {
+      font-style: normal;
+      color: $blue-1;
+    }
+  }
+
+  p {
+    @include DТекст16inter-reg;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

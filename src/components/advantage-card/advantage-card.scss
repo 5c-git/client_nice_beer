@@ -1,0 +1,51 @@
+.advantage-card {
+  // height: 100%;
+  padding-top: 45px;
+
+  &__wrapper {
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid $grey-6;
+    border-radius: 20px;
+    background-color: $white-1;
+  }
+
+  &__image {
+    @include noimg;
+    position: relative;
+    display: block;
+    // height: 215px;
+    margin-top: -45px;
+    border-radius: 15px;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-image: url('../assets/images/no-image.svg');
+    overflow: hidden;
+
+    // @media(max-width: $phone) {
+    //   height: 180px;
+    // }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    @include DТекст18inter-bold;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media (max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
