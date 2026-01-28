@@ -39,12 +39,12 @@
     }
 
     &:hover {
-      background-color: #3f8800;
+      background-color: $blue-1;
     }
   }
 
-  .bx-filter-input-checkbox input:checked ~ .bx-filter-param-text {
-    background-color: #3f8800;
+  .bx-filter-input-checkbox input:checked~.bx-filter-param-text {
+    background-color: $blue-1;
   }
 
   .bx-filter-param-label.disabled {
@@ -58,7 +58,7 @@
     content: unset;
   }
 
-  input + .bx-filter-param-label:before {
+  input+.bx-filter-param-label:before {
     position: absolute;
     left: 0;
     width: 20px;
@@ -72,11 +72,11 @@
     content: "";
   }
 
-  input:checked + .bx-filter-param-label:before {
+  input:checked+.bx-filter-param-label:before {
     background-color: $blue-1;
   }
 
-  input:checked + .bx-filter-param-label:after {
+  input:checked+.bx-filter-param-label:after {
     position: absolute;
     top: 0;
     left: 4px;
@@ -135,7 +135,7 @@
     }
 
     &:hover {
-      background-color: #3f8800;
+      background-color: $blue-1;
     }
   }
 
@@ -161,9 +161,9 @@
     &:not(:disabled):hover,
     &:not(:disabled):focus {
       @media (min-width: $desktop-only) {
-        color: #3f8800 !important;
+        color: $blue-1 !important;
         background-color: transparent !important;
-        border-color: #3f8800 !important;
+        border-color: $blue-1 !important;
       }
     }
   }
@@ -418,7 +418,7 @@
     }
 
     &:hover {
-      color: #3f8800;
+      color: $blue-1;
     }
   }
 }

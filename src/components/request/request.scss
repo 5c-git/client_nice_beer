@@ -7,16 +7,26 @@
   }
 
   &__fields {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
   }
 
   &__field {
-    
+
+    &--wide {
+      grid-column: 1 / -1;
+    }
   }
 
   &__legal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__legal-check {
     @include DТекст16inter-reg;
     display: flex;
     align-items: center;
@@ -24,6 +34,7 @@
     padding: 0;
     color: $grey-8;
     gap: 10px;
+    grid-column: span 2;
 
     p {
       margin: 0;

@@ -1,7 +1,8 @@
 extends ../templates/default
 
 include ../components/offer/offer
-include ../components/payment/payment
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/breadcrumbs/breadcrumbs
@@ -10,8 +11,15 @@ block main
     fail: true,
   })
 
-  //- +payment({
-  //-   fail: true,
-  //- })
+  +layout({
+    title: 'Обратная связь',
+  })
+    +request-wrapper({})
+      +request({
+        name: true,
+        phone: true,
+        email: true,
+        textarea: true, 
+      })
 
   include ../react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider

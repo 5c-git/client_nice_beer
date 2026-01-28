@@ -299,7 +299,7 @@
   }
 
   &__burger {
-    display: flex;
+    display: none;
     width: 40px;
     height: 40px;
     justify-content: center;
@@ -314,6 +314,10 @@
     transform-origin: 50% 50%;
     cursor: pointer;
     user-select: none;
+
+    @media (max-width: $tablet) {
+      display: flex;
+    }
 
     @media (max-width: $phone) {
       width: 35px;

@@ -4,43 +4,56 @@ mixin request(props)
   div.request
     form(action="#" method='post').request__form
       div.request__fields
-        div.request__field 
-          +field({
-            label: 'Имя',
-            type: 'text',
-            name: 'First name',
-            id: 'First name',
-            placeholder: ' ',
-            secondClass: 'validator__required',
-          })
-        div.request__field 
-          +field({
-            label: 'Имейл',
-            type: 'email',
-            name: 'Email',
-            id: 'Email',
-            placeholder: ' ',
-            secondClass: 'validator__mail',
-          })
-        div.request__field 
-          +field({
-            label: 'Сообщение',
-            textarea: true,
-            name: 'text',
-            id: 'text',
-            maxlength: '1000',
-            placeholder: ' ',
-            secondClass: 'validator__required',
-          })
+        if props.name
+          div.request__field 
+            +field({
+              label: 'Имя',
+              type: 'text',
+              name: 'First name',
+              id: 'First name',
+              placeholder: ' ',
+              secondClass: 'validator__required',
+            })
+        if props.phone
+          div.request__field 
+            +field({
+              label: 'Телефон',
+              type: 'tel',
+              name: 'Phone Number',
+              id: 'Phone Number',
+              placeholder: ' ',
+              secondClass: 'validator__phone',
+            })
+        if props.email
+          div.request__field 
+            +field({
+              label: 'Имейл',
+              type: 'email',
+              name: 'Email',
+              id: 'Email',
+              placeholder: ' ',
+              secondClass: 'validator__mail',
+            })
+        if props.textarea
+          div.request__field.request__field--wide
+            +field({
+              label: 'Сообщение',
+              textarea: true,
+              name: 'text',
+              id: 'text',
+              maxlength: '1000',
+              placeholder: ' ',
+              secondClass: 'validator__required',
+            })
 
       div.request__legal
-        +field({
-          checkbox: true,
-          name: 'legal',
-          id: 'legal',
-          required: true,
-        })
-        p Я соглашаюсь с #[a(href='#' target='_blank') политикой конфиденциальности] и #[a(href='#' target='_blank') пользовательским соглашением].
+        div.request__legal-check
+          +field({
+            checkbox: true,
+            name: 'legal',
+            id: 'legal',
+            required: true,
+          })
+          p Я соглашаюсь с #[a(href='#' target='_blank') политикой конфиденциальности] и #[a(href='#' target='_blank') пользовательским соглашением].
 
-      div.request__actions
         button(type='submit').button.button--arrow Отправить

@@ -1,13 +1,12 @@
 mixin request-wrapper(props)
-
-  include ../request/request
   
   div.request-wrapper
-    div.request-wrapper__header
-      h2.request-wrapper__title Обратная связь
-      div.request-wrapper__content
-        div.article
-          p Возникли вопросы, замечания или предложения? Напишите нам, и мы ответим в кратчайшие сроки!
+    if props.title
+      div.request-wrapper__header
+        h2.request-wrapper__title=props.title
+        div.request-wrapper__content
+          div.article
+            p Возникли вопросы, замечания или предложения? Напишите нам, и мы ответим в кратчайшие сроки!
 
     div.request-wrapper__main
-      +request({})
+      block

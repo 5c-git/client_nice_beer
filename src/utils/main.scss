@@ -56,14 +56,14 @@ main {
 
   & > section:last-child {
     margin-bottom: 0;
-    padding-bottom: 130px;
+    padding-bottom: 120px;
     flex-grow: 1;
 
     @media (max-width: $tablet) {
-      padding-bottom: 70px;
+      padding-bottom: 60px;
     }
     @media (max-width: $phone) {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
     }
   }
 }

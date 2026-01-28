@@ -12,5 +12,6 @@ import {
 const requestForm = document.querySelector('.request__form');
 if (requestForm) {
   validateForm('.request__form');
+  maskPhone('.request__form');
   setTextareaAutoHeight('.request__form textarea');
 }

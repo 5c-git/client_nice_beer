@@ -59,6 +59,22 @@
 }
 
 @font-face {
+  font-family: 'Bebas Neue Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/bebasneue/BebasNeuePro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/bebasneue/BebasNeuePro-Italic.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Circe";
   font-style: normal;
   font-weight: 100;

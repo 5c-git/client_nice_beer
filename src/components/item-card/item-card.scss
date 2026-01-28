@@ -10,7 +10,7 @@
   }
 
   &__banner {
-    position: relative;
+    @include hover-banner;
     display: block;
     margin: 0;
     padding: 0;
@@ -20,39 +20,6 @@
 
     @media (max-width: $phone) {
       height: 220px;
-    }
-
-    &:hover {
-      @media (min-width: $desktop-only) {
-        &:before {
-          visibility: initial;
-          opacity: initial;
-        }
-      }
-    }
-
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      font-family: $icon-font;
-      font-size: 72px;
-      line-height: 96px;
-      color: $white-1;
-      background-color: rgba($color: $dark-blue-1, $alpha: 30%);
-      transition:
-        visibility 0.3s,
-        opacity 0.3s;
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
-      content: "↗";
     }
 
     img {
@@ -109,7 +76,7 @@
   }
 
   &__title {
-    @include DЗаголовок20-Заголовок5;
+    @include DЗаголовок16-заголовоктовара;
     margin: 0;
     // overflow: hidden;
     // text-overflow: ellipsis;
@@ -163,33 +130,18 @@
   }
 
   &__amount {
-    // display: grid;
-    // height: 40px;
-    // align-items: center;
-    // grid-template-columns: 1fr 100px;
-    // gap: 10px;
-
-    // @media(max-width: $phone) {
-    //   height: unset;
-    //   grid-template-columns: 1fr;
-    // }
 
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  // &__packaging {
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
-
   &__price {
-    @include DЗаголовок30-Заголовок3;
+    @include DЗаголовок25-Заголовок4;
     margin: 0;
 
     span {
-      @include DЗаголовок20-Заголовок5;
+      @include DЗаголовок16-заголовоктовара;
       margin: 0;
     }
   }

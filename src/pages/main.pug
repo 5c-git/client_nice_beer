@@ -2,6 +2,7 @@ extends ../templates/default
 
 include ../components/slider/slider
 include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/intro/intro
@@ -21,4 +22,11 @@ block main
     })
 
   +layout({})
-    +request-wrapper({})
+    +request-wrapper({
+      title: 'Обратная связь',
+    })
+      +request({
+        name: true,
+        email: true,
+        textarea: true, 
+      })
