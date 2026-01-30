@@ -15,7 +15,9 @@ const initProfileSelect = (func) => {
     });
 
     select.addEventListener('addItem', (event) => {
-      func(event);
+      if (func) {
+        func(event);
+      }
     });
   }
 

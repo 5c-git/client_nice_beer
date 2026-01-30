@@ -1,0 +1,215 @@
+.corners-filter {
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__group {
+    position: relative;
+
+    &--active {
+      .corners-filter {
+        &__toggle {
+          border-style: solid;
+
+          &:before {
+            transform: rotate(-45deg);
+          }
+
+          &:after {
+            transform: rotate(45deg);
+          }
+        }
+
+        &__dropdown {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    @include DТекст15inter-reg;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    border: 1px dashed $grey-7;
+    color: $dark-blue-1;
+    background-color: transparent;
+    cursor: pointer;
+    gap: 5px;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        border-style: solid;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 15px;
+      width: 8px;
+      height: 2px;
+      margin: 0;
+      border: 0;
+      background-color: currentcolor;
+      transition: transform 0.3s;
+      transform: rotate(45deg);
+      pointer-events: none;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 10px;
+      width: 8px;
+      height: 2px;
+      margin: 0;
+      border: 0;
+      background-color: currentcolor;
+      transition: transform 0.3s;
+      transform: rotate(-45deg);
+      pointer-events: none;
+      content: "";
+    }
+  }
+
+  &__dropdown {
+    @include scroll;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 260px;
+    max-height: 260px;
+    background-color: $white-1;
+    border: 1px solid $grey-7;
+    transition:
+      visibility 0.3s,
+      opacity 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__label {
+    @include DТекст18inter-reg;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-color: transparent;
+    transition: background-color $transition-time;
+    gap: 6px;
+    cursor: pointer;
+
+    &:hover {
+      @media (min-width: $desktop-only) {
+        background-color: $grey-5;
+      }
+    }
+
+    &:has(:checked) {
+      color: $blue-1;
+
+      &:after {
+        @include DЗаголовок25-Заголовок4;
+        color: currentColor;
+        content: "✓";
+      }
+    }
+
+    input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      font-size: 0;
+      clip: rect(0 0 0 0);
+    }
+  }
+
+  &__result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &:has(.corners-filter__picked) {
+      margin-top: 20px;
+    }
+  }
+
+  &__picked {
+    @include DТекст15inter-reg;
+    position: relative;
+    display: flex;
+    height: 34px;
+    align-items: center;
+    padding-top: 4px;
+    padding-right: 30px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    border: 0;
+    border-radius: 50px;
+    color: $white-1;
+    background-color: $black-1;
+    transition: background-color $transition-time;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue-1;
+    }
+
+    &:before {
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 10px;
+      width: 12px;
+      height: 2px;
+      margin: 0;
+      border: 0;
+      background-color: currentcolor;
+      transition: transform 0.3s;
+      transform: rotate(45deg);
+      pointer-events: none;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 10px;
+      width: 12px;
+      height: 2px;
+      margin: 0;
+      border: 0;
+      background-color: currentcolor;
+      transition: transform 0.3s;
+      transform: rotate(-45deg);
+      pointer-events: none;
+      content: "";
+    }
+  }
+}

@@ -88,6 +88,7 @@ var map = {
 	"./components.js": 2820,
 	"./contacts/contacts.js": 9961,
 	"./cookie/cookie.js": 11,
+	"./corners-filter/corners-filter.js": 9237,
 	"./empty/empty.js": 1865,
 	"./field/field.js": 4205,
 	"./find/find.js": 8877,
@@ -198,6 +199,7 @@ var map = {
 	"components/components.js": 2820,
 	"components/contacts/contacts.js": 9961,
 	"components/cookie/cookie.js": 11,
+	"components/corners-filter/corners-filter.js": 9237,
 	"components/empty/empty.js": 1865,
 	"components/field/field.js": 4205,
 	"components/find/find.js": 8877,
@@ -1386,7 +1388,30 @@ if (payment) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8019);
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+const initTopFilterSelect = () => {
+  const select = document.querySelector(".top-filters__select");
+  if (select) {
+    const choicesNolint = new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, {
+      searchEnabled: false,
+      itemSelectText: "",
+      shouldSort: false,
+      classNames: {
+        containerOuter: "choices top-filters__choices"
+      }
+    });
+    select.addEventListener("addItem", (event) => {
+      if (func) {
+        func(event);
+      }
+    });
+    select.choicesInstance = choicesNolint;
+  }
+};
+initTopFilterSelect();
 
 
 /***/ },
@@ -3360,6 +3385,7 @@ profileCardInit();
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   $W: () => (/* binding */ createFormData),
+/* harmony export */   Ai: () => (/* binding */ getFormState),
 /* harmony export */   Bs: () => (/* binding */ setTextareaAutoHeight),
 /* harmony export */   CV: () => (/* binding */ TOKEN),
 /* harmony export */   Lx: () => (/* binding */ setStatus),
@@ -3587,6 +3613,17 @@ const activateRequestButtons = (func) => {
       });
     }
   });
+};
+const getFormState = (form) => {
+  const data = {};
+  const fd = new FormData(form);
+  for (const [name, value] of fd.entries()) {
+    if (!data[name]) {
+      data[name] = [];
+    }
+    data[name].push(value);
+  }
+  return data;
 };
 document.addEventListener("click", (evt) => {
   const button = evt.target.closest(".request-login");
@@ -5300,7 +5337,9 @@ const initProfileSelect = (func) => {
       }
     });
     select.addEventListener("addItem", (event) => {
-      func(event);
+      if (func) {
+        func(event);
+      }
     });
   }
   return choicesNolint;
@@ -8190,52 +8229,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const filterInit = () => {
-  const filter = document.querySelector(".catalog__filter");
-  if (filter) {
-    const overlay = filter.querySelector(".catalog__overlay");
-    const filterOpenButton = filter.querySelector(".catalog__filter-open");
-    const filterCloseButton = filter.querySelector(".catalog__filter-close");
-    const filterSetButton = filter.querySelector("#close_filter");
-    const clearFilterButton = document.querySelector("#clear_filter");
-    if (filterOpenButton) {
-      filterOpenButton.addEventListener("click", () => {
-        filter.classList.add("catalog__filter--active");
-        filterOpenButton.blur();
-        (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingOnBody */ .rP)();
-      });
-    }
-    if (filterCloseButton) {
-      filterCloseButton.addEventListener("click", () => {
-        filter.classList.remove("catalog__filter--active");
-        filterCloseButton.blur();
-        (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingFromBody */ .iW)();
-      });
-    }
-    if (overlay) {
-      overlay.addEventListener("click", () => {
-        filter.classList.remove("catalog__filter--active");
-        (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingFromBody */ .iW)();
-      });
-    }
-    if (filterSetButton) {
-      filterSetButton.addEventListener("click", () => {
-        filter.classList.remove("catalog__filter--active");
-        filterCloseButton.blur();
-        (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingFromBody */ .iW)();
-      });
-    }
-    if (clearFilterButton) {
-      const inputCheckboxFilter = document.querySelectorAll('.bx-filter-input-checkbox input[type="checkbox"]');
-      clearFilterButton.addEventListener("click", () => {
-        inputCheckboxFilter.forEach((inputCheckbox) => {
-          if (inputCheckbox.checked) {
-            inputCheckbox.checked = true;
-            inputCheckbox.click();
-          }
-        });
-      });
-    }
-  }
+  console.log("\u041D\u0435\u0430\u043A\u0442\u0443\u043B\u044C\u043D\u0430\u044F \u0444\u0443\u043D\u043A\u0446\u0438\u044F, \u043D\u0430\u0434\u043E \u0443\u0434\u0430\u043B\u0438\u0442\u044C!");
 };
 filterInit();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (filterInit);
@@ -9833,6 +9827,105 @@ buttons.forEach((button) => {
     }
   });
 });
+
+
+/***/ },
+
+/***/ 9237
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3670);
+
+
+const form = document.querySelector(".corners-filter__form");
+const resultBlock = document.querySelector(".corners-filter__result");
+if (form) {
+  const groups = [...form.querySelectorAll(".corners-filter__group")];
+  const closeAll = () => {
+    groups.forEach((group) => {
+      group.classList.remove("corners-filter__group--active");
+      const toggle = group.querySelector(".corners-filter__toggle");
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  };
+  groups.forEach((group) => {
+    const toggle = group.querySelector(".corners-filter__toggle");
+    if (!toggle)
+      return;
+    toggle.addEventListener("click", (evt) => {
+      evt.preventDefault();
+      const isActive = group.classList.contains("corners-filter__group--active");
+      closeAll();
+      if (!isActive) {
+        group.classList.add("corners-filter__group--active");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+  document.addEventListener("click", (evt) => {
+    const clickedInsideDropdown = evt.target.closest(".corners-filter__dropdown");
+    const clickedToggle = evt.target.closest(".corners-filter__toggle");
+    if (!clickedInsideDropdown && !clickedToggle) {
+      closeAll();
+    }
+  });
+  if (resultBlock) {
+    const renderPickedFilters = (state) => {
+      resultBlock.innerHTML = "";
+      for (const key in state) {
+        const values = state[key];
+        if (!values || !values.length)
+          continue;
+        const text = values.length === 1 ? `${key}: ${values[0]}` : `${key}: ${values.length} \u0437\u043D\u0430\u0447.`;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "corners-filter__picked";
+        btn.textContent = text;
+        btn.dataset.name = key;
+        resultBlock.appendChild(btn);
+      }
+    };
+    const updateState = () => {
+      const state = (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getFormState */ .Ai)(form);
+      renderPickedFilters(state);
+      return state;
+    };
+    updateState();
+    form.addEventListener("change", () => {
+      const state = updateState();
+      form.dispatchEvent(
+        new CustomEvent("filter:change", {
+          detail: state
+        })
+      );
+    });
+    resultBlock.addEventListener("click", (evt) => {
+      const btn = evt.target.closest(".corners-filter__picked");
+      if (!btn)
+        return;
+      const name = btn.dataset.name;
+      form.querySelectorAll(`input[name="${name}"]`).forEach((input) => {
+        input.checked = false;
+      });
+      const state = updateState();
+      form.dispatchEvent(
+        new CustomEvent("filter:change", {
+          detail: state
+        })
+      );
+    });
+  }
+}
+const filterForm = document.querySelector(".corners-filter__form");
+if (filterForm) {
+  filterForm.addEventListener("filter:change", (evt) => {
+    console.log("\u0424\u0438\u043B\u044C\u0442\u0440 \u0438\u0437\u043C\u0435\u043D\u0438\u043B\u0441\u044F:", evt.detail);
+  });
+}
 
 
 /***/ },

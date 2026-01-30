@@ -264,6 +264,21 @@ const activateRequestButtons = (func) => {
   });
 };
 
+// Функция для сбора данных с одним именем в массив.
+const getFormState = (form) => {
+  const data = {};
+  const fd = new FormData(form);
+
+  for (const [name, value] of fd.entries()) {
+    if (!data[name]) {
+      data[name] = [];
+    }
+    data[name].push(value);
+  }
+
+  return data;
+};
+
 document.addEventListener('click', (evt) => {
   const button = evt.target.closest('.request-login');
   if (!button) return;
@@ -317,4 +332,5 @@ export {
   debounce,
   setStatus,
   activateRequestButtons,
+  getFormState,
 };

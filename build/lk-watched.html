@@ -391,11 +391,128 @@
                 </div>
                 <div class="profile-center__main">
                       <div class="top-filters">
-                        <div class="top-filters__sort">
-                          <div class="top-filters__sort-buttons">
-                            <button class="top-filters__sort-button top-filters__sort-button--active" type="button" aria-label="Сортировать по рейтингу">По рейтингу<span></span></button>
-                            <button class="top-filters__sort-button" type="button" aria-label="Сортировать по новизне">По новизне<span></span></button>
-                            <button class="top-filters__sort-button" type="button" aria-label="Сортировать по цене">По цене<span></span></button>
+                        <div class="top-filters__top">
+<div class="corners-filter">
+  <div class="corners-filter__head">
+    <form class="corners-filter__form" action="#" method="post">
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Страна</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Бельгия</span>
+              <input type="checkbox" name="country" value="Бельгия">
+            </label>
+            <label class="corners-filter__label"><span>Германия</span>
+              <input type="checkbox" name="country" value="Германия">
+            </label>
+            <label class="corners-filter__label"><span>Ирландия</span>
+              <input type="checkbox" name="country" value="Ирландия">
+            </label>
+            <label class="corners-filter__label"><span>Португалия</span>
+              <input type="checkbox" name="country" value="Португалия">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Стиль</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Barleywine</span>
+              <input type="checkbox" name="sort" value="Barleywine">
+            </label>
+            <label class="corners-filter__label"><span>Belgian</span>
+              <input type="checkbox" name="sort" value="Belgian">
+            </label>
+            <label class="corners-filter__label"><span>Brown ale</span>
+              <input type="checkbox" name="sort" value="Brown ale">
+            </label>
+            <label class="corners-filter__label"><span>Gose</span>
+              <input type="checkbox" name="sort" value="Gose">
+            </label>
+            <label class="corners-filter__label"><span>IPA</span>
+              <input type="checkbox" name="sort" value="IPA">
+            </label>
+            <label class="corners-filter__label"><span>Lager</span>
+              <input type="checkbox" name="sort" value="Lager">
+            </label>
+            <label class="corners-filter__label"><span>Non-Alcoholic - Cider</span>
+              <input type="checkbox" name="sort" value="Non-Alcoholic - Cider">
+            </label>
+            <label class="corners-filter__label"><span>Pale ale</span>
+              <input type="checkbox" name="sort" value="Pale ale">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Пивоварня</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>BREWLOK</span>
+              <input type="checkbox" name="company" value="BREWLOK">
+            </label>
+            <label class="corners-filter__label"><span>4BREWERS</span>
+              <input type="checkbox" name="company" value="4BREWERS">
+            </label>
+            <label class="corners-filter__label"><span>Brewmen Collaboration with Plague Brew</span>
+              <input type="checkbox" name="company" value="Brewmen Collaboration with Plague Brew">
+            </label>
+            <label class="corners-filter__label"><span>ALASKA brewery</span>
+              <input type="checkbox" name="company" value="ALASKA brewery">
+            </label>
+            <label class="corners-filter__label"><span>Ability Brewing Project</span>
+              <input type="checkbox" name="company" value="Ability Brewing Project">
+            </label>
+            <label class="corners-filter__label"><span>Apple Way</span>
+              <input type="checkbox" name="company" value="Apple Way">
+            </label>
+            <label class="corners-filter__label"><span>Plan B Brewery</span>
+              <input type="checkbox" name="company" value="Plan B Brewery">
+            </label>
+            <label class="corners-filter__label"><span>White Stone</span>
+              <input type="checkbox" name="company" value="White Stone">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Объем</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Ж\Б 0.5л</span>
+              <input type="checkbox" name="value" value="ЖБ 0.5л">
+            </label>
+            <label class="corners-filter__label"><span>С\Б 0.5л</span>
+              <input type="checkbox" name="value" value="СБ 0.5л">
+            </label>
+            <label class="corners-filter__label"><span>Кега 12л</span>
+              <input type="checkbox" name="value" value="Кега 12л">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="corners-filter__result">
+    <button class="corners-filter__picked" type="button">Страна: Бельгия</button>
+    <button class="corners-filter__picked" type="button">Пивоварня: 2 знач.</button>
+    <button class="corners-filter__picked" type="button">Объем: Ж\Б 0.5л</button>
+  </div>
+</div>
+                        </div>
+                        <div class="top-filters__bot">
+                          <div class="top-filters__result">
+                            <p>Найдено 1043 результатов</p>
+                          </div>
+                          <div class="top-filters__sort">
+                            <select class="top-filters__select" name="city">
+                              <option value="1">По возрастанию рейтинга</option>
+                              <option value="2">По убыванию рейтинга</option>
+                              <option value="3">По возрастанию цены</option>
+                              <option value="4">По убыванию цены</option>
+                              <option value="5">По новизне</option>
+                            </select>
                           </div>
                         </div>
                       </div>

@@ -1,23 +1,31 @@
 .top-filters {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  padding-left: 140px;
+  flex-direction: column;
+  gap: 30px;
 
-  @media (max-width: $desktop) {
-    align-items: flex-end;
+  &__top {}
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 2px dotted $grey-8;
+    gap: 30px;
   }
-  @media (max-width: $phone) {
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
-    padding-left: unset;
+
+  &__result {
+    @include DТекст18inter-med;
+
+    p {
+      margin: 0;
+    }
   }
 
   &__sort {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: auto;
     gap: 15px;
 
     @media (max-width: $desktop) {
@@ -27,118 +35,12 @@
     }
   }
 
-  &__sort-text {
-    @include DТекст15inter-reg;
-    color: $grey-7;
+  &__select {
+    display: none;
   }
 
-  &__sort-buttons {
-    display: inline-grid;
-    grid-auto-flow: column;
-    column-gap: 15px;
-
-    @media (max-width: $phone) {
-      justify-content: flex-start;
-      column-gap: 10px;
-    }
-  }
-
-  &__sort-button {
-    @include DТекст15inter-reg;
-    display: flex;
-    min-height: 40px;
-    align-items: center;
-    padding-top: 7px;
-    padding-right: 10px;
-    padding-bottom: 7px;
-    padding-left: 10px;
-    border: 1px dashed $grey-7;
-    text-align: left;
-    text-decoration: none;
-    color: $dark-blue-1;
-    background-color: transparent;
-    cursor: pointer;
-    gap: 5px;
-
-    @media (max-width: $tablet) {
-      min-height: 40px;
-      padding-top: 7px;
-      padding-right: 14px;
-      padding-bottom: 7px;
-      padding-left: 14px;
-    }
-    @media (max-width: $phone) {
-      padding-top: 10px;
-      padding-right: 9px;
-      padding-bottom: 10px;
-      padding-left: 9px;
-    }
-
-    &:hover {
-      @media (min-width: $desktop-only) {
-        border-style: solid;
-      }
-    }
-
-    span {
-      position: relative;
-      display: none;
-      width: 8px;
-      height: 1px;
-      margin-right: 4px;
-      background-color: currentcolor;
-
-      @media (max-width: $phone) {
-        width: 6px;
-      }
-
-      &:before {
-        position: absolute;
-        top: -4px;
-        left: 0;
-        width: 12px;
-        height: 1px;
-        background-color: currentcolor;
-        content: "";
-
-        @media (max-width: $phone) {
-          width: 8px;
-        }
-      }
-
-      &:after {
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 5px;
-        height: 1px;
-        background-color: currentcolor;
-        content: "";
-
-        @media (max-width: $phone) {
-          width: 4px;
-        }
-      }
-    }
-
-    &--active {
-      border: 1px solid $blue-1;
-      color: $blue-1;
-
-      span {
-        display: inline-block;
-      }
-    }
-
-    &--low {
-      span:before {
-        top: 4px;
-      }
-
-      span:after {
-        top: -4px;
-      }
-    }
+  &__choices {
+    @include select;
   }
 
   &__view {

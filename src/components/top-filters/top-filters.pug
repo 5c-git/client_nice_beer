@@ -1,19 +1,25 @@
 mixin top-filters(props)
   div.top-filters
-    div.top-filters__sort
-      div.top-filters__sort-buttons
-        button(type='button' aria-label='Сортировать по рейтингу').top-filters__sort-button.top-filters__sort-button--active По рейтингу
-          span
-        button(type='button' aria-label='Сортировать по новизне').top-filters__sort-button По новизне
-          span
-        button(type='button' aria-label='Сортировать по цене').top-filters__sort-button По цене
-          span
+    div.top-filters__top
+      include ../corners-filter/corners-filter
 
-    if props.view
-      div.top-filters__view
-        button(type='button').top-filters__view-button.top-filters__view-button--tile-view.top-filters__view-button--active
-          svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
-            use(href='#icon-tile-view')
-        button(type='button').top-filters__view-button.top-filters__view-button--row-view
-          svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
-            use(href='#icon-row-view')
+    div.top-filters__bot
+      div.top-filters__result
+        p Найдено 1043 результатов
+
+      div.top-filters__sort
+        select(name="city").top-filters__select
+          option(value='1') По возрастанию рейтинга
+          option(value='2') По убыванию рейтинга
+          option(value='3') По возрастанию цены
+          option(value='4') По убыванию цены
+          option(value='5') По новизне
+
+      if props.view
+        div.top-filters__view
+          button(type='button').top-filters__view-button.top-filters__view-button--tile-view.top-filters__view-button--active
+            svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
+              use(href='#icon-tile-view')
+          button(type='button').top-filters__view-button.top-filters__view-button--row-view
+            svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
+              use(href='#icon-row-view')

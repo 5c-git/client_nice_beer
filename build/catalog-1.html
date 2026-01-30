@@ -544,6 +544,7 @@
               </aside>
             </div>
             <div class="catalog__main">
+              <div class="catalog__tabs">
 <div class="catalog-tabs">
   <div class="catalog-tabs__nav">
     <div class="catalog-tabs__border"> 
@@ -551,427 +552,147 @@
     </div>
   </div>
 </div>
-              <div class="catalog__filter">
-                <button class="catalog__filter-open" type="button">
-                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <use href="#icon-filter"></use>
-                  </svg><span>Фильтры</span>
-                </button>
-                <div class="catalog__overlay"></div>
-                <div class="catalog__filter-main">
-                  <div class="catalog__filter-head">
-                    <div class="container">
-                      <p class="catalog__filter-title">Фильтры</p>
-                      <button class="catalog__filter-close" type="button" aria-label="Закрыть фильтр"><span> </span></button>
-                    </div>
-                  </div>
-                  <div class="catalog__filter-body">
-                    <div class="container"><div class="bx-filter bx-blue ">
-<div class="bx-filter-section container-fluid">
-<div class="row">
-<div class="col-lg-12 bx-filter-title">Подбор параметров</div>
-</div>
-<form name="_form" action="/catalog/limonady/" method="get" class="smartfilter">
-<div class="row">
-<div class="col-lg-12 bx-filter-parameters-box bx-active">
-<span class="bx-filter-container-modef">
-<div class="bx-filter-popup-result left" id="modef" style="display: inline-block;">Выбрано: <span id="modef_num">2</span>
-<span class="arrow"></span>
-<br>
-<a href="/catalog/limonady/filter/labels-is-new/apply/" target="">Показать</a>
-</div>
-</span>
-<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
-<span class="bx-filter-parameters-box-hint">Метки<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
-</div>
-<div class="bx-filter-block" data-role="bx_filter_block">
-<div class="row bx-filter-parameters-box-container">
-<div class="col-xs-12 collapsed-checkbox">
-<div class="checkbox">
-<label data-role="label_arrFilter_342_4056408295" class="bx-filter-param-label" for="arrFilter_342_4056408295">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_4056408295" id="arrFilter_342_4056408295" onclick="smartFilter.click(this)" checked>
-<span class="bx-filter-param-text" title="Новинка">Новинка</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_2260783217" class="bx-filter-param-label" for="arrFilter_342_2260783217">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_2260783217" id="arrFilter_342_2260783217" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Скидка">Скидка</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Хит продаж</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Antidot</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Bad brew</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Big pot</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Big village</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Brew fiction</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Brewers4</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Burning</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Courage</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Brewlok</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Cider/mead</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Dipa</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Gose</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Ipa</span>
-</span>
-</label>
-</div>
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div>
-<div class="col-lg-12 bx-filter-parameters-box bx-active">
-<span class="bx-filter-container-modef"></span>
-<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
-<span class="bx-filter-parameters-box-hint">Стиль<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
-</div>
-<div class="bx-filter-block" data-role="bx_filter_block">
-<div class="row bx-filter-parameters-box-container">
-<div class="col-xs-12 collapsed-checkbox">
-<div class="checkbox">
-<label data-role="label_arrFilter_411_1526256607" class="bx-filter-param-label" for="arrFilter_411_1526256607">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_411_1526256607" id="arrFilter_411_1526256607" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Barleywine">Barleywine</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_411_1971244285" class="bx-filter-param-label" for="arrFilter_411_1971244285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_411_1971244285" id="arrFilter_411_1971244285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Gose with Raspberry &amp; Black Currant">Gose with Raspberry &amp; Black Currant</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Courage</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Brewlok</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Cider/mead</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Dipa</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Gose</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Ipa</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_4056408295" class="bx-filter-param-label" for="arrFilter_342_4056408295">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_4056408295" id="arrFilter_342_4056408295" onclick="smartFilter.click(this)" checked>
-<span class="bx-filter-param-text" title="Новинка">Новинка</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_2260783217" class="bx-filter-param-label" for="arrFilter_342_2260783217">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_2260783217" id="arrFilter_342_2260783217" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Скидка">Скидка</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Хит продаж</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Antidot</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Bad brew</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_342_1758376285" class="bx-filter-param-label" for="arrFilter_342_1758376285">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_342_1758376285" id="arrFilter_342_1758376285" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="Хит продаж">Big pot</span>
-</span>
-</label>
-</div>
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div>
-<div class="col-lg-12 bx-filter-parameters-box bx-active">
-<span class="bx-filter-container-modef"></span>
-<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
-<span class="bx-filter-parameters-box-hint">Плотность<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
-</div>
-<div class="bx-filter-block" data-role="bx_filter_block">
-<div class="row bx-filter-parameters-box-container">
-<div class="col-xs-12 collapsed-checkbox">
-<div class="checkbox">
-<label data-role="label_arrFilter_412_551740291" class="bx-filter-param-label" for="arrFilter_412_551740291">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_412_551740291" id="arrFilter_412_551740291" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="20">20</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_412_693415848" class="bx-filter-param-label" for="arrFilter_412_693415848">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_412_693415848" id="arrFilter_412_693415848" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="35">35</span>
-</span>
-</label>
-</div>  
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div>
-<div class="col-lg-12 bx-filter-parameters-box bx-active">
-<span class="bx-filter-container-modef"></span>
-<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
-<span class="bx-filter-parameters-box-hint">Крепость<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
-</div>
-<div class="bx-filter-block" data-role="bx_filter_block">
-<div class="row bx-filter-parameters-box-container">
-<div class="col-xs-12 collapsed-checkbox">
-<div class="checkbox">
-<label data-role="label_arrFilter_413_1310284409" class="bx-filter-param-label" for="arrFilter_413_1310284409">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_413_1310284409" id="arrFilter_413_1310284409" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="0,5">0,5</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_413_742230398" class="bx-filter-param-label" for="arrFilter_413_742230398">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_413_742230398" id="arrFilter_413_742230398" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="14,0">14,0</span>
-</span>
-</label>
-</div>
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div>
-<div class="col-lg-12 bx-filter-parameters-box bx-active">
-<span class="bx-filter-container-modef"></span>
-<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
-<span class="bx-filter-parameters-box-hint">Горечь<i data-role="prop_angle" class="fa fa-angle-up"></i></span>
-</div>
-<div class="bx-filter-block" data-role="bx_filter_block">
-<div class="row bx-filter-parameters-box-container">
-<div class="col-xs-12 collapsed-checkbox">
-<div class="checkbox">
-<label data-role="label_arrFilter_414_726682983" class="bx-filter-param-label" for="arrFilter_414_726682983">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_414_726682983" id="arrFilter_414_726682983" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="10">10</span>
-</span>
-</label>
-</div>
-<div class="checkbox">
-<label data-role="label_arrFilter_414_1162628272" class="bx-filter-param-label" for="arrFilter_414_1162628272">
-<span class="bx-filter-input-checkbox">
-<input type="checkbox" value="Y" name="arrFilter_414_1162628272" id="arrFilter_414_1162628272" onclick="smartFilter.click(this)">
-<span class="bx-filter-param-text" title="80">80</span>
-</span>
-</label>
-</div>
-</div>
-</div>
-<div style="clear: both"></div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-xs-12 bx-filter-button-box">
-<div class="bx-filter-block">
-<div class="bx-filter-parameters-box-container">
-<input class="btn btn-themes" type="button" id="set_filter" name="set_filter" value="Показать">
-<input class="btn btn-link" type="button" id="del_filter" name="del_filter" value="Сбросить">
-</div>
-</div>
-</div>
-</div>
-<div class="clb"></div>
-</form>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
               </div>
-                  <div class="top-filters">
-                    <div class="top-filters__sort">
-                      <div class="top-filters__sort-buttons">
-                        <button class="top-filters__sort-button top-filters__sort-button--active" type="button" aria-label="Сортировать по рейтингу">По рейтингу<span></span></button>
-                        <button class="top-filters__sort-button" type="button" aria-label="Сортировать по новизне">По новизне<span></span></button>
-                        <button class="top-filters__sort-button" type="button" aria-label="Сортировать по цене">По цене<span></span></button>
+              <div class="catalog__filters">
+                    <div class="top-filters">
+                      <div class="top-filters__top">
+<div class="corners-filter">
+  <div class="corners-filter__head">
+    <form class="corners-filter__form" action="#" method="post">
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Страна</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Бельгия</span>
+              <input type="checkbox" name="country" value="Бельгия">
+            </label>
+            <label class="corners-filter__label"><span>Германия</span>
+              <input type="checkbox" name="country" value="Германия">
+            </label>
+            <label class="corners-filter__label"><span>Ирландия</span>
+              <input type="checkbox" name="country" value="Ирландия">
+            </label>
+            <label class="corners-filter__label"><span>Португалия</span>
+              <input type="checkbox" name="country" value="Португалия">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Стиль</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Barleywine</span>
+              <input type="checkbox" name="sort" value="Barleywine">
+            </label>
+            <label class="corners-filter__label"><span>Belgian</span>
+              <input type="checkbox" name="sort" value="Belgian">
+            </label>
+            <label class="corners-filter__label"><span>Brown ale</span>
+              <input type="checkbox" name="sort" value="Brown ale">
+            </label>
+            <label class="corners-filter__label"><span>Gose</span>
+              <input type="checkbox" name="sort" value="Gose">
+            </label>
+            <label class="corners-filter__label"><span>IPA</span>
+              <input type="checkbox" name="sort" value="IPA">
+            </label>
+            <label class="corners-filter__label"><span>Lager</span>
+              <input type="checkbox" name="sort" value="Lager">
+            </label>
+            <label class="corners-filter__label"><span>Non-Alcoholic - Cider</span>
+              <input type="checkbox" name="sort" value="Non-Alcoholic - Cider">
+            </label>
+            <label class="corners-filter__label"><span>Pale ale</span>
+              <input type="checkbox" name="sort" value="Pale ale">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Пивоварня</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>BREWLOK</span>
+              <input type="checkbox" name="company" value="BREWLOK">
+            </label>
+            <label class="corners-filter__label"><span>4BREWERS</span>
+              <input type="checkbox" name="company" value="4BREWERS">
+            </label>
+            <label class="corners-filter__label"><span>Brewmen Collaboration with Plague Brew</span>
+              <input type="checkbox" name="company" value="Brewmen Collaboration with Plague Brew">
+            </label>
+            <label class="corners-filter__label"><span>ALASKA brewery</span>
+              <input type="checkbox" name="company" value="ALASKA brewery">
+            </label>
+            <label class="corners-filter__label"><span>Ability Brewing Project</span>
+              <input type="checkbox" name="company" value="Ability Brewing Project">
+            </label>
+            <label class="corners-filter__label"><span>Apple Way</span>
+              <input type="checkbox" name="company" value="Apple Way">
+            </label>
+            <label class="corners-filter__label"><span>Plan B Brewery</span>
+              <input type="checkbox" name="company" value="Plan B Brewery">
+            </label>
+            <label class="corners-filter__label"><span>White Stone</span>
+              <input type="checkbox" name="company" value="White Stone">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="corners-filter__group">
+        <button class="corners-filter__toggle" type="button">Объем</button>
+        <div class="corners-filter__dropdown">
+          <fieldset class="corners-filter__fieldset">
+            <label class="corners-filter__label"><span>Ж\Б 0.5л</span>
+              <input type="checkbox" name="value" value="ЖБ 0.5л">
+            </label>
+            <label class="corners-filter__label"><span>С\Б 0.5л</span>
+              <input type="checkbox" name="value" value="СБ 0.5л">
+            </label>
+            <label class="corners-filter__label"><span>Кега 12л</span>
+              <input type="checkbox" name="value" value="Кега 12л">
+            </label>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="corners-filter__result">
+    <button class="corners-filter__picked" type="button">Страна: Бельгия</button>
+    <button class="corners-filter__picked" type="button">Пивоварня: 2 знач.</button>
+    <button class="corners-filter__picked" type="button">Объем: Ж\Б 0.5л</button>
+  </div>
+</div>
+                      </div>
+                      <div class="top-filters__bot">
+                        <div class="top-filters__result">
+                          <p>Найдено 1043 результатов</p>
+                        </div>
+                        <div class="top-filters__sort">
+                          <select class="top-filters__select" name="city">
+                            <option value="1">По возрастанию рейтинга</option>
+                            <option value="2">По убыванию рейтинга</option>
+                            <option value="3">По возрастанию цены</option>
+                            <option value="4">По убыванию цены</option>
+                            <option value="5">По новизне</option>
+                          </select>
+                        </div>
+                        <div class="top-filters__view">
+                          <button class="top-filters__view-button top-filters__view-button--tile-view top-filters__view-button--active" type="button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-tile-view"></use>
+                            </svg>
+                          </button>
+                          <button class="top-filters__view-button top-filters__view-button--row-view" type="button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-row-view"></use>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                    <div class="top-filters__view">
-                      <button class="top-filters__view-button top-filters__view-button--tile-view top-filters__view-button--active" type="button">
-                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                          <use href="#icon-tile-view"></use>
-                        </svg>
-                      </button>
-                      <button class="top-filters__view-button top-filters__view-button--row-view" type="button">
-                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                          <use href="#icon-row-view"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
+              </div>
               <div class="catalog__list">
                     <article class="item-card">
                       <figure class="request-modal-product item-card__banner" data-id="3"><img src="./assets/images/promo-picture-1.jpeg" alt="1915 raspberry edition"></figure>
