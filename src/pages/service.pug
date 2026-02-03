@@ -2,6 +2,8 @@ extends ../templates/default
 
 include ../components/service-card/service-card
 include ../components/article/article
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/breadcrumbs/breadcrumbs
@@ -11,16 +13,31 @@ block main
     back: true,
   })
 
+
   +layout-header({
     service: true,
   })
+
 
   +layout({})
     +article({
       service: true,
     })
 
-  include ../react/providers/pages/service/RequestServiceProvider/RequestServiceProvider
+
+  +layout({
+    title: 'Заказать услугу',
+  })
+    +request-wrapper({})
+      +request({
+        id: 'RequestService',
+        name: true,
+        phone: true,
+        email: true,
+        textarea: true, 
+        footer: true,
+      })
+
 
   +layout({
     variant: 'layout--grid4',

@@ -1,0 +1,213 @@
+.file-loader {
+
+  &__label {}
+
+  &__input {
+    // display: none;
+  }
+}
+
+// .filepond--credits {
+//   display: none;
+// }
+
+.filepond--panel-root {
+  background: 0;
+}
+
+.filepond--drop-label {
+  justify-content: flex-start;
+  pointer-events: none;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+  @include DТекст16inter-reg;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  transition:
+    color $transition-time,
+    opacity $transition-time;
+  column-gap: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+
+  &:hover {
+    @media (min-width: $desktop-only) {
+      opacity: 0.8;
+    }
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: auto;
+    fill: currentcolor;
+  }
+}
+
+.filepond--root {
+  @include DТекст16inter-reg;
+  height: unset !important;
+  margin: 0;
+  contain: unset;
+
+  @media(max-width: $phone) {}
+}
+
+.filepond--root .filepond--list-scroller {
+  margin: 0;
+}
+
+.filepond--action-remove-item {
+  cursor: pointer;
+}
+
+.filepond--file {
+  align-items: center;
+  padding: 0;
+  padding-right: 80px;
+  color: inherit;
+}
+
+.filepond--file-action-button.filepond--file-action-button {
+  width: unset;
+  height: unset;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: 0;
+  box-shadow: none;
+}
+
+.filepond--file-action-button.filepond--action-remove-item {
+  color: $red-1;
+
+  &:not(:disabled):hover {
+    @media(min-width: $desktop-only) {
+      color: $blue-1;
+    }
+  }
+}
+
+.filepond--item-panel {
+  background: 0;
+}
+
+.filepond--file-info .filepond--file-info-main {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.filepond--file-info-sub {
+  display: none;
+}
+
+.filepond--item>.filepond--panel .filepond--panel-bottom {
+  box-shadow: unset;
+}
+
+[data-filepond-item-state*=invalid] .filepond--file-info {
+  margin: 0;
+}
+
+[data-filepond-item-state*=error] .filepond--item-panel,
+[data-filepond-item-state*=invalid] .filepond--item-panel {
+  display: none;
+}
+
+.filepond--file .filepond--file-status {
+  display: none;
+  margin: 0;
+  align-items: unset;
+  text-align: left;
+  flex-shrink: unset;
+}
+
+.filepond--file-status * {
+  white-space: normal;
+}
+
+.filepond--file-status-sub {
+  display: none;
+}
+
+.filepond--panel,
+.filepond--drip-blob,
+.filepond--drop-label,
+.filepond--item,
+.filepond--list-scroller,
+.filepond--list.filepond--list {
+  position: unset;
+  height: unset !important;
+  transform: unset !important;
+}
+
+.filepond--root .filepond--drop-label {
+  min-height: unset;
+}
+
+.filepond--list {
+  // display: flex;
+  // flex-direction: column;
+}
+
+.filepond--item {
+  height: unset !important;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filepond--browser.filepond--browser {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
+  clip: rect(0 0 0 0);
+}
+
+.filepond--browser.validator__input--error+.validator__error {
+  display: block;
+}
+
+.filepond--file .filepond--file-action-button,
+.filepond--file .filepond--processing-complete-indicator,
+.filepond--file .filepond--progress-indicator {
+  // position: unset;
+}
+
+[data-filepond-item-state*=error] .filepond--file-wrapper,
+[data-filepond-item-state*=error] .filepond--panel,
+[data-filepond-item-state*=invalid] .filepond--file-wrapper,
+[data-filepond-item-state*=invalid] .filepond--panel {
+  transition: unset;
+  animation: unset;
+
+  .filepond--file-info .filepond--file-info-main {
+    color: inherit;
+  }
+
+  .filepond--file .filepond--file-status {
+    color: inherit;
+  }
+}
+
+.filepond--file-action-button.filepond--file-action-button:after {
+  content: unset;
+}

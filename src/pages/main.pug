@@ -24,9 +24,13 @@ block main
   +layout({})
     +request-wrapper({
       title: 'Обратная связь',
+      text: 'Возникли вопросы, замечания или предложения? Напишите нам, и мы ответим в кратчайшие сроки!',
     })
       +request({
         name: true,
+        city: true,
+        company: true,
         email: true,
         textarea: true, 
+        file: true,
       })

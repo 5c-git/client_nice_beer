@@ -91,6 +91,7 @@ var map = {
 	"./corners-filter/corners-filter.js": 9237,
 	"./empty/empty.js": 1865,
 	"./field/field.js": 4205,
+	"./file-loader/file-loader.js": 8669,
 	"./find/find.js": 8877,
 	"./flatpickr-time/flatpickr-time.js": 6823,
 	"./footer/footer.js": 8413,
@@ -123,6 +124,7 @@ var map = {
 	"./pagination/pagination.js": 1015,
 	"./partner-card/partner-card.js": 5873,
 	"./payment/payment.js": 1561,
+	"./personal-data/personal-data.js": 4281,
 	"./politics/politics.js": 5569,
 	"./popUp/popUp.js": 9417,
 	"./post-title/post-title.js": 5169,
@@ -202,6 +204,7 @@ var map = {
 	"components/corners-filter/corners-filter.js": 9237,
 	"components/empty/empty.js": 1865,
 	"components/field/field.js": 4205,
+	"components/file-loader/file-loader.js": 8669,
 	"components/find/find.js": 8877,
 	"components/flatpickr-time/flatpickr-time.js": 6823,
 	"components/footer/footer.js": 8413,
@@ -234,6 +237,7 @@ var map = {
 	"components/pagination/pagination.js": 1015,
 	"components/partner-card/partner-card.js": 5873,
 	"components/payment/payment.js": 1561,
+	"components/personal-data/personal-data.js": 4281,
 	"components/politics/politics.js": 5569,
 	"components/popUp/popUp.js": 9417,
 	"components/post-title/post-title.js": 5169,
@@ -356,26 +360,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ },
 
-/***/ 289
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-
-
-const Loader = () => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "Loader", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", { width: "30", height: "30", viewBox: "0 0 30 30", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("circle", { cx: "15", cy: "15", r: "15", fill: "#EEEFF0" }),
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", { d: "M22.8949 13.9986C22.6536 12.262 21.848 10.6529 20.6022 9.41917C19.3563 8.18546 17.7394 7.39558 16.0005 7.1712C14.2616 6.94683 12.4972 7.30041 10.979 8.17748C9.46084 9.05455 8.27315 10.4064 7.59889 12.0249M7.10547 8.07757V12.0249H11.0528", stroke: "#7F8899", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", { d: "M7.10547 15.9727C7.34681 17.7093 8.15244 19.3184 9.39826 20.5521C10.6441 21.7858 12.261 22.5757 13.9999 22.8001C15.7388 23.0244 17.5032 22.6709 19.0214 21.7938C20.5396 20.9167 21.7273 19.5648 22.4015 17.9463M22.8949 21.8937V17.9463H18.9476", stroke: "#7F8899", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
-] }) });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Loader);
-
-
-/***/ },
-
 /***/ 325
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -407,45 +391,6 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-
-
-/***/ },
-
-/***/ 455
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7425);
-
-
-
-const Textarea = ({
-  name,
-  className,
-  label,
-  isRequired,
-  isDisabled,
-  placeholder
-}) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: `Textarea${className ? ` ${className}` : ""}`, children: [
-  label ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", { className: isRequired ? "Textarea__label Textarea__label--required" : "Textarea__label", children: label }) : null,
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-    formik__WEBPACK_IMPORTED_MODULE_1__/* .Field */ .D0,
-    {
-      as: "textarea",
-      autoComplete: "off",
-      autoCapitalize: "off",
-      disabled: isDisabled,
-      className: "Textarea__field",
-      name,
-      placeholder
-    }
-  )
-] });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Textarea);
 
 
 /***/ },
@@ -517,332 +462,6 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
-
-/***/ },
-
-/***/ 780
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(5338);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-;// ./src/react/components/Form-Name/Form-Name.js
-
-
-
-
-const FormName = (props) => {
-  const { name, updateName } = props;
-  const [editModeName, setEditModeName] = (0,react.useState)(true);
-  const formik = (0,formik_esm/* useFormik */.Wx)({
-    initialValues: {
-      name
-    },
-    validationSchema: index_esm/* object */.Ik({
-      name: index_esm/* string */.Yj().min(2, "\u041C\u0438\u043D\u0438\u043C\u0443\u043C 2 \u0441\u0438\u043C\u0432\u043E\u043B\u0430").max(100, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 100 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-    }),
-    onSubmit: (values) => {
-      if (name !== values.name) {
-        updateName(values.name);
-      }
-      setEditModeName(true);
-    }
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("form", { className: "form-personal-data form-lk", onSubmit: formik.handleSubmit, children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("label", { className: formik.errors.name && formik.touched.name ? "form-lk__label error" : "form-lk__label", htmlFor: "name", children: [
-      "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "*" })
-    ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      "input",
-      {
-        className: formik.errors.name && formik.touched.name ? "form-lk__item error" : "form-lk__item form-lk__item--limited",
-        id: "name",
-        name: "name",
-        type: "text",
-        placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-        disabled: editModeName,
-        onChange: formik.handleChange,
-        onBlur: formik.handleBlur,
-        value: formik.values.name
-      }
-    ),
-    editModeName && /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "form-lk__button-personal form-lk__button-personal--edit", onClick: () => setEditModeName(!editModeName), children: /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { className: "form-lk__pencil-icon", width: "25", height: "25", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-pencil" }) }) }),
-    !editModeName && /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-      "button",
-      {
-        className: "form-lk__button-personal form-lk__button-personal--save",
-        disabled: !formik.isValid && !formik.dirty,
-        onClick: formik.onSubmit,
-        type: "submit",
-        children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u2713\xA0" }),
-          "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
-        ]
-      }
-    )
-  ] });
-};
-/* harmony default export */ const Form_Name = (FormName);
-
-;// ./src/react/components/Form-Email/Form-Email.js
-
-
-
-
-const FormEmail = (props) => {
-  const emailRegExp = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/;
-  const { email, updateEmail } = props;
-  const [editModeEmail, setEditModeEmail] = (0,react.useState)(true);
-  const formik = (0,formik_esm/* useFormik */.Wx)({
-    initialValues: {
-      email
-    },
-    validationSchema: index_esm/* object */.Ik({
-      email: index_esm/* string */.Yj().matches(emailRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 email \u0430\u0434\u0440\u0435\u0441").max(100, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 100 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-    }),
-    onSubmit: (values) => {
-      if (email !== values.email) {
-        updateEmail(values.email);
-      }
-      setEditModeEmail(true);
-    }
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(jsx_runtime.Fragment, { children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("form", { className: "form-personal-data form-lk", onSubmit: formik.handleSubmit, children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("label", { className: formik.errors.email && formik.touched.email ? "form-lk__label error" : "form-lk__label", htmlFor: "email", children: [
-      "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0447\u0442\u0430",
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "*" })
-    ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      "input",
-      {
-        className: formik.errors.email && formik.touched.email ? "form-lk__item error" : "form-lk__item form-lk__item--limited",
-        id: "email",
-        name: "email",
-        type: "email",
-        placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email",
-        disabled: editModeEmail,
-        onChange: formik.handleChange,
-        onBlur: formik.handleBlur,
-        value: formik.values.email
-      }
-    ),
-    editModeEmail && /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "form-lk__button-personal form-lk__button-personal--edit", onClick: () => setEditModeEmail(!editModeEmail), children: /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { className: "form-lk__pencil-icon", width: "25", height: "25", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-pencil" }) }) }),
-    !editModeEmail && /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-      "button",
-      {
-        className: "form-lk__button-personal form-lk__button-personal--save",
-        disabled: !formik.isValid && !formik.dirty,
-        type: "submit",
-        children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u2713\xA0" }),
-          "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
-        ]
-      }
-    )
-  ] }) });
-};
-/* harmony default export */ const Form_Email = (FormEmail);
-
-// EXTERNAL MODULE: ./node_modules/react-input-mask/index.js
-var react_input_mask = __webpack_require__(844);
-var react_input_mask_default = /*#__PURE__*/__webpack_require__.n(react_input_mask);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/Form-Phone/Form-Phone.js
-
-
-
-
-
-
-const FormPhone = (props) => {
-  const { phone, updatePhone, editModePhone, setEditModePhone } = props;
-  const validationSchema = index_esm/* object */.Ik({
-    phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440").max(20, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 20 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsx)(
-    formik_esm/* Formik */.l1,
-    {
-      initialValues: {
-        phone
-      },
-      validationSchema,
-      onSubmit: (values) => {
-        if (phone !== values.phone) {
-          updatePhone(values.phone);
-        }
-        setEditModePhone(true);
-      },
-      children: ({
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        isValid,
-        dirty
-      }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(formik_esm/* Form */.lV, { className: "form-personal-data form-lk", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsxs)("label", { className: errors.phone && touched.phone ? "form-lk__label error" : "form-lk__label", htmlFor: "phone", children: [
-          "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "*" })
-        ] }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          (react_input_mask_default()),
-          {
-            mask: "+7 (999) 999-99-99",
-            maskPlaceholder: null,
-            value: values.phone,
-            onChange: handleChange,
-            onBlur: handleBlur,
-            disabled: editModePhone,
-            children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "input",
-              {
-                className: errors.phone && touched.phone ? "form-lk__item error" : "form-lk__item",
-                id: "phone",
-                name: "phone",
-                type: "phone",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
-                onChange: handleChange,
-                onBlur: handleBlur,
-                value: values.phone
-              }
-            )
-          }
-        ),
-        editModePhone && /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "form-lk__button-personal form-lk__button-personal--edit", onClick: () => setEditModePhone(!editModePhone), children: /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { className: "form-lk__pencil-icon", width: "25", height: "25", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-pencil" }) }) }),
-        !editModePhone && /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          "button",
-          {
-            className: "form-lk__button-personal form-lk__button-personal--save",
-            disabled: !isValid && !dirty,
-            type: "submit",
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u2713\xA0" }),
-              "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
-            ]
-          }
-        )
-      ] })
-    }
-  );
-};
-/* harmony default export */ const Form_Phone = (FormPhone);
-
-// EXTERNAL MODULE: ./src/react/components/Modal/Modal.js
-var Modal = __webpack_require__(5593);
-// EXTERNAL MODULE: ./src/react/components/Code/Code.js + 1 modules
-var Code = __webpack_require__(3070);
-// EXTERNAL MODULE: ./src/api/api.js
-var api = __webpack_require__(3786);
-// EXTERNAL MODULE: ./src/react/components/Loader/Loader.js
-var Loader = __webpack_require__(289);
-;// ./src/react/components/Form-Personal-Data/Form-Personal-Data.js
-
-
-
-
-
-
-
-
-
-
-const FormPersonalData = () => {
-  const [show, setShow] = (0,react.useState)(false);
-  const [error, setError] = (0,react.useState)(null);
-  const [phone, setPhone] = (0,react.useState)("");
-  const [newPhone, setNewPhone] = (0,react.useState)("");
-  const [editModePhone, setEditModePhone] = (0,react.useState)(true);
-  const [email, setEmail] = (0,react.useState)("");
-  const [newEmail, setNewEmail] = (0,react.useState)("");
-  const [name, setName] = (0,react.useState)("");
-  const [isLoading, setIsLoading] = (0,react.useState)(true);
-  const link = document.querySelector("#alert--confirm-email").content.querySelector(".alert__link");
-  link.textContent = `${newEmail}.`;
-  link.setAttribute("href", `mailto:${newEmail}`);
-  const fetchData = async () => {
-    const data = await api/* profileApi */.gu.getProfile();
-    console.log(data);
-    if (data.status === "success") {
-      setName(data.profile.name);
-      setEmail(data.profile.email);
-      setPhone(data.profile.phone);
-    } else {
-      setError(data);
-    }
-    setIsLoading(false);
-  };
-  const updateName = async (value) => {
-    await api/* profileApi */.gu.updateName(value);
-    setName(value);
-  };
-  const updateEmail = async (value) => {
-    setNewEmail(value);
-    await api/* profileApi */.gu.updateEmail(value);
-    setEmail(newEmail);
-  };
-  const updatePhone = async (value) => {
-    const data = await api/* profileApi */.gu.updatePhone(value);
-    if (data !== false) {
-      setNewPhone(value);
-    }
-  };
-  (0,react.useEffect)(() => {
-    fetchData();
-  }, []);
-  (0,react.useEffect)(() => {
-    if (show) {
-      (0,utils/* getPaddingOnBody */.rP)();
-    } else {
-      (0,utils/* getPaddingFromBody */.iW)();
-    }
-  }, [show]);
-  if (error !== null) {
-    return /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "form-lk__title", children: "\u041B\u0438\u0447\u043D\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435" }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Organization__contact-header", children: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0434\u0430\u043D\u043D\u044B\u0445." })
-    ] });
-  }
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "form-lk__title", children: "\u041B\u0438\u0447\u043D\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435" }),
-    isLoading ? /* @__PURE__ */ (0,jsx_runtime.jsx)(Loader/* default */.A, {}) : /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(Form_Name, { name, updateName }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(Form_Email, { email, updateEmail }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        Form_Phone,
-        {
-          phone,
-          editModePhone,
-          setEditModePhone,
-          updatePhone
-        }
-      )
-    ] })
-  ] });
-};
-/* harmony default export */ const Form_Personal_Data = (FormPersonalData);
-
-;// ./src/react/providers/pages/lk/personal-data/personal-data.js
-
-
-
-
-const personalData = document.querySelector("#personal-data");
-if (personalData) {
-  (0,client/* createRoot */.H)(personalData).render(/* @__PURE__ */ (0,jsx_runtime.jsx)(Form_Personal_Data, {}));
-}
-
 
 /***/ },
 
@@ -2101,608 +1720,6 @@ importAll(__webpack_require__(147));
 
 /***/ },
 
-/***/ 2832
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/react-dadata/dist/esm/index.js + 15 modules
-var esm = __webpack_require__(2121);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-// EXTERNAL MODULE: ./src/react/components/Modal/Modal.js
-var Modal = __webpack_require__(5593);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/MenuItem/MenuItem.js + 3 modules
-var MenuItem = __webpack_require__(5865);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/Textarea/Textarea.js
-var Textarea = __webpack_require__(455);
-// EXTERNAL MODULE: ./src/react/components/Select/Select.js
-var Select = __webpack_require__(4919);
-;// ./src/react/components/Address/Address.js
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-
-
-
-
-
-
-
-
-
-const schemaPersonal = index_esm/* object */.Ik().shape({
-  address: index_esm/* string */.Yj().required(),
-  city: index_esm/* string */.Yj().required(),
-  street: index_esm/* string */.Yj().required(),
-  house: index_esm/* string */.Yj().required()
-  // flat: Yup.string().required(),
-});
-const schemaYura = index_esm/* object */.Ik().shape({
-  address: index_esm/* string */.Yj().required(),
-  city: index_esm/* string */.Yj().required(),
-  street: index_esm/* string */.Yj().required(),
-  house: index_esm/* string */.Yj().required(),
-  // flat: Yup.string().required(),
-  comment: index_esm/* string */.Yj().notRequired()
-  // organization: Yup.string().required(),
-});
-const Address = ({ address, organizations, cancelHandler, submitHandler }) => {
-  console.log(address);
-  const [initialValues, setInitialValues] = (0,react.useState)({
-    address: address.value ? address.value : "",
-    city: address.data.city ? address.data.city : "",
-    street: address.data.street_with_type ? address.data.street_with_type : "",
-    house: address.data.house ? address.data.house : "",
-    flat: address.data.flat ? address.data.flat : "",
-    lat: address.data.geo_lat ? address.data.geo_lat : "",
-    lon: address.data.geo_lon ? address.data.geo_lon : "",
-    entrance: "",
-    flatNumber: "",
-    floor: "",
-    comment: ""
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Address", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Address__header", children: "\u0410\u0434\u0440\u0435\u0441" }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues,
-        validationSchema: Object.prototype.hasOwnProperty.call(initialValues, "organization") ? schemaYura : schemaPersonal,
-        enableReinitialize: true,
-        onSubmit: (values) => {
-          submitHandler(values);
-        },
-        children: ({ initialValues: initialValues2, values, errors, touched, handleChange }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Address__wrapper", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Address__heading", children: "\u0422\u0438\u043F \u0430\u0434\u0440\u0435\u0441\u0430:" }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Address__toggles", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: `Address__toggle ${Object.prototype.hasOwnProperty.call(
-                  initialValues2,
-                  "organization"
-                ) ? "" : "Address__toggle--active"}`,
-                type: "button",
-                onClick: () => {
-                  const newInitialValues = __spreadValues({}, initialValues2);
-                  newInitialValues.address = values.address;
-                  delete newInitialValues.organization;
-                  setInitialValues(newInitialValues);
-                },
-                children: "\u041B\u0438\u0447\u043D\u044B\u0439"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: `Address__toggle ${Object.prototype.hasOwnProperty.call(
-                  initialValues2,
-                  "organization"
-                ) ? "Address__toggle--active" : ""}`,
-                type: "button",
-                onClick: () => {
-                  setInitialValues(__spreadProps(__spreadValues({}, initialValues2), {
-                    organization: organizations.lenght > 0 ? organizations[0].id : "empty",
-                    address: values.address
-                  }));
-                },
-                children: "\u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F"
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)(formik_esm/* Form */.lV, { className: "Address__form", noValidate: true, children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              Input/* default */.A,
-              {
-                type: "text",
-                name: "city",
-                label: "\u0413\u043E\u0440\u043E\u0434",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0433\u043E\u0440\u043E\u0434",
-                isRequired: true,
-                className: `Address__input${errors.city && touched.city ? " Address__input--error" : ""}`
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              Input/* default */.A,
-              {
-                type: "text",
-                name: "street",
-                label: "\u0423\u043B\u0438\u0446\u0430",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0443\u043B\u0438\u0446\u0443",
-                isRequired: true,
-                className: `Address__input${errors.street && touched.street ? " Address__input--error" : ""}`
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              Input/* default */.A,
-              {
-                type: "text",
-                name: "house",
-                label: "\u0414\u043E\u043C",
-                placeholder: "\u041D\u043E\u043C\u0435\u0440 \u0434\u043E\u043C\u0430",
-                isRequired: true,
-                className: `Address__input${errors.house && touched.house ? " Address__input--error" : ""}`
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              Input/* default */.A,
-              {
-                type: "text",
-                name: "flat",
-                label: "\u041A\u0432\u0430\u0440\u0442\u0438\u0440\u0430/\u043E\u0444\u0438\u0441",
-                placeholder: "\u041D\u043E\u043C\u0435\u0440 \u043A\u0432\u0430\u0440\u0442\u0438\u0440\u044B",
-                className: `Address__input${errors.flat && touched.flat ? " Address__input--error" : ""}`
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Address__heading", children: "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u0434\u043B\u044F \u043A\u0443\u0440\u044C\u0435\u0440\u0430" }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Address__subgrid", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "entrance",
-                  label: "\u041F\u043E\u0434\u044A\u0435\u0437\u0434",
-                  placeholder: "\u041D\u043E\u043C\u0435\u0440 \u043F\u043E\u0434\u044A\u0435\u0437\u0434\u0430",
-                  isRequired: false,
-                  className: `Address__input${errors.entrance && touched.entrance ? " Address__input--error" : ""}`
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "flatNumber",
-                  label: "\u0414\u043E\u043C\u043E\u0444\u043E\u043D",
-                  placeholder: "\u041A\u043E\u0434 \u0434\u043E\u043C\u043E\u0444\u043E\u043D\u0430",
-                  isRequired: false,
-                  className: `Address__input${errors.flatNumber && touched.flatNumber ? " Address__input--error" : ""}`
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "floor",
-                  label: "\u042D\u0442\u0430\u0436",
-                  placeholder: "\u041D\u043E\u043C\u0435\u0440 \u044D\u0442\u0430\u0436\u0430",
-                  isRequired: false,
-                  className: `Address__input${errors.floor && touched.floor ? " Address__input--error" : ""}`
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Textarea/* default */.A,
-                {
-                  type: "text",
-                  name: "comment",
-                  label: "\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439",
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439",
-                  className: `Address__input-fullwidth${errors.comment && touched.comment ? " Address__input--error" : ""}`
-                }
-              ),
-              initialValues2.organization !== void 0 ? /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                Select/* default */.A,
-                {
-                  isModal: true,
-                  value: values.organization !== "empty" ? organizations.find(
-                    (item) => item.id === values.organization
-                  ).companyName : "",
-                  name: "organization",
-                  onChange: handleChange,
-                  placeholder: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E",
-                  className: `Address__input-fullwidth${errors.organization && touched.organization ? " Address__input--error" : ""}`,
-                  children: [
-                    organizations.map((item, index) => /* @__PURE__ */ (0,jsx_runtime.jsx)(MenuItem/* default */.A, { value: item.id, children: item.companyName }, index)),
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                      "button",
-                      {
-                        className: "Address__add",
-                        type: "button",
-                        onClick: () => {
-                          window.location.replace(
-                            `${window.location.origin}/personal/addorganization/`
-                          );
-                        },
-                        children: "+ \u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E"
-                      }
-                    )
-                  ]
-                }
-              ) : null
-            ] }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Address__navigation", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "button",
-                {
-                  className: "button button--transparent Address__button",
-                  type: "button",
-                  onClick: cancelHandler,
-                  children: "\u2717 \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "button Address__button", type: "submit", children: "\u2713 \u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C" })
-            ] })
-          ] })
-        ] })
-      }
-    )
-  ] });
-};
-/* harmony default export */ const Address_Address = (Address);
-
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/TextField/TextField.js + 7 modules
-var TextField = __webpack_require__(1256);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/esm/Close.js
-var Close = __webpack_require__(3518);
-;// ./src/react/components/Editable/Editable.js
-
-
-
-
-
-
-const Editable = ({ value, className, onEdit, onDelete }) => {
-  const [val, setVal] = (0,react.useState)("");
-  (0,react.useEffect)(() => {
-    setVal(value);
-  }, [value]);
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: `Editable${className ? ` ${className}` : ""}`, children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      TextField/* default */.A,
-      {
-        multiline: true,
-        type: "text",
-        value: val,
-        disabled: true,
-        onChange: (evt) => {
-          setVal(evt.target.value);
-        },
-        sx: {
-          width: "100%",
-          "& .MuiOutlinedInput-root": {
-            color: "red",
-            fontFamily: "Inter",
-            fontSize: "16px",
-            fontWeight: "400",
-            lineHeight: "25px",
-            paddingTop: "12px",
-            paddingRight: "70px",
-            paddingBottom: "12px",
-            paddingLeft: "20px",
-            border: "1px solid #f0f0f0",
-            borderRadius: "10px",
-            backgroundColor: "#ffffff",
-            "@media(max-Width: 767px)": {
-              fontSize: "14px",
-              lineHeight: "20px"
-            },
-            "& .MuiOutlinedInput-input": {
-              "&.Mui-disabled": {
-                color: "#212121",
-                WebkitTextFillColor: "#212121"
-              }
-            },
-            "& .MuiOutlinedInput-notchedOutline": {
-              display: "none"
-            }
-          }
-        }
-      }
-    ),
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Editable__buttons", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "button",
-        {
-          className: "Editable__edit",
-          type: "button",
-          onClick: () => {
-            onEdit(val);
-          },
-          children: /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "20", height: "20", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { href: "#icon-pencil" }) })
-        }
-      ),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "button",
-        {
-          className: "Editable__delete",
-          type: "button",
-          onClick: () => {
-            onDelete();
-          },
-          children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Close/* default */.A, {})
-        }
-      )
-    ] })
-  ] });
-};
-/* harmony default export */ const Editable_Editable = (Editable);
-
-// EXTERNAL MODULE: ./src/react/components/Loader/Loader.js
-var Loader = __webpack_require__(289);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-// EXTERNAL MODULE: ./src/api/OrganizationsApi.js
-var OrganizationsApi = __webpack_require__(2972);
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-// EXTERNAL MODULE: ./src/env.js
-var env = __webpack_require__(9838);
-;// ./src/api/AddressApi.js
-
-
-const fetchAddresses = (setIsLoading, setAddresses) => {
-  axios/* default */.A.get(`${window.routes5.addresses.requests.getAddresses[`url${env/* ENV */.K}`]}`).then((response) => {
-    if (response.status === 200) {
-      setIsLoading(false);
-      setAddresses(response.data);
-    }
-  });
-};
-const sendUpdatedAddresses = (addresses, setAddresses, setShow, setAddress, action) => {
-  axios/* default */.A.post(
-    `${window.routes5.addresses.requests.updateAddresses[`url${env/* ENV */.K}`]}`,
-    addresses
-  ).then((response) => {
-    setAddresses(response.data);
-    setShow(false);
-    setAddress("");
-    window.Corners5ProjectLayout.summonAlert("#alert--save");
-    window.location.reload();
-  });
-};
-
-;// ./src/react/providers/pages/lk-addresses/AddressProvider/AddressProvider.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const schemaAddress = index_esm/* object */.Ik().shape({
-  address: index_esm/* string */.Yj().required()
-});
-const AddressProvider = () => {
-  const [isLoading, setIsLoading] = (0,react.useState)(true);
-  const [addresses, setAddresses] = (0,react.useState)([]);
-  const [organizations, setOrganizations] = (0,react.useState)([]);
-  const [show, setShow] = (0,react.useState)(false);
-  const [addressToDelete, setAddressToDelete] = (0,react.useState)({});
-  const [address, setAddress] = (0,react.useState)({ value: "" });
-  const deleteAddress = (values, index, indx) => {
-    delete values[index].addresses[indx];
-    if (Object.keys(values[index].addresses).length === 0) {
-      values.splice(index, 1);
-    }
-    sendUpdatedAddresses(values, setAddresses, setShow, setAddress);
-  };
-  (0,react.useEffect)(() => {
-    if (isLoading && addresses.length === 0) {
-      fetchAddresses(setIsLoading, setAddresses);
-      (0,OrganizationsApi/* fetchOrganizations */.fV)(setIsLoading, setOrganizations);
-    }
-  });
-  (0,react.useEffect)(() => {
-    if (show || show === false && address.data) {
-      (0,utils/* getPaddingOnBody */.rP)();
-    } else {
-      (0,utils/* getPaddingFromBody */.iW)();
-    }
-  }, [show, address.data]);
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "AddressProvider", children: [
-    show ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        className: "Modal--address AddressProvider__modal AddressProvider__modal--nooverflow",
-        closeModal: () => {
-          setShow(false);
-          setAddress({ value: "" });
-        },
-        children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "AddressProvider__form", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "AddressProvider__header", children: "\u0410\u0434\u0440\u0435\u0441" }),
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "AddressProvider__text", children: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0430\u0434\u0440\u0435\u0441 \u0432 \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u043E\u0439 \u0444\u043E\u0440\u043C\u0435" }),
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "AddressProvider__field-container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-            esm/* AddressSuggestions */.OO,
-            {
-              className: "AddressProvider__field",
-              token: "14ae5e2d4d50c72272527cc24f93b32fa6650307",
-              defaultQuery: address.value,
-              onChange: setAddress,
-              inputProps: { placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0430\u0434\u0440\u0435\u0441" },
-              delay: 1e3,
-              count: 5
-            }
-          ) }),
-          address.data ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "AddressProvider__buttons", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button button--transparent AddressProvider__button AddressProvider__cancel",
-                onClick: () => {
-                  setShow(false);
-                  setAddress("");
-                },
-                children: "\u2717 \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button AddressProvider__button",
-                type: "button",
-                onClick: () => {
-                  setShow(false);
-                },
-                children: "\u0414\u0430\u043B\u0435\u0435"
-              }
-            )
-          ] }) : null
-        ] })
-      }
-    ) : null,
-    show === false && address.data ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        className: "Modal--address AddressProvider__modal AddressProvider__modal--nooverflow",
-        closeModal: () => {
-          setShow(false);
-          setAddress({ value: "" });
-        },
-        children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Address_Address,
-          {
-            address,
-            organizations,
-            cancelHandler: () => {
-              setShow(true);
-            },
-            submitHandler: (val) => {
-              sendUpdatedAddresses(val, setAddresses, setShow, setAddress);
-            }
-          }
-        )
-      }
-    ) : null,
-    Object.keys(addressToDelete).length !== 0 ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        className: "AddressProvider__delete-modal",
-        closeModal: () => {
-          setAddressToDelete({});
-        },
-        children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "AddressProvider__delete", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { className: "AddressProvider__question", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { href: "#icon-question" }) }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "AddressProvider__delete-text", children: [
-            "\u0412\u044B \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E",
-            /* @__PURE__ */ (0,jsx_runtime.jsx)("br", {}),
-            " \u0445\u043E\u0442\u0438\u0442\u0435 \u0443\u0434\u0430\u043B\u0438\u0442\u044C \u0430\u0434\u0440\u0435\u0441?"
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "AddressProvider__delete-navigation", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button button--transparent",
-                onClick: () => {
-                  setAddressToDelete({});
-                },
-                children: "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button",
-                onClick: () => {
-                  deleteAddress(
-                    addresses,
-                    addressToDelete.index,
-                    addressToDelete.indx
-                  );
-                  setAddressToDelete({});
-                },
-                children: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C"
-              }
-            )
-          ] })
-        ] })
-      }
-    ) : null,
-    isLoading && addresses.length === 0 ? /* @__PURE__ */ (0,jsx_runtime.jsx)(Loader/* default */.A, {}) : /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-      addresses.map((item, index) => {
-        const locations = Object.entries(item.addresses).map((adrs) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Editable_Editable,
-          {
-            value: adrs[1],
-            onEdit: (val) => {
-              setShow(true);
-              setAddress({ value: val });
-            },
-            onDelete: () => {
-              setAddressToDelete({ index, indx: adrs[0] });
-            }
-          },
-          adrs[0]
-        ));
-        return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "AddressProvider__item", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "AddressProvider__heading", children: item.name }),
-          locations
-        ] }, index);
-      }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "button",
-        {
-          className: "button AddressProvider__add",
-          onClick: () => {
-            setShow(true);
-          },
-          children: "+ \u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0430\u0434\u0440\u0435\u0441"
-        }
-      )
-    ] })
-  ] });
-};
-const AddressProviderContainer = document.querySelector("#AddressProvider");
-if (AddressProviderContainer) {
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(AddressProvider, {}), AddressProviderContainer);
-}
-
-
-/***/ },
-
 /***/ 2836
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -2734,60 +1751,6 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-
-
-/***/ },
-
-/***/ 2972
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   OF: () => (/* binding */ sendUpdatedOrganizations),
-/* harmony export */   fV: () => (/* binding */ fetchOrganizations),
-/* harmony export */   uy: () => (/* binding */ sendDeletedOrganizations)
-/* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1083);
-/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9838);
-
-
-const fetchOrganizations = (setIsLoading, setOrganizations) => {
-  axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.get(
-    `${window.routes5.organizations.requests.getOrganizations[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`
-  ).then((response) => {
-    if (response.status === 200 && response.data.status !== "error") {
-      setIsLoading(false);
-      setOrganizations(response.data);
-    } else {
-      setIsLoading(false);
-      setOrganizations(response.data.status);
-    }
-  });
-};
-const sendUpdatedOrganizations = (organizations, index, setOrganizations, messages, setMessage) => {
-  axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.post(
-    `${window.routes5.organizations.requests.updateOrganizations[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`,
-    organizations
-  ).then((response) => {
-    const updatedMessages = [...messages];
-    updatedMessages.push({
-      type: "success",
-      text: response.data[index].companyName
-    });
-    setOrganizations(response.data);
-    setMessage(updatedMessages);
-  });
-};
-const sendDeletedOrganizations = (organizations, setOrganizations, setModal) => {
-  oranizationsApi.post(
-    `${window.routes5.organizations.requests.deleteOrganizations[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`,
-    organizations
-  ).then((response) => {
-    window.Corners5ProjectLayout.summonAlert("#alert--organization-deleted");
-    setModal(null);
-    setOrganizations(response.data);
-  });
-};
 
 
 /***/ },
@@ -2847,331 +1810,6 @@ const callUsModalInit = (func) => {
   console.log("\u0424\u0443\u043D\u043A\u0446\u0438\u044F \u0443\u0434\u0430\u043B\u0435\u043D\u0430, \u0435\u0441\u043B\u0438 \u0432\u044B \u0432\u0438\u0434\u0438\u0442\u0435 \u044D\u0442\u043E \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435 - \u043F\u043E\u0447\u0438\u0441\u0442\u0438\u0442\u0435 common.js");
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (callUsModalInit);
-
-
-/***/ },
-
-/***/ 3045
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/react/components/Textarea/Textarea.js
-var Textarea = __webpack_require__(455);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/RequestContacts/RequestContacts.js
-
-
-
-
-
-
-
-
-const RequestContacts = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    fio: index_esm/* string */.Yj().required(),
-    phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required(),
-    email: index_esm/* string */.Yj().email().required(),
-    text: index_esm/* string */.Yj().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestContacts", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__header", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "RequestContacts__title", children: "\u041E\u0431\u0440\u0430\u0442\u043D\u0430\u044F \u0441\u0432\u044F\u0437\u044C" }) }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          fio: "",
-          phone: "",
-          email: "",
-          text: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "RequestContacts__form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "fio",
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: errors.fio && touched.fio ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: "phone",
-                  label: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
-                  value: values.phone,
-                  isRequired: true,
-                  placeholder: "+7 (999) 999-99-99",
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  className: errors.phone && touched.phone ? "PhoneInput--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: "email",
-                  label: "E-mail",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                  className: errors.email && touched.email ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__field RequestContacts__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Textarea/* default */.A,
-                {
-                  name: "text",
-                  label: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  className: errors.text && touched.text ? "Textarea--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestContacts__field RequestContacts__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestContacts__terms", children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "RequestContacts__legal", children: [
-                  "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                  " \u0438 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                  "."
-                ] }),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "RequestContacts__submit button", type: "submit", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C" })
-              ] }) })
-            ]
-          }
-        )
-      }
-    )
-  ] });
-};
-/* harmony default export */ const RequestContacts_RequestContacts = (RequestContacts);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/RequestContactsApi.js
-
-const RequestContactsApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const setStatus = (status) => {
-  switch (status) {
-    case "success":
-      return "alert--green";
-    case "error":
-      return "alert--red";
-    default:
-      return "";
-  }
-};
-const container = document.querySelector("#RequestContactsProvider");
-const sendRequestContacts = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  RequestContactsApi.post("/feedback.php", values).then((response) => {
-    if (response.status === 200) {
-      const alert = document.querySelector("#alert--request").content.querySelector(".alert");
-      alert.classList.add(setStatus(response.data.status));
-      const container2 = document.querySelector("#alert--request").content.querySelector(".alert__container");
-      container2.innerHTML = response.data.text;
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--request");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--error");
-  });
-};
-
-;// ./src/react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider.js
-
-
-
-
-
-const requestContacts = document.querySelector("#RequestContactsProvider");
-if (requestContacts) {
-  const { id } = requestContacts.dataset;
-  const RequestContactsProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(RequestContacts_RequestContacts, { submitHandler: sendRequestContacts, id }) });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(RequestContactsProvider, {}), requestContacts);
-}
-
-
-/***/ },
-
-/***/ 3070
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// UNUSED EXPORTS: default
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-;// ./src/react/components/VerificationCodeInput/VerificationCodeInput.js
-
-
-
-const VerificationCodeInput_VerificationCodeInput = ({
-  length = 4,
-  onComplete,
-  className = ""
-}) => {
-  const inputsRef = useRef([]);
-  const handleChange = (e, index) => {
-    var _a;
-    const value = e.target.value.replace(/\D/g, "");
-    e.target.value = value;
-    if (!value)
-      return;
-    if (index < length - 1) {
-      (_a = inputsRef.current[index + 1]) == null ? void 0 : _a.focus();
-    }
-    const code = inputsRef.current.map((input) => (input == null ? void 0 : input.value) || "").join("");
-    if (code.length === length) {
-      onComplete(code);
-    }
-  };
-  const handleKeyDown = (e, index) => {
-    var _a;
-    if (e.key === "Backspace" && !e.target.value && index > 0) {
-      (_a = inputsRef.current[index - 1]) == null ? void 0 : _a.focus();
-    }
-  };
-  return /* @__PURE__ */ jsx("div", { className: `VerificationCodeInput ${className}`, children: Array.from({ length }).map((_, index) => /* @__PURE__ */ jsx(
-    "input",
-    {
-      type: "text",
-      inputMode: "numeric",
-      maxLength: 1,
-      ref: (el) => inputsRef.current[index] = el,
-      onChange: (e) => handleChange(e, index),
-      onKeyDown: (e) => handleKeyDown(e, index),
-      className: "VerificationCodeInput__input"
-    },
-    index
-  )) });
-};
-/* harmony default export */ const components_VerificationCodeInput_VerificationCodeInput = ((/* unused pure expression or super */ null && (VerificationCodeInput_VerificationCodeInput)));
-
-;// ./src/react/components/Code/Code.js
-
-
-
-
-
-const Code = ({ phoneNumber, changeAction, sendAgain, sendSms }) => {
-  const [seconds, setSeconds] = useState(60);
-  useEffect(() => {
-    if (seconds === 0)
-      return;
-    const timer = setTimeout(() => {
-      setSeconds((s) => s - 1);
-    }, 1e3);
-    return () => clearTimeout(timer);
-  }, [seconds]);
-  return /* @__PURE__ */ jsxs("div", { className: "Code", children: [
-    /* @__PURE__ */ jsx("p", { className: "Code__header", children: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u0434" }),
-    /* @__PURE__ */ jsxs("p", { className: "Code__text", children: [
-      "\u041C\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438 \u043A\u043E\u0434 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u044F \u043D\u0430 \u043D\u043E\u043C\u0435\u0440",
-      " ",
-      /* @__PURE__ */ jsxs("b", { children: [
-        "+7 (***) ***-",
-        phoneNumber[13],
-        phoneNumber[14],
-        "-",
-        phoneNumber[16],
-        phoneNumber[17]
-      ] })
-    ] }),
-    /* @__PURE__ */ jsx(
-      "button",
-      {
-        className: "Code__button",
-        type: "button",
-        onClick: changeAction,
-        children: "\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C"
-      }
-    ),
-    /* @__PURE__ */ jsx(
-      Formik,
-      {
-        initialValues: { code: "" },
-        onSubmit: (values) => sendSms(values.code),
-        children: ({ setFieldValue, submitForm }) => /* @__PURE__ */ jsx(
-          VerificationCodeInput,
-          {
-            length: 4,
-            className: "Code__number",
-            onComplete: (value) => {
-              setFieldValue("code", value);
-              submitForm();
-            }
-          }
-        )
-      }
-    ),
-    seconds === 0 ? /* @__PURE__ */ jsx(
-      "button",
-      {
-        className: "Code__button",
-        type: "button",
-        onClick: () => {
-          setSeconds(60);
-          sendAgain();
-        },
-        children: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043D\u043E\u0432\u044B\u0439 \u043A\u043E\u0434 \u043F\u043E SMS"
-      }
-    ) : /* @__PURE__ */ jsxs("p", { className: "Code__seconds", children: [
-      "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043D\u043E\u0432\u044B\u0439 \u043A\u043E\u0434 \u043C\u043E\u0436\u043D\u043E \u0447\u0435\u0440\u0435\u0437 ",
-      seconds,
-      " \u0441\u0435\u043A\u0443\u043D\u0434"
-    ] })
-  ] });
-};
-/* harmony default export */ const Code_Code = ((/* unused pure expression or super */ null && (Code)));
 
 
 /***/ },
@@ -3387,15 +2025,14 @@ profileCardInit();
 /* harmony export */   $W: () => (/* binding */ createFormData),
 /* harmony export */   Ai: () => (/* binding */ getFormState),
 /* harmony export */   Bs: () => (/* binding */ setTextareaAutoHeight),
-/* harmony export */   CV: () => (/* binding */ TOKEN),
 /* harmony export */   Lx: () => (/* binding */ setStatus),
 /* harmony export */   Qs: () => (/* binding */ activateRequestButtons),
-/* harmony export */   Sj: () => (/* binding */ PHONE_REG_EXP),
 /* harmony export */   XJ: () => (/* binding */ getScrollbarWidth),
 /* harmony export */   iW: () => (/* binding */ getPaddingFromBody),
 /* harmony export */   rP: () => (/* binding */ getPaddingOnBody),
 /* harmony export */   sg: () => (/* binding */ debounce)
 /* harmony export */ });
+/* unused harmony exports TOKEN, PHONE_REG_EXP */
 /* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1660);
 /* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_popUp_popUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9417);
@@ -3684,215 +2321,6 @@ window.addEventListener("load", () => {
 
 /***/ },
 
-/***/ 3726
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/react/components/Textarea/Textarea.js
-var Textarea = __webpack_require__(455);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/RequestService/RequestService.js
-
-
-
-
-
-
-
-
-const RequestService = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    fio: index_esm/* string */.Yj().required(),
-    phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required(),
-    email: index_esm/* string */.Yj().email().required(),
-    text: index_esm/* string */.Yj().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestService", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestService__header", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "RequestService__title", children: "\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0443\u0441\u043B\u0443\u0433\u0443" }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "RequestService__post-title", children: "\u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435\u0441\u044C \u043A \u043D\u0430\u043C, \u0438 \u043C\u044B \u0441 \u0443\u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0438\u0435\u043C \u043F\u043E\u043C\u043E\u0436\u0435\u043C \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043D\u0443\u0436\u043D\u0443\u044E \u0432\u0430\u043C \u0443\u0441\u043B\u0443\u0433\u0443." })
-    ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          fio: "",
-          phone: "",
-          email: "",
-          text: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "RequestService__form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "fio",
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: errors.fio && touched.fio ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: "phone",
-                  label: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
-                  value: values.phone,
-                  isRequired: true,
-                  placeholder: "+7 (999) 999-99-99",
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  className: errors.phone && touched.phone ? "PhoneInput--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: "email",
-                  label: "E-mail",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                  className: errors.email && touched.email ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__field RequestService__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Textarea/* default */.A,
-                {
-                  name: "text",
-                  label: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  className: errors.text && touched.text ? "Textarea--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__field RequestService__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestService__terms", children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "RequestService__legal", children: [
-                  "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                  " \u0438 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                  "."
-                ] }),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "RequestService__submit button", type: "submit", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C" })
-              ] }) })
-            ]
-          }
-        )
-      }
-    ),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestService__footer", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("ul", { className: "RequestService__contacts-list", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestService__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestService__contacts-link", href: "tel:+79155428282", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-phone" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "+7 (915) 542-82-82" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestService__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestService__contacts-link", href: "mailto:brewery@brewlok.ru", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-mail" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "brewery@brewlok.ru" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestService__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestService__contacts-link", href: "https://vk.com/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-vk" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 VKontakte" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestService__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestService__contacts-link", href: "https://t.me/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-telegram" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u0432 Telegram" })
-      ] }) })
-    ] }) })
-  ] });
-};
-/* harmony default export */ const RequestService_RequestService = (RequestService);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/RequestServiceApi.js
-
-const RequestServiceApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const setStatus = (status) => {
-  switch (status) {
-    case "success":
-      return "alert--green";
-    case "error":
-      return "alert--red";
-    default:
-      return "";
-  }
-};
-const container = document.querySelector("#RequestServiceProvider");
-const sendRequestService = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  RequestServiceApi.post("/feedback_services.php", values).then((response) => {
-    if (response.status === 200) {
-      const alert = document.querySelector("#alert--request").content.querySelector(".alert");
-      alert.classList.add(setStatus(response.data.status));
-      const container2 = document.querySelector("#alert--request").content.querySelector(".alert__container");
-      container2.innerHTML = response.data.text;
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--request");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--error");
-  });
-};
-
-;// ./src/react/providers/pages/service/RequestServiceProvider/RequestServiceProvider.js
-
-
-
-
-
-const requestService = document.querySelector("#RequestServiceProvider");
-if (requestService) {
-  const { id } = requestService.dataset;
-  const RequestServiceProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(RequestService_RequestService, { submitHandler: sendRequestService, id }) });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(RequestServiceProvider, {}), requestService);
-}
-
-
-/***/ },
-
 /***/ 3746
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -3940,113 +2368,6 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
-
-/***/ },
-
-/***/ 3786
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Xp: () => (/* binding */ organizationsApi),
-/* harmony export */   gu: () => (/* binding */ profileApi),
-/* harmony export */   p5: () => (/* binding */ dataAPI)
-/* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1083);
-/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9838);
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3670);
-
-
-
-const instance = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
-  baseURL: "",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const daData = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
-  baseURL: "https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party",
-  headers: {
-    "Content-Type": "application/json",
-    Accept: "application/json",
-    Authorization: `Token ${_utils_utils__WEBPACK_IMPORTED_MODULE_2__/* .TOKEN */ .CV}`
-  }
-});
-const dataAPI = {
-  async getOrganization(query) {
-    const response = await axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.post(`checkCompany.php`, { inn: query });
-    const daDataInfo = await daData.post(null, { query });
-    if (daDataInfo.data.suggestions[0]) {
-      return {
-        isAlreadyExist: response.data.result ? true : false,
-        data: daDataInfo.data.suggestions[0]
-      };
-    }
-    return {
-      isAlreadyExist: response.data.result ? true : false,
-      data: {}
-    };
-  }
-};
-const organizationsApi = {
-  addNewOrganization(newOrganization) {
-    console.log("Api");
-    return instance.post("add_organization.php", { newOrganization }).then((response) => {
-      if (response.data.status === "success") {
-        window.Corners5ProjectLayout.summonAlert("#alert--add");
-        setTimeout(() => {
-          window.location.replace(
-            `${window.location.origin}/personal/organizations/`
-          );
-        }, 3e3);
-      }
-    }).catch((error) => console.log("error", error));
-  }
-};
-const profileApi = {
-  getProfile() {
-    return axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.get(`${window.routes5.profile.requests.getProfile[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`).then((response) => {
-      console.log(_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K);
-      if (response.status === 200 && response.data.status !== "error") {
-        return response.data;
-      } else {
-        return "\u0412\u043E\u0437\u043D\u0438\u043A\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430, \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0435 \u043F\u043E\u043F\u044B\u0442\u043A\u0443 \u043F\u043E\u0437\u0436\u0435";
-      }
-    }).catch(() => "\u0412\u043E\u0437\u043D\u0438\u043A\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430, \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0435 \u043F\u043E\u043F\u044B\u0442\u043A\u0443 \u043F\u043E\u0437\u0436\u0435");
-  },
-  updateName(name) {
-    return instance.put(`${window.routes5.profile.requests.getProfile[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`, { name }).then((response) => {
-      if (response.status === 200) {
-        console.log("\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u044B");
-        window.Corners5ProjectLayout.summonAlert("#alert--fio");
-      }
-    }).catch((error) => console.log("error", error));
-  },
-  updateEmail(email) {
-    return instance.put(`${window.routes5.profile.requests.getProfile[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`, { email }).then((response) => {
-      if (response.status === 200) {
-        console.log("\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u044B");
-        window.Corners5ProjectLayout.summonAlert("#alert--confirm-email");
-      }
-    }).catch((error) => console.log("error", error));
-  },
-  updatePhone(phone) {
-    return instance.put(`${window.routes5.profile.requests.getProfile[`url${_env__WEBPACK_IMPORTED_MODULE_1__/* .ENV */ .K}`]}`, {
-      phone
-    }).then((response) => {
-      if (response.status === 200 && response.data.status === "success") {
-        window.Corners5ProjectLayout.summonAlert("#alert--mobileSuccess");
-        return true;
-      } else if (response.status === 200 && response.data.status === "error") {
-        document.querySelector("#alert--error").content.querySelector(".alert__text").textContent = response.data.text;
-        window.Corners5ProjectLayout.summonAlert("#alert--error");
-        return false;
-      }
-    }).catch((error) => console.log("error", error));
-  }
-};
-
 
 /***/ },
 
@@ -4165,58 +2486,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 
 const body = document.querySelector(".alert-wrapper");
-const removeAllAlert = () => {
-  const currentAlert = body.querySelectorAll(".alert");
-  currentAlert.forEach((el) => {
-    el.remove();
-  });
-};
-const removeAlert = (template) => {
+const removeAlert = ({
+  template
+}) => {
   const templateContent = document.querySelector(`${template}`);
   templateContent.remove();
 };
-const summonAlert = (template) => {
+const summonAlert = (input) => {
+  let template;
+  let text;
+  let className;
+  if (typeof input === "string") {
+    template = input;
+  } else if (typeof input === "object" && input !== null) {
+    template = input.template;
+    text = input.text;
+    className = input.className;
+  } else {
+    console.log("\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0442\u0438\u043F \u0434\u0430\u043D\u043D\u044B\u0445 \u0434\u043B\u044F summonAlert. \u041E\u0436\u0438\u0434\u0430\u0435\u0442\u0441\u044F \u0441\u0442\u0440\u043E\u043A\u0430 (template) \u0438\u043B\u0438 \u043E\u0431\u044A\u0435\u043A\u0442 { template, text }.");
+    return;
+  }
+  if (typeof template !== "string" || !template.startsWith("#")) {
+    console.log('\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0448\u0430\u0431\u043B\u043E\u043D. \u041E\u0436\u0438\u0434\u0430\u0435\u0442\u0441\u044F \u0441\u0442\u0440\u043E\u043A\u0430, \u043D\u0430\u0447\u0438\u043D\u0430\u044E\u0449\u0430\u044F\u0441\u044F \u0441 "#", \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440 "#alert--request".');
+    return;
+  }
   const alertName = template.slice(1);
-  const templateContent = document.querySelector(`#${alertName}`).content.cloneNode(true);
+  const alertTemplate = document.querySelector(`#${alertName}`);
+  if (!alertTemplate) {
+    console.log(`#${alertName} \u0441\u0438\u0441\u0442\u0435\u043C\u043D\u043E\u0433\u043E \u043E\u043A\u043D\u0430 \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442.`);
+    return;
+  }
+  const oldAlert = document.querySelector(`.${alertName}`);
+  if (oldAlert) {
+    oldAlert.remove();
+  }
+  const templateContent = alertTemplate.content.cloneNode(true);
   const alert = templateContent.querySelector(`.${alertName}`);
+  if (!alert) {
+    console.log(`\u0412 \u0448\u0430\u0431\u043B\u043E\u043D\u0435 #${alertName} \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u043A\u043E\u0440\u043D\u0435\u0432\u043E\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 .${alertName}`);
+    return;
+  }
+  if (className) {
+    if (typeof className === "string") {
+      alert.classList.add(className);
+    } else {
+      console.log("className \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u0441\u0442\u0440\u043E\u043A\u043E\u0439 \u0438\u043B\u0438 \u043C\u0430\u0441\u0441\u0438\u0432\u043E\u043C \u0441\u0442\u0440\u043E\u043A");
+    }
+  }
   const close = alert.querySelector(".alert__close");
-  const hideAlert = () => {
-    alert.classList.add("alert--back-bounce");
-  };
+  const textContainer = alert.querySelector(".alert__container");
+  if (text && textContainer) {
+    textContainer.innerHTML = text;
+  }
   const closeAlert = () => {
     alert.remove();
   };
   if (close) {
-    close.addEventListener("click", () => {
-      closeAlert();
-    });
+    close.addEventListener("click", closeAlert);
   }
-  removeAllAlert();
   body.append(templateContent);
   alert.classList.add("alert--bounce");
-  let h;
-  let c;
-  const hideAlertTimeout = setTimeout(() => {
-    hideAlert();
-  }, 1e4);
-  const closeAlertTimeout = setTimeout(() => {
-    closeAlert();
-  }, 12500);
-  alert.addEventListener("mouseleave", () => {
-    h = setTimeout(() => {
-      hideAlert();
-    }, 3e3);
-    c = setTimeout(() => {
-      closeAlert();
-    }, 5500);
-  });
-  alert.addEventListener("mouseenter", () => {
-    clearTimeout(hideAlertTimeout);
-    clearTimeout(closeAlertTimeout);
-    clearTimeout(h);
-    clearTimeout(c);
-    alert.classList.remove("alert--back-bounce");
-  });
+  return alert;
 };
 
 
@@ -4451,7 +2781,48 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8019);
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+const initFieldSelect = (func) => {
+  const selects = document.querySelectorAll(".field__input--select");
+  if (selects.length > 0) {
+    selects.forEach((select) => {
+      const field = select.closest(".field");
+      const description = field.querySelector(".validator__description");
+      const choicesNolint = new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, {
+        searchEnabled: "search" in select.dataset,
+        shouldSort: false,
+        classNames: {
+          containerOuter: "choices field__choices",
+          input: "field__input"
+        },
+        noResultsText: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E",
+        noChoicesText: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
+        itemSelectText: ""
+      });
+      const customSelect = field.querySelector(".choices__inner");
+      select.addEventListener("hideDropdown", () => {
+        document.querySelector(".field__choices").querySelectorAll(".is-highlighted").forEach((el) => {
+          el.classList.remove("is-highlighted");
+        });
+      });
+      select.addEventListener("addItem", (event) => {
+        if (customSelect.classList.contains("validator__input--error")) {
+          customSelect.classList.remove("validator__input--error");
+          description.classList.remove("validator__description--error");
+          description.classList.add("validator__description--valid");
+        }
+        if (func) {
+          func(event);
+        }
+      });
+      select.choicesInstance = choicesNolint;
+    });
+  }
+};
+initFieldSelect();
 
 
 /***/ },
@@ -4538,6 +2909,127 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
+
+/***/ },
+
+/***/ 4281
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _validator_validator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4489);
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3670);
+/* harmony import */ var _alert_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4009);
+/* harmony import */ var _loading_loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3037);
+/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9838);
+
+
+
+
+
+
+const personalDataFormInit = (func) => {
+  const forms = document.querySelectorAll(".personal-data__form");
+  if (forms.length > 0) {
+    (0,_validator_validator__WEBPACK_IMPORTED_MODULE_0__.validateForm)(".personal-data__form");
+    (0,_validator_validator__WEBPACK_IMPORTED_MODULE_0__.maskPhone)('.personal-data__form input[type="tel"]');
+    forms.forEach((form) => {
+      const fieldWrapper = form.querySelector(".personal-data__field-wrapper");
+      if (fieldWrapper) {
+        const actions = fieldWrapper.querySelector(".personal-data__field-action");
+        const input = fieldWrapper.querySelector("input");
+        if (!input || !actions)
+          return;
+        const change = actions.querySelector(".personal-data__change");
+        const cancel = actions.querySelector(".personal-data__cancel");
+        let value = input.value;
+        if (change) {
+          change.addEventListener("click", () => {
+            value = input.value;
+            input.removeAttribute("readonly");
+          });
+        }
+        form.addEventListener("bouncerFormValid", (0,_utils_utils__WEBPACK_IMPORTED_MODULE_1__/* .debounce */ .sg)(() => {
+          if (value === input.value) {
+            input.setAttribute("readonly", "readonly");
+          } else {
+            const result = func == null ? void 0 : func(form);
+            if (result == null ? void 0 : result.then) {
+              (0,_loading_loading__WEBPACK_IMPORTED_MODULE_3__.addLoading)(form);
+              result.done((data) => {
+                value = input.value;
+                input.setAttribute("readonly", "readonly");
+              }).fail(() => {
+              }).always(() => {
+                (0,_loading_loading__WEBPACK_IMPORTED_MODULE_3__.removeLoading)(form);
+              });
+            }
+          }
+        }));
+        if (cancel) {
+          cancel.addEventListener("click", () => {
+            input.value = value;
+            input.focus();
+            input.blur();
+            input.setAttribute("readonly", "readonly");
+          });
+        }
+      }
+    });
+  }
+};
+personalDataFormInit((form) => {
+  const fd = new FormData(form);
+  let alertTemplate = "#alert--request";
+  let payload = {};
+  switch (form.id) {
+    case "perosnal-name":
+      payload = { name: fd.get("name") };
+      alertTemplate = "#alert--fio";
+      break;
+    case "perosnal-phone":
+      payload = { phone: fd.get("phone") };
+      alertTemplate = "#alert--mobileSuccess";
+      break;
+    case "perosnal-email":
+      payload = { email: fd.get("email") };
+      alertTemplate = "#alert--confirm-email";
+      break;
+    default:
+      return;
+  }
+  return $.ajax({
+    type: "PUT",
+    data: fd,
+    url: `${window.routes5.profile.requests.updateProfile[`url${_env__WEBPACK_IMPORTED_MODULE_4__/* .ENV */ .K}`]}`,
+    contentType: false,
+    processData: false,
+    cache: false,
+    dataType: "json",
+    success(data) {
+      const alert = (0,_alert_alert__WEBPACK_IMPORTED_MODULE_2__.summonAlert)({
+        template: alertTemplate,
+        text: data.text,
+        className: (0,_utils_utils__WEBPACK_IMPORTED_MODULE_1__/* .setStatus */ .Lx)(data.status)
+      });
+      const link = alert.querySelector(".alert__link");
+      if (link) {
+        const email = fd.get("email");
+        link.textContent = email;
+      }
+      return data;
+    },
+    error(data) {
+      (0,_alert_alert__WEBPACK_IMPORTED_MODULE_2__.summonAlert)({
+        template: "#alert--error",
+        text: data.text
+      });
+    },
+    complete(data) {
+    }
+  });
+});
+
 
 /***/ },
 
@@ -4658,62 +3150,6 @@ const packagingSelectInit = (container, func) => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-
-
-/***/ },
-
-/***/ 4395
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7425);
-/* harmony import */ var react_input_mask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(844);
-/* harmony import */ var react_input_mask__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_input_mask__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-const PhoneInput = ({
-  name,
-  value,
-  onChange,
-  onBlur,
-  className,
-  label,
-  placeholder,
-  isRequired,
-  isDisabled
-}) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: `PhoneInput${className ? ` ${className}` : ""}`, children: [
-  label ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", { className: isRequired ? "PhoneInput__label PhoneInput__label--required" : "PhoneInput__label", children: label }) : null,
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-    (react_input_mask__WEBPACK_IMPORTED_MODULE_2___default()),
-    {
-      mask: "+7 (999) 999-99-99",
-      maskPlaceholder: null,
-      value,
-      onChange,
-      onBlur,
-      disabled: isDisabled,
-      children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-        formik__WEBPACK_IMPORTED_MODULE_1__/* .Field */ .D0,
-        {
-          minLength: "10",
-          autoComplete: "off",
-          autoCapitalize: "off",
-          className: "PhoneInput__field",
-          type: "tel",
-          name,
-          placeholder
-        }
-      )
-    }
-  )
-] });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PhoneInput);
 
 
 /***/ },
@@ -5202,46 +3638,6 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ },
 
-/***/ 4541
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7425);
-
-
-
-const Input = ({
-  type,
-  name,
-  className,
-  label,
-  isRequired,
-  isDisabled,
-  placeholder
-}) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: `Input${className ? ` ${className}` : ""}`, children: [
-  label ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", { className: isRequired ? "Input__label Input__label--required" : "Input__label", children: label }) : null,
-  /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-    formik__WEBPACK_IMPORTED_MODULE_1__/* .Field */ .D0,
-    {
-      autoComplete: "off",
-      autoCapitalize: "off",
-      disabled: isDisabled,
-      className: "Input__field",
-      type,
-      name,
-      placeholder
-    }
-  )
-] });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Input);
-
-
-/***/ },
-
 /***/ 4598
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -5371,190 +3767,6 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
-
-/***/ },
-
-/***/ 4919
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-/* harmony import */ var _mui_material_FormControl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7821);
-/* harmony import */ var _mui_material_Select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5952);
-/* harmony import */ var _mui_icons_material_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1812);
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3670);
-
-
-
-
-
-
-const Select = ({
-  children,
-  isModal,
-  value,
-  name,
-  onChange,
-  label,
-  isRequired,
-  isDisabled,
-  className,
-  placeholder
-}) => {
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: `Select${className ? ` ${className}` : ""}`, children: [
-    label ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-      "label",
-      {
-        className: isRequired ? "Select__label Select__label--required" : "Select__label",
-        children: label
-      }
-    ) : null,
-    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material_FormControl__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, { fullWidth: true, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-      _mui_material_Select__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A,
-      {
-        value,
-        name,
-        disabled: isDisabled,
-        onChange,
-        onOpen: () => {
-          if (!isModal) {
-            (0,_utils_utils__WEBPACK_IMPORTED_MODULE_4__/* .getPaddingOnBody */ .rP)();
-          }
-        },
-        onClose: () => {
-          if (!isModal) {
-            (0,_utils_utils__WEBPACK_IMPORTED_MODULE_4__/* .getPaddingFromBody */ .iW)();
-          }
-        },
-        IconComponent: _mui_icons_material_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A,
-        displayEmpty: true,
-        renderValue: (value2) => {
-          if (value2 === "") {
-            return placeholder;
-          }
-          return value2;
-        },
-        sx: {
-          fontFamily: "IBM Plex Sans",
-          fontSize: "17px",
-          fontWeight: "400",
-          lineHeight: "30px",
-          backgroundColor: "transparent",
-          "@media (max-width: 767px)": {
-            fontSize: "14px",
-            lineHeight: "20px"
-          },
-          "&:hover": {
-            "& .MuiOutlinedInput-notchedOutline": {
-              borderColor: "#f0f0f0"
-            }
-          },
-          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: "transparent",
-            borderWidth: "0"
-          },
-          "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "transparent",
-            borderWidth: "0"
-          },
-          "& .MuiOutlinedInput-input": {
-            paddingTop: "10px",
-            paddingRight: "15px",
-            paddingBottom: "10px",
-            paddingLeft: "15px",
-            fontFamily: "IBM Plex Sans",
-            fontSize: "17px",
-            lineHeight: "30px",
-            "@media (max-width: 767px)": {
-              fontSize: "14px",
-              lineHeight: "20px"
-            },
-            "&.MuiSelect-select": {
-              position: "relative",
-              whiteSpace: "break-spaces",
-              backgroundColor: "#ffffff",
-              borderRadius: "0",
-              "&.Mui-disabled": {
-                color: "#7F8899",
-                backgroundColor: "#EEEFF0"
-              },
-              "&:before": {
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "calc(100% - 2px)",
-                height: "calc(100% - 2px)",
-                border: "1px solid #f0f0f0",
-                borderRadius: "0",
-                content: '""'
-              },
-              '&[aria-expanded="true"]': {
-                borderRadius: "0",
-                "&:before": {
-                  borderRadius: "0"
-                }
-              }
-            }
-          },
-          "& .MuiSelect-icon": {
-            top: "24%",
-            width: "25px",
-            height: "25px",
-            fill: "#212121",
-            "&.Mui-disabled": {
-              fill: "#7F8899"
-            }
-          }
-        },
-        MenuProps: {
-          disableScrollLock: true,
-          PaperProps: {
-            sx: {
-              borderRadius: "0",
-              borderRight: "1px solid #f0f0f0",
-              borderBottom: "1px solid #f0f0f0",
-              borderLeft: "1px solid #f0f0f0",
-              backgroundColor: "#ffffff",
-              boxShadow: "0px 20px 30px rgba(0, 0, 0, 0.1)",
-              "& .MuiMenu-list": {
-                paddingTop: "4px",
-                paddingRight: "5px",
-                paddingBottom: "5px",
-                paddingLeft: "5px",
-                "& .MuiButtonBase-root": {
-                  paddingTop: "12px",
-                  paddingRight: "10px",
-                  paddingBottom: "12px",
-                  paddingLeft: "10px",
-                  fontFamily: "IBM Plex Sans",
-                  fontSize: "17px",
-                  fontWeight: "400",
-                  lineHeight: "30px",
-                  color: "#212121",
-                  borderRadius: "0",
-                  "&:hover": {
-                    backgroundColor: "#EEEFF0",
-                    color: "#1F617F"
-                  },
-                  "&.Mui-selected": {
-                    backgroundColor: "#ffffff",
-                    color: "#212121"
-                  }
-                }
-              }
-            }
-          }
-        },
-        children
-      }
-    ) })
-  ] });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Select);
-
 
 /***/ },
 
@@ -5832,1126 +4044,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ },
 
-/***/ 5208
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./src/api/api.js
-var api = __webpack_require__(3786);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./node_modules/react-input-mask/index.js
-var react_input_mask = __webpack_require__(844);
-var react_input_mask_default = /*#__PURE__*/__webpack_require__.n(react_input_mask);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/OutlinedInput/OutlinedInput.js + 2 modules
-var OutlinedInput = __webpack_require__(7118);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/MenuItem/MenuItem.js + 3 modules
-var MenuItem = __webpack_require__(5865);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/FormControl/FormControl.js + 3 modules
-var FormControl = __webpack_require__(7821);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/ListItemText/ListItemText.js + 2 modules
-var ListItemText = __webpack_require__(9447);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/Select/Select.js + 41 modules
-var Select = __webpack_require__(5952);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/Checkbox/Checkbox.js + 6 modules
-var Checkbox = __webpack_require__(980);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/esm/KeyboardArrowDown.js
-var KeyboardArrowDown = __webpack_require__(1812);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/Form-Add-Organization-1/Form-Add-Organization-1.js
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const FormAddOrganization1 = (props) => {
-  const { fetchData, dataForm, setDataForm } = props;
-  const innRegExp = /^[0-9_]{10,12}$/;
-  const validationSchema = index_esm/* object */.Ik().shape({
-    inn: index_esm/* string */.Yj().transform((value) => value.replace(/[^\d]/g, "")).matches(innRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0418\u041D\u041D").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-    mainFio: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!").max(100, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 100 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432"),
-    mainEmail: index_esm/* string */.Yj().email("\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 email \u0430\u0434\u0440\u0435\u0441").max(100, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 100 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-    mainPhone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440").max(20, "\u041C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 20 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-    mainRole: index_esm/* array */.YO().required().required().min(1, "\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-    contacts: index_esm/* array */.YO().of(
-      index_esm/* object */.Ik().shape({
-        fio: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-        email: index_esm/* string */.Yj().email("\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 email \u0430\u0434\u0440\u0435\u0441").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-        phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-        role: index_esm/* array */.YO().required().required().min(1, "\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-      })
-    )
-  });
-  const ITEM_HEIGHT = 55;
-  const ITEM_PADDING_TOP = 8;
-  const MenuProps = {
-    PaperProps: {
-      style: {
-        width: 250,
-        borderRadius: 0
-      }
-    }
-  };
-  const MenuItemStyle = {
-    font: "inherit",
-    padding: 0,
-    marginRight: "5px",
-    marginLeft: "5px",
-    minHeight: "unset",
-    "& .MuiTypography-root": {
-      font: "inherit",
-      color: "#212121",
-      paddingTop: "10px",
-      paddingRight: "15px",
-      paddingBottom: "10px",
-      paddingLeft: "15px",
-      fontFamily: "IBM Plex Sans",
-      fontSize: "17px",
-      lineHeight: "30px",
-      "@media (max-width: 767px)": {
-        fontSize: "14px",
-        lineHeight: "20px"
-      }
-    },
-    "&.Mui-selected": {
-      backgroundColor: "#f0f0f0"
-    },
-    "&.Mui-selected:hover": {
-      backgroundColor: "#f0f0f0"
-    }
-  };
-  const CheckboxStyle = {
-    "& .MuiSvgIcon-root": {
-      color: "#0077C5"
-    }
-  };
-  const FormControlStyle = {
-    margin: 0,
-    font: "inherit",
-    display: "block",
-    boxSizing: "border-box",
-    minWidth: "100%",
-    width: "auto",
-    "& .MuiInputLabel-root": {
-      color: "#212121",
-      "&.Mui-focused": {
-        color: "#212121"
-      }
-    },
-    "& .MuiOutlinedInput-notchedOutline": {
-      border: "0"
-    }
-  };
-  const SelectStyle = {
-    font: "inherit",
-    borderRadius: 0,
-    boxSizing: "border-box",
-    display: "flex",
-    minWidth: "460px",
-    maxWidth: "460px",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    "@media (max-width: 767px)": {
-      maxWidth: "100%",
-      minWidth: "100%"
-    },
-    margin: "5px 0 20px",
-    "& .MuiOutlinedInput-input": {
-      border: "1px solid #f0f0f0",
-      borderRadius: 0,
-      padding: "13px 14px 12px",
-      backgroundColor: "white",
-      color: "#212121",
-      ":focus": {
-        borderRadius: "0"
-      },
-      "@media (max-width: 767px)": {
-        padding: "12px 15px 11px"
-      }
-    },
-    "& .MuiSvgIcon-root": {
-      fill: "#212121"
-    }
-  };
-  const rolesData = [
-    "\u041F\u0438\u0432\u043E\u0432\u0430\u0440",
-    "\u0417\u0430\u043A\u0443\u043F\u0449\u0438\u043A",
-    "\u0414\u0438\u0440\u0435\u043A\u0442\u043E\u0440",
-    "\u0423\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0439",
-    "\u0411\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440",
-    "\u0414\u0440\u0443\u0433\u043E\u0435"
-  ];
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "add-organization", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "form-lk__title", children: "1/2 \u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438" }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: dataForm.firstStep,
-        validationSchema,
-        onSubmit: (values) => {
-          values.inn = values.inn.replace(/[^\d]/g, "");
-          fetchData(values.inn);
-          setDataForm((prevDataForm) => __spreadProps(__spreadValues({}, prevDataForm), {
-            firstStep: values
-          }));
-        },
-        children: ({ values, errors, touched, handleChange, handleBlur }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(formik_esm/* Form */.lV, { noValidate: true, children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("fieldset", { className: "form-lk__fieldset", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)("legend", { className: "form-lk__legend", children: "\u0418\u041D\u041D \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F" }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: errors.inn && touched.inn ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: "inn",
-                  children: "\u0418\u041D\u041D \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                (react_input_mask_default()),
-                {
-                  mask: "999999999999",
-                  maskPlaceholder: null,
-                  value: values.inn,
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                    "input",
-                    {
-                      className: errors.inn && touched.inn ? "form-lk__item error" : "form-lk__item",
-                      id: "inn",
-                      name: "inn",
-                      type: "text",
-                      autoComplete: "off",
-                      autoCapitalize: "off",
-                      placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u041D\u041D \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F",
-                      onChange: handleChange,
-                      onBlur: handleBlur,
-                      value: values.inn
-                    }
-                  )
-                }
-              )
-            ] })
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("fieldset", { className: "form-lk__fieldset", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)("legend", { className: "form-lk__legend", children: "\u041E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0437\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E" }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: errors.mainFio && touched.mainFio ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: "mainFio",
-                  children: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "input",
-                {
-                  className: errors.mainFio && touched.mainFio ? "form-lk__item error" : "form-lk__item",
-                  id: "mainFio",
-                  name: "mainFio",
-                  type: "text",
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  value: values.mainFio
-                }
-              )
-            ] }),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: errors.mainEmail && touched.mainEmail ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "mainEmail",
-                children: "E-mail"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "input",
-              {
-                className: errors.mainEmail && touched.mainEmail ? "form-lk__item error" : "form-lk__item",
-                id: "mainEmail",
-                name: "mainEmail",
-                type: "email",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email",
-                onChange: handleChange,
-                onBlur: handleBlur,
-                value: values.mainEmail
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: errors.mainPhone && touched.mainPhone ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: "mainPhone",
-                  children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                (react_input_mask_default()),
-                {
-                  mask: "+7 (999) 999-99-99",
-                  maskPlaceholder: null,
-                  value: values.mainPhone,
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                    "input",
-                    {
-                      className: errors.mainPhone && touched.mainPhone ? "form-lk__item error" : "form-lk__item",
-                      id: "mainPhone",
-                      name: "mainPhone",
-                      type: "phone",
-                      placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
-                      onChange: props.onChange,
-                      onBlur: props.onBlur,
-                      value: props.values
-                    }
-                  )
-                }
-              )
-            ] }),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "form-lk__field", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)(FormControl/* default */.A, { sx: FormControlStyle, children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: errors.mainRole && touched.mainRole ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: "multiple-checkbox",
-                  children: "\u0420\u043E\u043B\u044C"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Select/* default */.A,
-                {
-                  sx: SelectStyle,
-                  className: errors.mainRole && touched.mainRole ? "form-lk__item form-lk__item--select error" : "form-lk__item form-lk__item--select",
-                  labelId: "multiple-checkbox-label",
-                  id: "multiple-checkbox",
-                  name: "mainRole",
-                  multiple: true,
-                  IconComponent: KeyboardArrowDown/* default */.A,
-                  value: values.mainRole,
-                  onChange: handleChange,
-                  onOpen: () => {
-                    (0,utils/* getPaddingOnBody */.rP)();
-                  },
-                  onClose: () => {
-                    (0,utils/* getPaddingFromBody */.iW)();
-                  },
-                  input: /* @__PURE__ */ (0,jsx_runtime.jsx)(OutlinedInput/* default */.A, {}),
-                  renderValue: (selected) => selected.join(", "),
-                  MenuProps,
-                  children: rolesData.map((name) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                    MenuItem/* default */.A,
-                    {
-                      sx: MenuItemStyle,
-                      value: name,
-                      disableRipple: true,
-                      children: [
-                        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                          Checkbox/* default */.A,
-                          {
-                            sx: CheckboxStyle,
-                            checked: values.mainRole.indexOf(name) > -1,
-                            disableRipple: true
-                          }
-                        ),
-                        /* @__PURE__ */ (0,jsx_runtime.jsx)(ListItemText/* default */.A, { primary: name })
-                      ]
-                    },
-                    name
-                  ))
-                }
-              )
-            ] }) })
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsx)(formik_esm/* FieldArray */.ED, { name: "contacts", error: true, children: ({ remove, push }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-            values.contacts.map((member, index) => /* @__PURE__ */ (0,jsx_runtime.jsxs)("fieldset", { className: "form-lk__fieldset", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("legend", { className: "form-lk__legend", children: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043A\u043E\u043D\u0442\u0430\u043A\u0442" }),
-              /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                "button",
-                {
-                  type: "button",
-                  className: "form-lk__button-delete ",
-                  onClick: () => remove(index),
-                  children: [
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                      "svg",
-                      {
-                        className: "form-lk__pencil-icon",
-                        width: "20",
-                        height: "20",
-                        children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-lk-cart" })
-                      }
-                    ),
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442" })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].fio`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].fio`) ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: `contacts.${index}.fio`,
-                  children: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                formik_esm/* Field */.D0,
-                {
-                  className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].fio`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].fio`) ? "form-lk__item error" : "form-lk__item",
-                  name: `contacts.${index}.fio`,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  type: "text"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].email`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].email`) ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: `contacts.${index}.email`,
-                  children: "E-mail"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                formik_esm/* Field */.D0,
-                {
-                  className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].email`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].email`) ? "form-lk__item error" : "form-lk__item",
-                  name: `contacts.${index}.email`,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email",
-                  type: "email"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "label",
-                {
-                  className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].phone`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].phone`) ? "form-lk__label error" : "form-lk__label",
-                  htmlFor: `contacts.${index}.phone`,
-                  children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D"
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                (react_input_mask_default()),
-                {
-                  mask: "+7 (999) 999-99-99",
-                  maskPlaceholder: null,
-                  value: values.contacts.phone,
-                  onChange: handleChange,
-                  children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                    formik_esm/* Field */.D0,
-                    {
-                      className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].phone`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].phone`) ? "form-lk__item error" : "form-lk__item",
-                      name: `contacts.${index}.phone`,
-                      placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
-                      type: "phone"
-                    }
-                  )
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "form-lk__field", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)(FormControl/* default */.A, { sx: FormControlStyle, children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "label",
-                  {
-                    className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].role`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].role`) ? "form-lk__label error" : "form-lk__label",
-                    htmlFor: `contacts.${index}.role`,
-                    children: "\u0420\u043E\u043B\u044C"
-                  }
-                ),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  Select/* default */.A,
-                  {
-                    sx: SelectStyle,
-                    className: (0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].role`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].role`) ? "form-lk__item form-lk__item--select error" : "form-lk__item form-lk__item--select",
-                    labelId: "checkbox-label",
-                    id: "multiple-checkbox",
-                    name: `contacts.${index}.role`,
-                    multiple: true,
-                    IconComponent: KeyboardArrowDown/* default */.A,
-                    value: values.contacts[index].role,
-                    onChange: handleChange,
-                    onOpen: () => {
-                      (0,utils/* getPaddingOnBody */.rP)();
-                    },
-                    onClose: () => {
-                      (0,utils/* getPaddingFromBody */.iW)();
-                    },
-                    input: /* @__PURE__ */ (0,jsx_runtime.jsx)(OutlinedInput/* default */.A, {}),
-                    renderValue: (selected) => selected.join(", "),
-                    MenuProps,
-                    children: rolesData.map((name) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                      MenuItem/* default */.A,
-                      {
-                        sx: MenuItemStyle,
-                        value: name,
-                        disableRipple: true,
-                        children: [
-                          /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                            Checkbox/* default */.A,
-                            {
-                              sx: CheckboxStyle,
-                              checked: values.contacts[index].role.indexOf(name) > -1,
-                              disableRipple: true
-                            }
-                          ),
-                          /* @__PURE__ */ (0,jsx_runtime.jsx)(ListItemText/* default */.A, { primary: name })
-                        ]
-                      },
-                      name
-                    ))
-                  }
-                )
-              ] }) })
-            ] }, index)),
-            values.contacts.length < 3 ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__add-contact", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { children: "\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0445 \u043B\u0438\u0446, \u0434\u043B\u044F \u0431\u043E\u043B\u0435\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u0438 \u0431\u044B\u0441\u0442\u0440\u043E\u0433\u043E \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u043F\u043E \u0432\u0430\u0448\u0435\u043C\u0443 \u0437\u0430\u043A\u0430\u0437\u0443." }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                "button",
-                {
-                  type: "button",
-                  className: "form-lk__button-add button",
-                  onClick: () => {
-                    push({
-                      fio: "",
-                      email: "",
-                      phone: "",
-                      role: []
-                    });
-                  },
-                  children: "+ \u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442"
-                }
-              )
-            ] }) : null
-          ] }) }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__control", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "a",
-              {
-                className: "form-lk__button-cancel button button--transparent",
-                href: "lk-my-organization.html",
-                children: "\u2717 \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "form-lk__button-forward button",
-                type: "submit",
-                children: "\u0414\u0430\u043B\u0435\u0435"
-              }
-            )
-          ] })
-        ] })
-      }
-    )
-  ] });
-};
-/* harmony default export */ const Form_Add_Organization_1 = (FormAddOrganization1);
-
-;// ./src/react/components/Form-Add-Organization-2/Form-Add-Organization-2.js
-var Form_Add_Organization_2_defProp = Object.defineProperty;
-var Form_Add_Organization_2_defProps = Object.defineProperties;
-var Form_Add_Organization_2_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var Form_Add_Organization_2_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var Form_Add_Organization_2_hasOwnProp = Object.prototype.hasOwnProperty;
-var Form_Add_Organization_2_propIsEnum = Object.prototype.propertyIsEnumerable;
-var Form_Add_Organization_2_defNormalProp = (obj, key, value) => key in obj ? Form_Add_Organization_2_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var Form_Add_Organization_2_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (Form_Add_Organization_2_hasOwnProp.call(b, prop))
-      Form_Add_Organization_2_defNormalProp(a, prop, b[prop]);
-  if (Form_Add_Organization_2_getOwnPropSymbols)
-    for (var prop of Form_Add_Organization_2_getOwnPropSymbols(b)) {
-      if (Form_Add_Organization_2_propIsEnum.call(b, prop))
-        Form_Add_Organization_2_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var Form_Add_Organization_2_spreadProps = (a, b) => Form_Add_Organization_2_defProps(a, Form_Add_Organization_2_getOwnPropDescs(b));
-
-
-
-
-
-const innRegExp = /^[0-9_]{10,12}$/;
-const ogrnRegExp = /^[0-9]{13}$/;
-const kppBikRegExp = /^[0-9]{9}$/;
-const accountRegExp = /^[0-9]{20}$/;
-const strictSchema = {
-  inn: index_esm/* string */.Yj().transform((value) => value.replace(/[^\d]/g, "")).matches(innRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0418\u041D\u041D").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  companyName: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  address: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  addressMailing: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  ogrn: index_esm/* string */.Yj().matches(ogrnRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u041E\u0413\u0420\u041D").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  kpp: index_esm/* string */.Yj().matches(kppBikRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u041A\u041F\u041F").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  bik: index_esm/* string */.Yj().matches(kppBikRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0411\u0418\u041A").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  bank: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  accountChecking: index_esm/* string */.Yj().matches(accountRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0421\u0447\u0435\u0442").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  account\u0421orrespondent: index_esm/* string */.Yj().matches(accountRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0421\u0447\u0435\u0442").required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-};
-const freeSchema = {
-  inn: index_esm/* string */.Yj().transform((value) => value.replace(/[^\d]/g, "")).matches(innRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0418\u041D\u041D").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  companyName: index_esm/* string */.Yj().notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  address: index_esm/* string */.Yj().notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  addressMailing: index_esm/* string */.Yj().notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  ogrn: index_esm/* string */.Yj().matches(ogrnRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u041E\u0413\u0420\u041D").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  kpp: index_esm/* string */.Yj().matches(kppBikRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u041A\u041F\u041F").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  bik: index_esm/* string */.Yj().matches(kppBikRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0411\u0418\u041A").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  bank: index_esm/* string */.Yj().required("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  accountChecking: index_esm/* string */.Yj().matches(accountRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0421\u0447\u0435\u0442").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!"),
-  account\u0421orrespondent: index_esm/* string */.Yj().matches(accountRegExp, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0421\u0447\u0435\u0442").notRequired("\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043B\u0435!")
-};
-const FormAddOrganization2 = (props) => {
-  const { dataForm, setDataForm, addNewOrganization, setStep, existFlag } = props;
-  const formik = (0,formik_esm/* useFormik */.Wx)({
-    initialValues: dataForm.secondStep,
-    enableReinitialize: true,
-    validationSchema: index_esm/* object */.Ik(
-      existFlag === true ? freeSchema : strictSchema
-    ),
-    onSubmit: (values) => {
-      values.inn = values.inn.replace(/[^\d]/g, "");
-      const data = Form_Add_Organization_2_spreadProps(Form_Add_Organization_2_spreadValues({}, dataForm), { secondStep: values });
-      setDataForm((prevDataForm) => Form_Add_Organization_2_spreadProps(Form_Add_Organization_2_spreadValues({}, prevDataForm), {
-        secondStep: values
-      }));
-      addNewOrganization(data);
-    }
-  });
-  (0,react.useEffect)(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "form-lk__title", children: "2/2 \u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438" }),
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("form", { noValidate: true, className: "form-lk__form", onSubmit: formik.handleSubmit, children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsxs)("fieldset", { className: "form-lk__fieldset form-lk__fieldset--wide", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("legend", { className: "form-lk__legend", children: "\u041F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0440\u0435\u043A\u0432\u0438\u0437\u0438\u0442\u043E\u0432" }),
-        /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__container", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.inn && formik.touched.inn ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "inn",
-                children: "\u0418\u041D\u041D"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "999999999999",
-                maskPlaceholder: null,
-                value: formik.values.inn,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.inn && formik.touched.inn ? "form-lk__item error" : "form-lk__item",
-                    id: "inn",
-                    name: "inn",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u041D\u041D \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.inn
-                  }
-                )
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.companyName && formik.touched.companyName ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "companyName",
-                children: "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "input",
-              {
-                className: formik.errors.companyName && formik.touched.companyName ? "form-lk__item error" : "form-lk__item",
-                id: "companyName",
-                name: "companyName",
-                type: "text",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F",
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                value: formik.values.companyName,
-                disabled: existFlag
-              }
-            )
-          ] })
-        ] }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "label",
-          {
-            className: formik.errors.address && formik.touched.address ? "form-lk__label error" : "form-lk__label",
-            htmlFor: "address",
-            children: "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441"
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "input",
-          {
-            className: formik.errors.address && formik.touched.address ? "form-lk__item error" : "form-lk__item",
-            id: "address",
-            name: "address",
-            type: "text",
-            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u044E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441",
-            onChange: formik.handleChange,
-            onBlur: formik.handleBlur,
-            value: formik.values.address,
-            disabled: existFlag
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "label",
-          {
-            className: formik.errors.addressMailing && formik.touched.addressMailing ? "form-lk__label error" : "form-lk__label",
-            htmlFor: "addressMailing",
-            children: "\u041F\u043E\u0447\u0442\u043E\u0432\u044B\u0439 \u0430\u0434\u0440\u0435\u0441"
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "input",
-          {
-            className: formik.errors.addressMailing && formik.touched.addressMailing ? "form-lk__item error" : "form-lk__item",
-            id: "addressMailing",
-            name: "addressMailing",
-            type: "text",
-            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u043E\u0447\u0442\u043E\u0432\u044B\u0439 \u0430\u0434\u0440\u0435\u0441",
-            onChange: formik.handleChange,
-            onBlur: formik.handleBlur,
-            value: formik.values.addressMailing,
-            disabled: existFlag
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__container", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.ogrn && formik.touched.ogrn ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "ogrn",
-                children: "\u041E\u0413\u0420\u041D"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "9999999999999",
-                maskPlaceholder: null,
-                value: formik.values.ogrn,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.ogrn && formik.touched.ogrn ? "form-lk__item error" : "form-lk__item",
-                    id: "ogrn",
-                    name: "ogrn",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u041E\u0413\u0420\u041D",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.ogrn
-                  }
-                )
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.kpp && formik.touched.kpp ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "kpp",
-                children: "\u041A\u041F\u041F"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "999999999",
-                maskPlaceholder: null,
-                value: formik.values.kpp,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.kpp && formik.touched.kpp ? "form-lk__item error" : "form-lk__item",
-                    id: "kpp",
-                    name: "kpp",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u041A\u041F\u041F",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.kpp
-                  }
-                )
-              }
-            )
-          ] })
-        ] }),
-        /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__container", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.bank && formik.touched.bank ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "bank",
-                children: "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0431\u0430\u043D\u043A\u0430"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "input",
-              {
-                className: formik.errors.bank && formik.touched.bank ? "form-lk__item error" : "form-lk__item",
-                id: "bank",
-                name: "bank",
-                type: "text",
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0431\u0430\u043D\u043A\u0430",
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                value: formik.values.bank,
-                disabled: existFlag
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.bik && formik.touched.bik ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "bik",
-                children: "\u0411\u0418\u041A"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "999999999",
-                maskPlaceholder: null,
-                value: formik.values.bik,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.bik && formik.touched.bik ? "form-lk__item error" : "form-lk__item",
-                    id: "bik",
-                    name: "bik",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0411\u0418\u041A",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.bik
-                  }
-                )
-              }
-            )
-          ] })
-        ] }),
-        /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__container", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.accountChecking && formik.touched.accountChecking ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "accountChecking",
-                children: "\u0420\u0430\u0441\u0447\u0435\u0442\u043D\u044B\u0439 \u0441\u0447\u0435\u0442"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "99999999999999999999",
-                maskPlaceholder: null,
-                value: formik.values.accountChecking,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.accountChecking && formik.touched.accountChecking ? "form-lk__item error" : "form-lk__item",
-                    id: "accountChecking",
-                    name: "accountChecking",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0440\u0430\u0441\u0447\u0435\u0442\u043D\u044B\u0439 \u0441\u0447\u0435\u0442",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.accountChecking
-                  }
-                )
-              }
-            )
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__field form-lk__field--narrow", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "label",
-              {
-                className: formik.errors.account\u0421orrespondent && formik.touched.account\u0421orrespondent ? "form-lk__label error" : "form-lk__label",
-                htmlFor: "account\u0421orrespondent",
-                children: "\u041A\u043E\u0440. \u0441\u0447\u0435\u0442"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              (react_input_mask_default()),
-              {
-                mask: "99999999999999999999",
-                maskPlaceholder: null,
-                value: formik.values.account\u0421orrespondent,
-                onChange: formik.handleChange,
-                onBlur: formik.handleBlur,
-                disabled: existFlag,
-                children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "input",
-                  {
-                    className: formik.errors.account\u0421orrespondent && formik.touched.account\u0421orrespondent ? "form-lk__item error" : "form-lk__item",
-                    id: "account\u0421orrespondent",
-                    name: "account\u0421orrespondent",
-                    type: "text",
-                    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u0440. \u0441\u0447\u0435\u0442",
-                    onChange: formik.handleChange,
-                    onBlur: formik.handleBlur,
-                    value: formik.values.account\u0421orrespondent
-                  }
-                )
-              }
-            )
-          ] })
-        ] })
-      ] }),
-      existFlag ? /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "form-lk__legend", children: "\u0415\u0441\u043B\u0438 \u0432\u044B \u043D\u0435 \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u044B \u0441 \u0434\u0430\u043D\u043D\u044B\u043C\u0438 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u044B\u043C\u0438 \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043D\u0438\u0442\u0435 \u043F\u043E \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0443 \u0438\u043B\u0438 \u043D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043D\u0430 \u043F\u043E\u0447\u0442\u0443 \u0434\u043B\u044F \u0443\u0442\u043E\u0447\u043D\u0435\u043D\u0438\u044F \u0434\u0430\u043D\u043D\u044B\u0445" }) : null,
-      /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "form-lk__control", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "button",
-          {
-            className: "form-lk__button-back button button--transparent",
-            onClick: () => setStep("one"),
-            children: "\u2190 \u041D\u0430\u0437\u0430\u0434"
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "a",
-          {
-            className: "form-lk__button-cancel form-lk__button-cancel--mobile button button--transparent",
-            href: "lk-my-organization.html",
-            children: "\u2717 \u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          "button",
-          {
-            className: "form-lk__button-save button",
-            onClick: formik.onSubmit,
-            type: "submit",
-            children: "\u2713 \u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
-          }
-        )
-      ] })
-    ] })
-  ] });
-};
-/* harmony default export */ const Form_Add_Organization_2 = (FormAddOrganization2);
-
-;// ./src/react/components/Add-Organization/Add-Organization.js
-var Add_Organization_defProp = Object.defineProperty;
-var Add_Organization_defProps = Object.defineProperties;
-var Add_Organization_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var Add_Organization_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var Add_Organization_hasOwnProp = Object.prototype.hasOwnProperty;
-var Add_Organization_propIsEnum = Object.prototype.propertyIsEnumerable;
-var Add_Organization_defNormalProp = (obj, key, value) => key in obj ? Add_Organization_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var Add_Organization_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (Add_Organization_hasOwnProp.call(b, prop))
-      Add_Organization_defNormalProp(a, prop, b[prop]);
-  if (Add_Organization_getOwnPropSymbols)
-    for (var prop of Add_Organization_getOwnPropSymbols(b)) {
-      if (Add_Organization_propIsEnum.call(b, prop))
-        Add_Organization_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var Add_Organization_spreadProps = (a, b) => Add_Organization_defProps(a, Add_Organization_getOwnPropDescs(b));
-
-
-
-
-
-const AddOrganization = () => {
-  const [step, setStep] = (0,react.useState)("one");
-  const [exist, setExist] = (0,react.useState)(false);
-  const [formData, setFormData] = (0,react.useState)({
-    firstStep: {
-      inn: "",
-      mainFio: "",
-      mainEmail: "",
-      mainPhone: "",
-      mainRole: [],
-      contacts: [
-        {
-          fio: "",
-          email: "",
-          phone: "",
-          role: []
-        }
-      ]
-    },
-    secondStep: {
-      inn: "",
-      companyName: "",
-      address: "",
-      addressMailing: "",
-      ogrn: "",
-      kpp: "",
-      bank: "",
-      bik: "",
-      accountChecking: "",
-      account\u0421orrespondent: ""
-    }
-  });
-  const fetchData = async (inn) => {
-    const organization = await api/* dataAPI */.p5.getOrganization(inn);
-    const emptyOrganization = Object.keys(organization.data).length === 0;
-    if (!emptyOrganization) {
-      setFormData((prevFormData) => Add_Organization_spreadProps(Add_Organization_spreadValues({}, prevFormData), {
-        secondStep: {
-          inn: organization.data.data.inn,
-          companyName: organization.data.data.name.short_with_opf,
-          address: organization.data.data.address.unrestricted_value,
-          addressMailing: organization.data.data.address.unrestricted_value,
-          ogrn: organization.data.data.ogrn,
-          kpp: organization.data.data.kpp,
-          bank: "",
-          bik: "",
-          accountChecking: "",
-          account\u0421orrespondent: ""
-        }
-      }));
-      setStep("two");
-      setExist(organization.isAlreadyExist);
-    } else {
-      setFormData((prevFormData) => Add_Organization_spreadProps(Add_Organization_spreadValues({}, prevFormData), {
-        secondStep: {
-          inn: prevFormData.firstStep.inn,
-          companyName: "",
-          address: "",
-          addressMailing: "",
-          ogrn: "",
-          kpp: "",
-          bank: "",
-          bik: "",
-          accountChecking: "",
-          account\u0421orrespondent: ""
-        }
-      }));
-      setStep("two");
-      setExist(organization.isAlreadyExist);
-    }
-  };
-  const addNewOrganization = async (newOrganization) => {
-    await api/* organizationsApi */.Xp.addNewOrganization(newOrganization);
-  };
-  let component = null;
-  switch (step) {
-    case "one":
-      component = /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        Form_Add_Organization_1,
-        {
-          fetchData,
-          dataForm: formData,
-          setDataForm: setFormData
-        }
-      );
-      break;
-    case "two":
-      component = /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        Form_Add_Organization_2,
-        {
-          dataForm: formData,
-          setDataForm: setFormData,
-          addNewOrganization,
-          setStep,
-          existFlag: exist
-        }
-      );
-      break;
-    default:
-      break;
-  }
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "form-lk__add-organization", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "form-lk__back", href: "lk-my-organization.html", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { className: "form-lk__back-arrow", children: "\u2190 " }),
-      "\u041C\u043E\u0438 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438"
-    ] }) }),
-    component
-  ] });
-};
-/* harmony default export */ const Add_Organization = (AddOrganization);
-
-;// ./src/react/providers/pages/lk-add-organization/add-organization/add-organization.js
-
-
-
-
-const addOrganization = document.querySelector("#add-organization");
-if (addOrganization) {
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(Add_Organization, {}), addOrganization);
-}
-
-
-/***/ },
-
 /***/ 5210
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -6988,34 +4080,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ 5244
-(module, __unused_webpack_exports, __webpack_require__) {
+(module) {
 
-var map = {
-	"./LoginProvider/LoginProvider.js": 9304,
-	"./SubscribeProvider/SubscribeProvider.js": 5640,
-	"react/providers/common/LoginProvider/LoginProvider.js": 9304,
-	"react/providers/common/SubscribeProvider/SubscribeProvider.js": 5640
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
 }
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 5244;
+webpackEmptyContext.keys = () => ([]);
+webpackEmptyContext.resolve = webpackEmptyContext;
+webpackEmptyContext.id = 5244;
+module.exports = webpackEmptyContext;
 
 /***/ },
 
@@ -7071,48 +4146,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ 5313
-(module, __unused_webpack_exports, __webpack_require__) {
+(module) {
 
-var map = {
-	"./contacts/RequestContactsProvider/RequestContactsProvider.js": 3045,
-	"./cooperation/RequestCooperationProvider/RequestCooperationProvider.js": 7195,
-	"./lk-add-organization/add-organization/add-organization.js": 5208,
-	"./lk-addresses/AddressProvider/AddressProvider.js": 2832,
-	"./lk-my-organization/OrganizationProvider/OrganizationProvider.js": 5862,
-	"./lk/personal-data/personal-data.js": 780,
-	"./main/RequestSuggestProvider/RequestSuggestProvider.js": 9720,
-	"./search-1/RequestSearchProvider/RequestSearchProvider.js": 9309,
-	"./service/RequestServiceProvider/RequestServiceProvider.js": 3726,
-	"react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider.js": 3045,
-	"react/providers/pages/cooperation/RequestCooperationProvider/RequestCooperationProvider.js": 7195,
-	"react/providers/pages/lk-add-organization/add-organization/add-organization.js": 5208,
-	"react/providers/pages/lk-addresses/AddressProvider/AddressProvider.js": 2832,
-	"react/providers/pages/lk-my-organization/OrganizationProvider/OrganizationProvider.js": 5862,
-	"react/providers/pages/lk/personal-data/personal-data.js": 780,
-	"react/providers/pages/main/RequestSuggestProvider/RequestSuggestProvider.js": 9720,
-	"react/providers/pages/search-1/RequestSearchProvider/RequestSearchProvider.js": 9309,
-	"react/providers/pages/service/RequestServiceProvider/RequestServiceProvider.js": 3726
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
 }
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 5313;
+webpackEmptyContext.keys = () => ([]);
+webpackEmptyContext.resolve = webpackEmptyContext;
+webpackEmptyContext.id = 5313;
+module.exports = webpackEmptyContext;
 
 /***/ },
 
@@ -7293,192 +4337,6 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ },
 
-/***/ 5593
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6540);
-
-
-
-const Modal = ({
-  children,
-  closeModal,
-  className
-}) => {
-  const onDismiss = () => {
-    closeModal();
-  };
-  const onModalEscPress = (evt) => {
-    if (evt.code === "Escape") {
-      evt.preventDefault();
-      onDismiss();
-    }
-  };
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
-    document.addEventListener("keydown", onModalEscPress);
-    return () => {
-      document.removeEventListener("keydown", onModalEscPress);
-    };
-  }, []);
-  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", { className: `Modal${className ? ` ${className}` : ""}`, children: [
-    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-      "div",
-      {
-        className: "Modal__overlay",
-        onClick: () => {
-          closeModal();
-        }
-      }
-    ),
-    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", { className: "Modal__container", children: [
-      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
-        "button",
-        {
-          className: "Modal__close",
-          onClick: () => {
-            closeModal();
-          },
-          children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", { children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("use", { href: "#icon-closer" }) })
-        }
-      ),
-      children
-    ] })
-  ] });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Modal);
-
-
-/***/ },
-
-/***/ 5640
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-;// ./src/react/components/Subscribe/Subscribe.js
-
-
-
-
-
-const Subscribe = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    email: index_esm/* string */.Yj().email().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Subscribe", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Subscribe__header", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "Subscribe__title", children: "\u041F\u043E\u0434\u043F\u0438\u0448\u0438\u0442\u0435\u0441\u044C \u043D\u0430\xA0\u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443! " }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Subscribe__post-title", children: "\u041F\u043E\u0434\u043F\u0438\u0448\u0438\u0442\u0435\u0441\u044C \u043D\u0430\xA0\u043D\u043E\u0432\u043E\u0441\u0442\u0438 \u0438\xA0\u043F\u043E\u043B\u0443\u0447\u0430\u0439\u0442\u0435 \u0441\u0430\u043C\u044B\u0435 \u0441\u0432\u0435\u0436\u0438\u0435 \u0441\u0442\u0430\u0442\u044C\u0438 \u0438\xA0\u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0446\u0438\u0438 \u043E\u0442\xA0\u043D\u0430\u0448\u0438\u0445 \u043F\u0438\u0432\u043E\u0432\u0430\u0440\u043E\u0432!" })
-    ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          email: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          errors,
-          touched
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          formik_esm/* Form */.lV,
-          {
-            className: "Subscribe__form",
-            id: "Subscribe-form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "Subscribe__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              Input/* default */.A,
-              {
-                type: "email",
-                name: "email",
-                label: "E-mail",
-                isRequired: true,
-                placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                className: errors.email && touched.email ? "Input--error" : null
-              }
-            ) })
-          }
-        )
-      }
-    ),
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "Subscribe__terms", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "Subscribe__legal", children: [
-        "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", className: "Subscribe__legal-link", target: "_blank", rel: "noopener noreferrer", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-        " \u0438 ",
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", className: "Subscribe__legal-link", target: "_blank", rel: "noopener noreferrer", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-        "."
-      ] }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "Subscribe__submit button", type: "submit", form: "Subscribe-form", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C" })
-    ] })
-  ] });
-};
-/* harmony default export */ const Subscribe_Subscribe = (Subscribe);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/SubscribeApi.js
-
-const SubscribeApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const container = document.querySelector("#SubscribeProvider");
-const sendSubscribe = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  SubscribeApi.post("/subscribe.php", values).then((response) => {
-    if (response.status === 200) {
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--subscribe");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--subscribe");
-  });
-};
-
-;// ./src/react/providers/common/SubscribeProvider/SubscribeProvider.js
-
-
-
-
-
-const subscribeProvider = document.querySelector("#SubscribeProvider");
-if (subscribeProvider) {
-  const { id } = subscribeProvider.dataset;
-  const SubscribeProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Subscribe_Subscribe, { submitHandler: sendSubscribe, id }) });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(SubscribeProvider, {}), subscribeProvider);
-}
-
-
-/***/ },
-
 /***/ 5745
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -7488,16 +4346,97 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _validator_validator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4489);
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3670);
+/* harmony import */ var _alert_alert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4009);
+/* harmony import */ var _loading_loading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3037);
+/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9838);
 
 
 
 
-const requestForm = document.querySelector(".request__form");
-if (requestForm) {
+
+
+
+const initRequestForm = (func) => {
+  const requestForm = document.querySelector(".request__form");
+  if (!requestForm)
+    return;
   (0,_validator_validator__WEBPACK_IMPORTED_MODULE_1__.validateForm)(".request__form");
   (0,_validator_validator__WEBPACK_IMPORTED_MODULE_1__.maskPhone)(".request__form");
   (0,_utils_utils__WEBPACK_IMPORTED_MODULE_2__/* .setTextareaAutoHeight */ .Bs)(".request__form textarea");
-}
+  const form = requestForm;
+  let alertTemplate = "#alert--request";
+  let url = `${window.routes5.form.requests.Feedback[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+  switch (form.id) {
+    case "RequestContacts":
+      url = `${window.routes5.form.requests.RequestContacts[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+      alertTemplate = "#alert--request";
+      break;
+    case "Subscribe":
+      url = `${window.routes5.form.requests.Subscribe[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+      alertTemplate = "#alert--subscribe";
+      break;
+    case "RequestService":
+      url = `${window.routes5.form.requests.RequestService[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+      alertTemplate = "#alert--request";
+      break;
+    case "RequestCooperation":
+      url = `${window.routes5.form.requests.RequestCooperation[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+      alertTemplate = "#alert--request";
+      break;
+    case "RequestSearch":
+      url = `${window.routes5.form.requests.RequestSearch[`url${_env__WEBPACK_IMPORTED_MODULE_5__/* .ENV */ .K}`]}`;
+      alertTemplate = "#alert--request";
+      break;
+    default:
+      break;
+  }
+  ;
+  form.addEventListener("bouncerShowError", (event) => {
+    const field = event.target;
+  });
+  form.addEventListener("bouncerFormValid", (0,_utils_utils__WEBPACK_IMPORTED_MODULE_2__/* .debounce */ .sg)(() => {
+    (0,_loading_loading__WEBPACK_IMPORTED_MODULE_4__.addLoading)(form);
+    const fd = new FormData(form);
+    const fileInputs = form.querySelectorAll('input[type="file"]');
+    fileInputs.forEach((input) => {
+      const name = input.name;
+      const files = fd.getAll(name);
+      files.forEach((file, index) => {
+        fd.append(`${name}-${index}`, file);
+        fd.delete(name);
+      });
+    });
+    $.ajax({
+      type: "POST",
+      data: fd,
+      url,
+      contentType: false,
+      processData: false,
+      cache: false,
+      dataType: "json",
+      success(data) {
+        (0,_alert_alert__WEBPACK_IMPORTED_MODULE_3__.summonAlert)({
+          template: alertTemplate,
+          text: data.text,
+          className: (0,_utils_utils__WEBPACK_IMPORTED_MODULE_2__/* .setStatus */ .Lx)(data.status)
+        });
+        form.reset();
+        (0,_loading_loading__WEBPACK_IMPORTED_MODULE_4__.removeLoading)();
+        return data;
+      },
+      error(data) {
+        (0,_alert_alert__WEBPACK_IMPORTED_MODULE_3__.summonAlert)({
+          template: "#alert--error",
+          text: data.text
+        });
+        (0,_loading_loading__WEBPACK_IMPORTED_MODULE_4__.removeLoading)();
+      },
+      complete(data) {
+      }
+    });
+  }));
+};
+initRequestForm();
 
 
 /***/ },
@@ -7543,563 +4482,6 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-
-
-/***/ },
-
-/***/ 5862
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./src/api/OrganizationsApi.js
-var OrganizationsApi = __webpack_require__(2972);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/esm/Close.js
-var Close = __webpack_require__(3518);
-;// ./src/react/components/Warning/Warning.js
-
-
-
-const calculateType = (type, text) => {
-  switch (type) {
-    case "success":
-      return {
-        className: "Warning Warning--success",
-        message: /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Warning__message", children: text })
-      };
-    case "error":
-      return {
-        className: "Warning Warning--error",
-        message: /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "Warning__message", children: [
-          "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u043D\u0430. \u0421\u0432\u044F\u0436\u0438\u0442\u0435\u0441\u044C \u0441 \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\u043E\u043C \u0441\u0430\u0439\u0442\u0430 ",
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "tel:+7 (123) 123 34 54", children: "+7 (123) 123 34 54" })
-        ] })
-      };
-    default:
-      return {
-        className: "Warning",
-        message: /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Warning__message", children: "\u0412\u043D\u0438\u043C\u0430\u043D\u0438\u0435! \u041F\u043E\u0441\u043B\u0435 \u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0434\u0430\u043D\u043D\u044B\u0445 \u043E\u0431 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u0430 \u0431\u0443\u0434\u0435\u0442 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043D\u0430 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443." })
-      };
-  }
-};
-const Warning = ({ type, text, index, deleteFn }) => {
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: calculateType(type, text).className, children: [
-    type === "success" ? /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "Warning__close", type: "button", onClick: () => {
-      deleteFn(index);
-    }, children: /* @__PURE__ */ (0,jsx_runtime.jsx)(Close/* default */.A, {}) }) : null,
-    calculateType(type, text).message
-  ] });
-};
-/* harmony default export */ const Warning_Warning = (Warning);
-
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/@mui/material/esm/MenuItem/MenuItem.js + 3 modules
-var MenuItem = __webpack_require__(5865);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./node_modules/tippy.js/dist/tippy.esm.js + 54 modules
-var tippy_esm = __webpack_require__(9244);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/react/components/Select/Select.js
-var Select = __webpack_require__(4919);
-// EXTERNAL MODULE: ./node_modules/@mui/icons-material/esm/KeyboardArrowDown.js
-var KeyboardArrowDown = __webpack_require__(1812);
-;// ./src/react/components/Organization/Organization.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-const validationSchema = index_esm/* object */.Ik().shape({
-  inn: index_esm/* string */.Yj().required(),
-  companyName: index_esm/* string */.Yj().required(),
-  yuraAddress: index_esm/* string */.Yj().required(),
-  PostAddress: index_esm/* string */.Yj().required(),
-  ogrn: index_esm/* string */.Yj().required(),
-  kpp: index_esm/* string */.Yj().required(),
-  bankName: index_esm/* string */.Yj().required(),
-  bik: index_esm/* string */.Yj().required(),
-  checkingAccount: index_esm/* string */.Yj().required(),
-  correspondentAccount: index_esm/* string */.Yj().required(),
-  contacts: index_esm/* array */.YO().of(
-    index_esm/* object */.Ik().shape({
-      fio: index_esm/* string */.Yj().required(),
-      email: index_esm/* string */.Yj().email().required(),
-      phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required(),
-      role: index_esm/* string */.Yj().required()
-    })
-  )
-});
-const calculateStatus = (type, message) => {
-  switch (type) {
-    case "main":
-      return /* @__PURE__ */ jsx("p", { className: "Organization__status Organization__status--main", children: /* @__PURE__ */ jsx("span", { children: "\u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F" }) });
-    case "fail":
-      return /* @__PURE__ */ jsxs("p", { className: "Organization__status Organization__status--failed", children: [
-        /* @__PURE__ */ jsx("span", { children: "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u043D\u0430" }),
-        " ",
-        message
-      ] });
-    case "checking":
-      return /* @__PURE__ */ jsx("p", { className: "Organization__status Organization__status--checking", children: /* @__PURE__ */ jsx("span", { children: "\u041D\u0430 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0435" }) });
-    default:
-      return null;
-  }
-};
-const Organization = ({ organization, unlockOrg, sendOrg, callAlert }) => {
-  const [isOpen, setIsOpen] = (0,react.useState)(false);
-  (0,react.useEffect)(() => {
-    (0,tippy_esm/* default */.Ay)("[data-tippy-content]", {
-      allowHTML: true,
-      arrow: false,
-      maxWidth: 287,
-      animation: "scale-subtle"
-    });
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: `Organization${isOpen ? " Organization--opened" : ""}`, children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__constant", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "section",
-        {
-          className: "Organization__meta",
-          onClick: () => {
-            setIsOpen(true);
-          },
-          children: /* @__PURE__ */ (0,jsx_runtime.jsx)("h3", { className: "Organization__header", children: organization.companyName })
-        }
-      ),
-      /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "Organization__who", children: [
-        organization.inn,
-        "\xA0",
-        organization.who
-      ] }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "button",
-        {
-          className: "Organization__arrow",
-          type: "button",
-          onClick: () => {
-            setIsOpen(!isOpen);
-          },
-          children: /* @__PURE__ */ (0,jsx_runtime.jsx)(KeyboardArrowDown/* default */.A, {})
-        }
-      )
-    ] }),
-    isOpen ? /* @__PURE__ */ (0,jsx_runtime.jsx)("section", { className: "Organization__dynamic", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          inn: organization.inn,
-          companyName: organization.companyName,
-          yuraAddress: organization.yuraAddress,
-          PostAddress: organization.PostAddress,
-          ogrn: organization.ogrn,
-          kpp: organization.kpp,
-          bankName: organization.bankName,
-          bik: organization.bik,
-          checkingAccount: organization.checkingAccount,
-          correspondentAccount: organization.correspondentAccount,
-          contacts: organization.contacts
-        },
-        enableReinitialize: true,
-        validationSchema,
-        onSubmit: (values) => {
-          sendOrg(values);
-        },
-        children: ({ values, errors, touched, handleChange, handleBlur }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(formik_esm/* Form */.lV, { noValidate: true, children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)(formik_esm/* FieldArray */.ED, { name: "contacts", children: ({ remove, push }) => /* @__PURE__ */ (0,jsx_runtime.jsx)(jsx_runtime.Fragment, { children: values.contacts.map((member, index) => /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__contact", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__contact-navigation", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Organization__contact-header", children: "\u041E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439" }),
-              console.log(member),
-              index !== 0 && organization.meta.status !== "fail" && organization.meta.status !== "checking" ? /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                "button",
-                {
-                  className: "Organization__contact-delete",
-                  onClick: () => {
-                    remove(index);
-                  },
-                  children: [
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { href: "#icon-trash" }) }),
-                    "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442"
-                  ]
-                }
-              ) : null
-            ] }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__member", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: `contacts[${index}].fio`,
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: false,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: `Organization__input${(0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].fio`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].fio`) ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: `contacts[${index}].email`,
-                  label: "E-mail",
-                  isRequired: false,
-                  className: `Organization__input${(0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].email`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].email`) ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: `contacts[${index}].phone`,
-                  onBlur: handleBlur,
-                  value: values.contacts[index].phone,
-                  onChange: handleChange,
-                  label: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
-                  isRequired: false,
-                  className: `Organization__input${(0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].phone`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].phone`) ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-                Select/* default */.A,
-                {
-                  value: values.contacts[index].role.toString(),
-                  name: `contacts[${index}].role`,
-                  fieldName: "role",
-                  onChange: handleChange,
-                  label: "\u0420\u043E\u043B\u044C",
-                  isRequired: false,
-                  className: `Organization__input${(0,formik_esm/* getIn */.O6)(errors, `contacts[${index}].role`) && (0,formik_esm/* getIn */.O6)(touched, `contacts[${index}].role`) ? " Organization__input--error" : ""}`,
-                  isDisabled: true,
-                  children: [
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(MenuItem/* default */.A, { value: "\u041F\u043E\u0432\u0430\u0440", children: "\u041F\u043E\u0432\u0430\u0440" }),
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(MenuItem/* default */.A, { value: "\u0417\u0430\u043A\u0443\u043F\u0449\u0438\u043A", children: "\u0417\u0430\u043A\u0443\u043F\u0449\u0438\u043A" }),
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(MenuItem/* default */.A, { value: "\u0414\u0438\u0440\u0435\u043A\u0442\u043E\u0440", children: "\u0414\u0438\u0440\u0435\u043A\u0442\u043E\u0440" }),
-                    /* @__PURE__ */ (0,jsx_runtime.jsx)(MenuItem/* default */.A, { value: "\u0423\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0439", children: "\u0423\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0439" })
-                  ]
-                }
-              )
-            ] })
-          ] }, index)) }) }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__info", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__meta Organization__meta--flex", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("h3", { className: "Organization__contact-header", children: "\u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F" }),
-              organization.meta.status === "main" ? /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "tooltip Organization__tooltip", children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Organization__tooltip-text", children: "\u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F" }),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                  "button",
-                  {
-                    className: "tooltip__button",
-                    type: "button",
-                    "data-tippy-content": "\u042D\u0442\u043E \u043E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F \u0438 \u0432\u0441\u0435 \u0446\u0435\u043D\u044B \u0438 \u0441\u043A\u0438\u0434\u043A\u0438 \u0432 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0435 \u0441\u0447\u0438\u0442\u0430\u044E\u0442\u0441\u044F \u0438\u043C\u0435\u043D\u043D\u043E \u0434\u043B\u044F \u043D\u0435\u0435. \u0415\u0441\u043B\u0438 \u0432\u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u0441\u043C\u0435\u043D\u0438\u0442\u044C \u043E\u0441\u043D\u043E\u0432\u043D\u0443\u044E \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E, \u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043D\u0438\u0442\u0435 \u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443 8 888 888-88-88."
-                  }
-                )
-              ] }) : null
-            ] }),
-            /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Organization__org-inputs", children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "inn",
-                  label: "\u0418\u041D\u041D",
-                  isRequired: false,
-                  className: `Organization__input${errors.inn && touched.inn ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "companyName",
-                  label: "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0438\u043B\u0438 \u0418\u041F",
-                  isRequired: false,
-                  className: `Organization__input${errors.companyName && touched.companyName ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "yuraAddress",
-                  label: "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441",
-                  className: `Organization__input${errors.yuraAddress && touched.yuraAddress ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "PostAddress",
-                  label: "\u041F\u043E\u0447\u0442\u043E\u0432\u044B\u0439 \u0430\u0434\u0440\u0435\u0441",
-                  isRequired: false,
-                  className: `Organization__input${errors.PostAddress && touched.PostAddress ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "ogrn",
-                  label: "\u041E\u0413\u0420\u041D",
-                  isRequired: false,
-                  className: `Organization__input${errors.ogrn && touched.ogrn ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "kpp",
-                  label: "\u041A\u041F\u041F",
-                  isRequired: false,
-                  className: `Organization__input${errors.kpp && touched.kpp ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "bankName",
-                  label: "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0431\u0430\u043D\u043A\u0430",
-                  isRequired: false,
-                  className: `Organization__input${errors.bankName && touched.bankName ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "bik",
-                  label: "\u0411\u0418\u041A \u0431\u0430\u043D\u043A\u0430",
-                  isRequired: false,
-                  className: `Organization__input${errors.bik && touched.bik ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "checkingAccount",
-                  label: "\u0420\u0430\u0441\u0447\u0435\u0442\u043D\u044B\u0439 \u0441\u0447\u0435\u0442",
-                  isRequired: false,
-                  className: `Organization__input${errors.checkingAccount && touched.checkingAccount ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "correspondentAccount",
-                  label: "\u041A\u043E\u0440. \u0441\u0447\u0435\u0442",
-                  isRequired: false,
-                  className: `Organization__input${errors.correspondentAccount && touched.correspondentAccount ? " Organization__input--error" : ""}`,
-                  isDisabled: true
-                }
-              )
-            ] })
-          ] })
-        ] })
-      }
-    ) }) : null
-  ] });
-};
-/* harmony default export */ const Organization_Organization = (Organization);
-
-// EXTERNAL MODULE: ./src/react/components/Modal/Modal.js
-var Modal = __webpack_require__(5593);
-// EXTERNAL MODULE: ./src/react/components/Loader/Loader.js
-var Loader = __webpack_require__(289);
-// EXTERNAL MODULE: ./src/react/components/Code/Code.js + 1 modules
-var Code = __webpack_require__(3070);
-;// ./src/react/providers/pages/lk-my-organization/OrganizationProvider/OrganizationProvider.js
-
-
-
-
-
-
-
-
-
-
-const emptyOrganization = {
-  inn: "",
-  companyName: "\u041E\u041E\u041E \u0415\u0449\u0435 \u043E\u0434\u043D\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F",
-  yuraAddress: "",
-  PostAddress: "",
-  ogrn: "",
-  kpp: "",
-  bankName: "",
-  bik: "",
-  checkingAccount: "",
-  correspondentAccount: "",
-  contacts: [
-    {
-      fio: "",
-      email: "",
-      phone: "",
-      role: ""
-    }
-  ],
-  meta: {
-    status: "",
-    message: ""
-  }
-};
-const OrganizationProvider = () => {
-  const [isLoading, setIsLoading] = (0,react.useState)(true);
-  const [organizations, setOrganizations] = (0,react.useState)([]);
-  const [warnings, setWarnings] = (0,react.useState)([]);
-  const [organizationToDelete, setOrganizationToDelete] = (0,react.useState)(null);
-  (0,react.useEffect)(() => {
-    if (isLoading && organizations.length === 0) {
-      (0,OrganizationsApi/* fetchOrganizations */.fV)(setIsLoading, setOrganizations);
-    }
-  });
-  const replaceOldOrgWithNew = (newOrganization) => {
-    const indexToReplace = organizations.findIndex(
-      (item) => item.inn === newOrganization.inn
-    );
-    organizations[indexToReplace] = newOrganization;
-    (0,OrganizationsApi/* sendUpdatedOrganizations */.OF)(
-      organizations,
-      indexToReplace,
-      setOrganizations,
-      warnings,
-      setWarnings
-    );
-  };
-  const deleteOrganization = () => {
-    const updatedArray = organizations.filter(
-      (item) => item.inn !== organizationToDelete
-    );
-    (0,OrganizationsApi/* sendDeletedOrganizations */.uy)(
-      updatedArray,
-      setOrganizations,
-      setOrganizationToDelete
-    );
-  };
-  const unlockOrganization = (inn) => {
-    const updatedOrganizations = [...organizations];
-    const organiztionIndexToUnlock = updatedOrganizations.findIndex(
-      (item) => item.inn === inn
-    );
-    updatedOrganizations[organiztionIndexToUnlock].meta.status = "";
-    setOrganizations(updatedOrganizations);
-  };
-  const deleteWarning = (index) => {
-    const filteredWarnings = warnings.filter((_alert, indx) => indx !== index);
-    setWarnings(filteredWarnings);
-  };
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "OrganizationProvider", children: [
-    organizationToDelete ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        closeModal: () => {
-          setOrganizationToDelete(null);
-        },
-        children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "OrganizationProvider__delete", children: [
-          /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { className: "OrganizationProvider__question", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { href: "#icon-question" }) }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "OrganizationProvider__delete-text", children: [
-            "\u0412\u044B \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0445\u043E\u0442\u0438\u0442\u0435 \u0443\u0434\u0430\u043B\u0438\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E ",
-            organizationToDelete.companyName,
-            "?"
-          ] }),
-          /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "OrganizationProvider__delete-navigation", children: [
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button button--transparent",
-                onClick: () => {
-                  setOrganizationToDelete(null);
-                },
-                children: "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
-              }
-            ),
-            /* @__PURE__ */ (0,jsx_runtime.jsx)(
-              "button",
-              {
-                className: "button",
-                onClick: () => {
-                  deleteOrganization();
-                },
-                children: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C"
-              }
-            )
-          ] })
-        ] })
-      }
-    ) : null,
-    isLoading && organizations.length === 0 ? /* @__PURE__ */ (0,jsx_runtime.jsx)(Loader/* default */.A, {}) : /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-      organizations.length > 0 ? /* @__PURE__ */ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [
-        warnings.length !== 0 ? warnings.map((item, index) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Warning_Warning,
-          {
-            index,
-            type: item.type,
-            deleteFn: deleteWarning,
-            text: `\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0434\u0430\u043D\u043D\u044B\u0445 \u043E\u0431 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438 ${item.text} \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043D\u0430 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443. \u041D\u0430\u0448 \u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440 \u0441\u0432\u044F\u0436\u0435\u0442\u0441\u044F \u0441 \u0432\u0430\u043C\u0438 \u0438 \u043E\u0431\u0441\u0443\u0434\u0438\u0442 \u0434\u0435\u0442\u0430\u043B\u0438 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439.`
-          },
-          index
-        )) : null,
-        organizations.map((item, index) => /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Organization_Organization,
-          {
-            organization: item,
-            unlockOrg: unlockOrganization,
-            sendOrg: replaceOldOrgWithNew,
-            callAlert: setOrganizationToDelete
-          },
-          index
-        ))
-      ] }) : /* @__PURE__ */ (0,jsx_runtime.jsx)(jsx_runtime.Fragment, { children: /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Organization__contact-header", children: "\u0412 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u0443 \u0432\u0430\u0441 \u043D\u0435\u0442 \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0445 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0439." }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)(
-        "a",
-        {
-          className: "button OrganizationProvider__button",
-          href: window.routes5.LINKS.addOrganization,
-          children: "+ \u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044E"
-        }
-      )
-    ] })
-  ] });
-};
-const Organizations = document.querySelector("#OrganizationProvider");
-if (Organizations) {
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(OrganizationProvider, {}), Organizations);
-}
 
 
 /***/ },
@@ -8590,212 +4972,6 @@ if (storagesInfo) {
       }
     }
   });
-}
-
-
-/***/ },
-
-/***/ 7195
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/react/components/Textarea/Textarea.js
-var Textarea = __webpack_require__(455);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/RequestCooperation/RequestCooperation.js
-
-
-
-
-
-
-
-
-const RequestCooperation = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    fio: index_esm/* string */.Yj().required(),
-    phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required(),
-    email: index_esm/* string */.Yj().email().required(),
-    text: index_esm/* string */.Yj().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestCooperation", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__header", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "RequestCooperation__title", children: "\u0421\u0442\u0430\u0442\u044C \u043F\u0430\u0440\u0442\u043D\u0435\u0440\u043E\u043C" }) }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          fio: "",
-          phone: "",
-          email: "",
-          text: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "RequestCooperation__form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "fio",
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: errors.fio && touched.fio ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: "phone",
-                  label: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
-                  value: values.phone,
-                  isRequired: true,
-                  placeholder: "+7 (999) 999-99-99",
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  className: errors.phone && touched.phone ? "PhoneInput--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: "email",
-                  label: "E-mail",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                  className: errors.email && touched.email ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__field RequestCooperation__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Textarea/* default */.A,
-                {
-                  name: "text",
-                  label: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  className: errors.text && touched.text ? "Textarea--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__field RequestCooperation__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestCooperation__terms", children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "RequestCooperation__legal", children: [
-                  "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                  " \u0438 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                  "."
-                ] }),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "RequestCooperation__submit button", type: "submit", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C" })
-              ] }) })
-            ]
-          }
-        )
-      }
-    ),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestCooperation__footer", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("ul", { className: "RequestCooperation__contacts-list", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestCooperation__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestCooperation__contacts-link", href: "tel:+79155428282", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-phone" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "+7 (915) 542-82-82" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestCooperation__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestCooperation__contacts-link", href: "mailto:brewery@brewlok.ru", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-mail" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "brewery@brewlok.ru" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestCooperation__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestCooperation__contacts-link", href: "https://vk.com/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-vk" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 VKontakte" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestCooperation__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestCooperation__contacts-link", href: "https://t.me/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-telegram" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u0432 Telegram" })
-      ] }) })
-    ] }) })
-  ] });
-};
-/* harmony default export */ const RequestCooperation_RequestCooperation = (RequestCooperation);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/RequestCooperationApi.js
-
-const RequestCooperationApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const setStatus = (status) => {
-  switch (status) {
-    case "success":
-      return "alert--green";
-    case "error":
-      return "alert--red";
-    default:
-      return "";
-  }
-};
-const container = document.querySelector("#RequestCooperationProvider");
-const sendRequestCooperation = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  RequestCooperationApi.post("/feedback_partner.php", values).then((response) => {
-    if (response.status === 200) {
-      const alert = document.querySelector("#alert--request").content.querySelector(".alert");
-      alert.classList.add(setStatus(response.data.status));
-      const container2 = document.querySelector("#alert--request").content.querySelector(".alert__container");
-      container2.innerHTML = response.data.text;
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--request");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--error");
-  });
-};
-
-;// ./src/react/providers/pages/cooperation/RequestCooperationProvider/RequestCooperationProvider.js
-
-
-
-
-
-const requestCooperation = document.querySelector("#RequestCooperationProvider");
-if (requestCooperation) {
-  const { id } = requestCooperation.dataset;
-  const RequestCooperationProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(RequestCooperation_RequestCooperation, { submitHandler: sendRequestCooperation, id }) });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(RequestCooperationProvider, {}), requestCooperation);
 }
 
 
@@ -9292,6 +5468,91 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ },
 
+/***/ 8669
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var filepond__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9992);
+/* harmony import */ var filepond__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(filepond__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var filepond_locale_ru_ru__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(790);
+/* harmony import */ var filepond_plugin_file_validate_type__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3424);
+/* harmony import */ var filepond_plugin_file_validate_type__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(filepond_plugin_file_validate_type__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var filepond_plugin_file_validate_size__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8460);
+/* harmony import */ var filepond_plugin_file_validate_size__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(filepond_plugin_file_validate_size__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _alert_alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4009);
+
+
+
+
+
+
+filepond__WEBPACK_IMPORTED_MODULE_0__.registerPlugin(
+  (filepond_plugin_file_validate_type__WEBPACK_IMPORTED_MODULE_2___default()),
+  (filepond_plugin_file_validate_size__WEBPACK_IMPORTED_MODULE_3___default())
+);
+const fileLoaderInit = () => {
+  const fileLoader = document.querySelector(".file-loader");
+  if (fileLoader) {
+    const form = fileLoader.closest("form");
+    const input = fileLoader.querySelector(".file-loader__input");
+    const isRequired = input.hasAttribute("required");
+    const { labelName } = input.dataset;
+    const filePond = filepond__WEBPACK_IMPORTED_MODULE_0__.create(
+      fileLoader.querySelector('input[type="file"]'),
+      {
+        required: isRequired,
+        styleButtonRemoveItemPosition: "right",
+        iconRemove: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C",
+        allowMultiple: true,
+        allowRevert: false,
+        allowProcess: false,
+        allowReorder: false,
+        credits: false,
+        itemInsertInterval: 0,
+        // Файлы отправляются обычной HTML-формой.
+        storeAsFile: true,
+        // Валидация размера применяется ТОЛЬКО если файл добавлен.
+        allowFileSizeValidation: true,
+        // Валидация типа применяется ТОЛЬКО если файл добавлен.
+        allowFileTypeValidation: true,
+        // Кастомное определение MIME-типа
+        fileValidateTypeDetectType: (source, type) => new Promise((resolve) => {
+          const fileName = source.name;
+          if (fileName.toLowerCase().endsWith(".flv")) {
+            type = "video/x-flv";
+          }
+          resolve(type);
+        }),
+        beforeAddFile: (item) => {
+        },
+        beforeRemoveFile: (item) => {
+        },
+        onerror(error, item) {
+          filePond.removeFile(item);
+          (0,_alert_alert__WEBPACK_IMPORTED_MODULE_4__.summonAlert)({
+            template: "#alert--red",
+            text: error.main
+          });
+        }
+      }
+    );
+    filepond__WEBPACK_IMPORTED_MODULE_0__.setOptions(filepond_locale_ru_ru__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
+    filepond__WEBPACK_IMPORTED_MODULE_0__.setOptions({
+      labelIdle: `<svg width="18" height="18" viewBox="0 0 18 18" stroke="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.87721 9.72546L9.54625 5.03781C10.4918 4.08854 12.0248 4.08854 12.9702 5.03781C13.9158 5.98707 13.9158 7.52612 12.9702 8.47538L7.36738 14.1005C6.9376 14.532 6.2408 14.532 5.81102 14.1005C5.38124 13.669 5.38124 12.9695 5.81102 12.538L10.7913 7.53786C11.0492 7.27897 11.0492 6.85923 10.7913 6.60034C10.5335 6.34145 10.1154 6.34145 9.85756 6.60034L4.87721 11.6005C3.93171 12.5497 3.93171 14.0888 4.87721 15.0381C5.82272 15.9873 7.35569 15.9873 8.30119 15.0381L13.9041 9.41291C15.3653 7.94587 15.3653 5.56732 13.9041 4.10028C12.4429 2.63324 10.0737 2.63324 8.61246 4.10028L3.9434 8.7879C3.68553 9.04679 3.68553 9.46656 3.9434 9.72546C4.20126 9.98435 4.61935 9.98435 4.87721 9.72546Z"/></svg>${labelName}`
+    });
+    if (form) {
+      form.addEventListener("reset", () => {
+        filePond.removeFiles();
+      });
+    }
+  }
+};
+fileLoaderInit();
+
+
+/***/ },
+
 /***/ 8697
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -9389,6 +5650,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const multiMapInit = (data) => {
+  if (!data)
+    return;
   const find = document.querySelector(".find");
   if (find) {
     const select = document.querySelector(".find__select");
@@ -9843,6 +6106,7 @@ const form = document.querySelector(".corners-filter__form");
 const resultBlock = document.querySelector(".corners-filter__result");
 if (form) {
   const groups = [...form.querySelectorAll(".corners-filter__group")];
+  const submitButton = form.querySelector(".corners-filter__submit");
   const closeAll = () => {
     groups.forEach((group) => {
       group.classList.remove("corners-filter__group--active");
@@ -9863,7 +6127,19 @@ if (form) {
       if (!isActive) {
         group.classList.add("corners-filter__group--active");
         toggle.setAttribute("aria-expanded", "true");
+        console.log(window.innerWidth);
+        if (window.innerWidth < 768) {
+          (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingOnBody */ .rP)();
+        }
       }
+    });
+    const close = group.querySelector(".corners-filter__dropdown-close");
+    if (!close)
+      return;
+    close.addEventListener("click", (evt) => {
+      evt.preventDefault();
+      closeAll();
+      (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingFromBody */ .iW)();
     });
   });
   document.addEventListener("click", (evt) => {
@@ -9895,13 +6171,21 @@ if (form) {
       return state;
     };
     updateState();
-    form.addEventListener("change", () => {
+    form.addEventListener("submit", (evt) => {
+      evt.preventDefault();
       const state = updateState();
       form.dispatchEvent(
         new CustomEvent("filter:change", {
           detail: state
         })
       );
+      submitButton.setAttribute("style", "display: none;");
+    });
+    form.addEventListener("change", (evt) => {
+      if (evt.target.matches('input[type="checkbox"]')) {
+        console.log("\u041A\u043B\u0438\u043A\u043D\u0443\u043B\u0438");
+        submitButton.removeAttribute("style");
+      }
     });
     resultBlock.addEventListener("click", (evt) => {
       const btn = evt.target.closest(".corners-filter__picked");
@@ -9977,574 +6261,6 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
-
-/***/ },
-
-/***/ 9304
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(6540);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(5338);
-// EXTERNAL MODULE: ./src/react/components/Modal/Modal.js
-var Modal = __webpack_require__(5593);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-;// ./src/react/components/Login/Login.js
-
-
-
-
-
-
-const validationSchema = index_esm/* object */.Ik().shape({
-  phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required()
-});
-const Login = ({ submitHandler }) => {
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Login", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Login__header", children: "\u0412\u0445\u043E\u0434 \u0438\u043B\u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F" }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: { phone: "" },
-        validationSchema,
-        onSubmit: (values) => {
-          submitHandler(values.phone);
-        },
-        children: ({ values, errors, touched, handleChange, handleBlur }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "Login__form",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: "phone",
-                  onBlur: handleBlur,
-                  value: values.phone,
-                  onChange: handleChange,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430",
-                  className: `Login__input${errors.phone && touched.phone ? " Login__input--error" : ""}`
-                }
-              ),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "button Login__button", type: "submit", children: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043A\u043E\u0434" }),
-              /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "Login__link", children: [
-                " \u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0443 \xAB\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043A\u043E\u0434\xBB, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C c ",
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                " \u0438 ",
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                "."
-              ] })
-            ]
-          }
-        )
-      }
-    )
-  ] });
-};
-/* harmony default export */ const Login_Login = (Login);
-
-// EXTERNAL MODULE: ./src/react/components/Code/Code.js + 1 modules
-var Code = __webpack_require__(3070);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-;// ./src/react/components/Registration/Registration.js
-
-
-
-
-
-const Registration_validationSchema = index_esm/* object */.Ik().shape({
-  fio: index_esm/* string */.Yj().required(),
-  email: index_esm/* string */.Yj().email().required()
-});
-const Registration = ({ submitHandler }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "Registration", children: [
-  /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "Registration__header", children: "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F" }),
-  /* @__PURE__ */ (0,jsx_runtime.jsx)(
-    formik_esm/* Formik */.l1,
-    {
-      initialValues: { fio: "", email: "" },
-      validationSchema: Registration_validationSchema,
-      onSubmit: (values) => {
-        submitHandler(values);
-      },
-      children: ({ errors, touched }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(formik_esm/* Form */.lV, { noValidate: true, children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Input/* default */.A,
-          {
-            type: "text",
-            name: "fio",
-            label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-            isRequired: false,
-            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0424\u0430\u043C\u0438\u043B\u0438\u044E \u0418\u043C\u044F",
-            className: `Registration__input${errors.fio && touched.fio ? " Registration__input--error" : ""}`
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Input/* default */.A,
-          {
-            type: "email",
-            name: "email",
-            label: "E-mail",
-            isRequired: false,
-            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-            className: `Registration__input${errors.email && touched.email ? " Registration__input--error" : ""}`
-          }
-        ),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "button Registration__button", type: "submit", children: "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F" })
-      ] })
-    }
-  ),
-  /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "Registration__link", children: [
-    "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0443 \xAB\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F\xBB, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-    " \u0438 ",
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-    "."
-  ] })
-] });
-/* harmony default export */ const Registration_Registration = (Registration);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var lib_axios = __webpack_require__(1083);
-// EXTERNAL MODULE: ./src/env.js
-var env = __webpack_require__(9838);
-;// ./src/api/LoginApi.js
-
-
-const sendPhone = async (phone, returnData) => {
-  try {
-    const response = await lib_axios/* default */.A.post(
-      `${window.routes5.login.requests.sendPhone[`url${env/* ENV */.K}`]}`,
-      { phone }
-    );
-    if (response.data.status === "success") {
-      returnData({ data: phone, error: "", isLoading: false });
-    } else if (response.data.status === "error") {
-      returnData({ data: null, error: response.data.text, isLoading: false });
-    }
-  } catch (error) {
-    if (error.response) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    } else if (error.request) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    }
-  }
-};
-const sendCode = async (data, returnData) => {
-  try {
-    const response = await axios.post(
-      `${window.routes5.login.requests.sendCode[`url${ENV}`]}`,
-      { phone: data.phone, sms: data.sms }
-    );
-    if (response.data.status === "success") {
-      returnData({
-        data: { sms: data.sms, result: response.data.result },
-        error: "",
-        isLoading: false
-      });
-    } else if (response.data.status === "error") {
-      returnData({ data: null, error: response.data.text, isLoading: false });
-    }
-  } catch (error) {
-    if (error.response) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    } else if (error.request) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    }
-  }
-};
-const sendRegistration = async (data, returnData) => {
-  try {
-    const response = await lib_axios/* default */.A.post(
-      `${window.routes5.login.requests.sendRegistration[`url${env/* ENV */.K}`]}`,
-      { phone: data.phone, fio: data.fio, email: data.email }
-    );
-    if (response.data.status === "success") {
-      returnData({ data: data.email, error: "", isLoading: false });
-    } else if (response.data.status === "error") {
-      console.log(response.data.text);
-      returnData({ data: null, error: response.data.text, isLoading: false });
-    }
-  } catch (error) {
-    if (error.response) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    } else if (error.request) {
-      returnData({
-        data: null,
-        error: "\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043D\u0435\u043F\u0440\u0435\u0434\u0432\u0438\u0434\u0435\u043D\u043D\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430!",
-        isLoading: false
-      });
-    }
-  }
-};
-
-;// ./src/react/providers/common/LoginProvider/LoginProvider.js
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-
-
-
-
-
-
-
-
-
-const defaultState = {
-  data: null,
-  error: "",
-  isLoading: false
-};
-const LoginProvider = () => {
-  const [openPhone, setOpenPhone] = (0,react.useState)(false);
-  const [openSms, setOpenSms] = (0,react.useState)(false);
-  const [openRegistraion, setOpenRegistration] = (0,react.useState)(false);
-  const [phoneQuery, setPhoneQuery] = (0,react.useState)(defaultState);
-  const [smsQuery, setSmsQuery] = (0,react.useState)(defaultState);
-  const [registrationQuery, setRegistrationQuery] = (0,react.useState)(defaultState);
-  (0,react.useEffect)(() => {
-    if (openPhone || openSms || openRegistraion) {
-      (0,utils/* getPaddingOnBody */.rP)();
-    } else {
-      (0,utils/* getPaddingFromBody */.iW)();
-    }
-  }, [openPhone, openSms, openRegistraion]);
-  (0,react.useEffect)(() => {
-    if (phoneQuery.error !== "") {
-      document.querySelector("#alert--error").content.querySelector(".alert__text").innerHTML = phoneQuery.error;
-      window.Corners5ProjectLayout.summonAlert("#alert--error");
-      setPhoneQuery(__spreadProps(__spreadValues({}, phoneQuery), { error: "" }));
-    }
-    if (smsQuery.error !== "") {
-      document.querySelector("#alert--error").content.querySelector(".alert__text").innerHTML = smsQuery.error;
-      window.Corners5ProjectLayout.summonAlert("#alert--error");
-      setSmsQuery(__spreadProps(__spreadValues({}, smsQuery), { error: "" }));
-    }
-    if (registrationQuery.error !== "") {
-      document.querySelector("#alert--error").content.querySelector(".alert__text").innerHTML = registrationQuery.error;
-      window.Corners5ProjectLayout.summonAlert("#alert--error");
-      setRegistrationQuery(__spreadProps(__spreadValues({}, registrationQuery), { error: "" }));
-    }
-  });
-  (0,react.useEffect)(() => {
-    if (phoneQuery.data !== null) {
-      setOpenPhone(false);
-      setOpenSms(true);
-    }
-  }, [phoneQuery.data]);
-  (0,react.useEffect)(() => {
-    setOpenSms(false);
-    if (smsQuery.data !== null && smsQuery.data.result.openreg === 1) {
-      setOpenRegistration(true);
-    } else if (smsQuery.data !== null) {
-      window.location.reload();
-    }
-  }, [smsQuery.data]);
-  (0,react.useEffect)(() => {
-    if (registrationQuery.data !== null) {
-      setOpenRegistration(false);
-      setPhoneQuery(defaultState);
-      setSmsQuery(defaultState);
-      setRegistrationQuery(defaultState);
-      window.location.reload();
-    }
-  });
-  window.LoginProvider = { setOpenPhone, setOpenSms, setOpenRegistration };
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("section", { className: "LoginProvider", children: [
-    openPhone ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        closeModal: () => {
-          setOpenPhone(false);
-          setPhoneQuery(defaultState);
-        },
-        className: "Modal--sms",
-        children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Login_Login,
-          {
-            submitHandler: (phone) => {
-              sendPhone(phone, setPhoneQuery);
-            }
-          }
-        )
-      }
-    ) : null,
-    openRegistraion ? /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      Modal/* default */.A,
-      {
-        closeModal: () => {
-          setOpenRegistration(false);
-          setRegistrationQuery(defaultState);
-        },
-        className: "Modal--sms",
-        children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-          Registration_Registration,
-          {
-            submitHandler: (values) => {
-              sendRegistration(
-                {
-                  phone: phoneQuery.data,
-                  fio: values.fio,
-                  email: values.email
-                },
-                setRegistrationQuery
-              );
-            }
-          }
-        )
-      }
-    ) : null
-  ] });
-};
-const LoginProviderContainer = document.querySelector("#LoginProvider");
-if (LoginProviderContainer) {
-  (0,client/* createRoot */.H)(LoginProviderContainer).render(/* @__PURE__ */ (0,jsx_runtime.jsx)(LoginProvider, {}));
-}
-
-
-/***/ },
-
-/***/ 9309
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/utils/utils.js
-var utils = __webpack_require__(3670);
-;// ./src/react/components/RequestSearch/RequestSearch.js
-
-
-
-
-
-
-
-const RequestSearch = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    fio: index_esm/* string */.Yj().required(),
-    phone: index_esm/* string */.Yj().matches(utils/* PHONE_REG_EXP */.Sj).required(),
-    email: index_esm/* string */.Yj().email().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestSearch", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestSearch__header", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("h2", { className: "RequestSearch__title", children: "\u041D\u0435 \u043D\u0430\u0448\u043B\u0438 \u0447\u0442\u043E \u0438\u0441\u043A\u0430\u043B\u0438?" }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("p", { className: "RequestSearch__post-title", children: "\u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435\u0441\u044C \u043A \u043D\u0430\u043C, \u0438 \u043C\u044B \u0441 \u0443\u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0438\u0435\u043C \u043F\u043E\u043C\u043E\u0436\u0435\u043C \u043D\u0430\u0439\u0442\u0438 \u043D\u0443\u0436\u043D\u0443\u044E \u0432\u0430\u043C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E." })
-    ] }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          fio: "",
-          phone: "",
-          email: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "RequestSearch__form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSearch__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "fio",
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: errors.fio && touched.fio ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSearch__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                PhoneInput/* default */.A,
-                {
-                  name: "phone",
-                  label: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
-                  value: values.phone,
-                  isRequired: true,
-                  placeholder: "+7 (999) 999-99-99",
-                  onChange: handleChange,
-                  onBlur: handleBlur,
-                  className: errors.phone && touched.phone ? "PhoneInput--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSearch__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: "email",
-                  label: "E-mail",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                  className: errors.email && touched.email ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSearch__field RequestSearch__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestSearch__terms", children: [
-                /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "RequestSearch__legal", children: [
-                  "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                  " \u0438 ",
-                  /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                  "."
-                ] }),
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "RequestSearch__submit button", type: "submit", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0432\u043E\u043F\u0440\u043E\u0441" })
-              ] }) })
-            ]
-          }
-        )
-      }
-    ),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSearch__footer", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("ul", { className: "RequestSearch__contacts-list", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestSearch__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestSearch__contacts-link", href: "tel:+79155428282", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-phone" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "+7 (915) 542-82-82" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestSearch__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestSearch__contacts-link", href: "mailto:brewery@brewlok.ru", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-mail" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "brewery@brewlok.ru" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestSearch__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestSearch__contacts-link", href: "https://vk.com/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-vk" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 VKontakte" })
-      ] }) }),
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("li", { className: "RequestSearch__contacts-item", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("a", { className: "RequestSearch__contacts-link", href: "https://t.me/brewlokbrewery", children: [
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("svg", { width: "24", height: "24", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("use", { xlinkHref: "#icon-contacts-telegram" }) }),
-        /* @__PURE__ */ (0,jsx_runtime.jsx)("span", { children: "\u0432 Telegram" })
-      ] }) })
-    ] }) })
-  ] });
-};
-/* harmony default export */ const RequestSearch_RequestSearch = (RequestSearch);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/RequestSearchApi.js
-
-const RequestSearchApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const setStatus = (status) => {
-  switch (status) {
-    case "success":
-      return "alert--green";
-    case "error":
-      return "alert--red";
-    default:
-      return "";
-  }
-};
-const container = document.querySelector("#RequestSearchProvider");
-const sendRequestSearch = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  RequestSearchApi.post("/search_notfound.php", values).then((response) => {
-    if (response.status === 200) {
-      const alert = document.querySelector("#alert--request").content.querySelector(".alert");
-      alert.classList.add(setStatus(response.data.status));
-      const container2 = document.querySelector("#alert--request").content.querySelector(".alert__container");
-      container2.innerHTML = response.data.text;
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--request");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--error");
-  });
-};
-
-;// ./src/react/providers/pages/search-1/RequestSearchProvider/RequestSearchProvider.js
-
-
-
-
-
-const requestSearch = document.querySelector("#RequestSearchProvider");
-if (requestSearch) {
-  const { id } = requestSearch.dataset;
-  const RequestSearchProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "container", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(RequestSearch_RequestSearch, { submitHandler: sendRequestSearch, id }) });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(RequestSearchProvider, {}), requestSearch);
-}
-
 
 /***/ },
 
@@ -10693,177 +6409,6 @@ const activateModalProduct = (func) => {
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (activateModalProduct);
-
-
-/***/ },
-
-/***/ 9720
-(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(4848);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(961);
-// EXTERNAL MODULE: ./node_modules/formik/dist/formik.esm.js + 121 modules
-var formik_esm = __webpack_require__(7425);
-// EXTERNAL MODULE: ./node_modules/yup/index.esm.js
-var index_esm = __webpack_require__(2664);
-// EXTERNAL MODULE: ./src/react/components/Input/Input.js
-var Input = __webpack_require__(4541);
-// EXTERNAL MODULE: ./src/react/components/PhoneInput/PhoneInput.js
-var PhoneInput = __webpack_require__(4395);
-// EXTERNAL MODULE: ./src/react/components/Textarea/Textarea.js
-var Textarea = __webpack_require__(455);
-;// ./src/react/components/RequestSuggest/RequestSuggest.js
-
-
-
-
-
-
-
-const RequestSuggest = ({ submitHandler, id }) => {
-  const validationSchema = index_esm/* object */.Ik().shape({
-    fio: index_esm/* string */.Yj().required(),
-    email: index_esm/* string */.Yj().email().required(),
-    text: index_esm/* string */.Yj().required()
-  });
-  return /* @__PURE__ */ (0,jsx_runtime.jsxs)("div", { className: "RequestSuggest", children: [
-    /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__header", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("h2", { className: "RequestSuggest__title", children: [
-      /* @__PURE__ */ (0,jsx_runtime.jsx)("em", { children: "\u041D\u0435 \u043D\u0430\u0448\u043B\u0438" }),
-      " \u0447\u0442\u043E \u0438\u0441\u043A\u0430\u043B\u0438?"
-    ] }) }),
-    /* @__PURE__ */ (0,jsx_runtime.jsx)(
-      formik_esm/* Formik */.l1,
-      {
-        initialValues: {
-          id,
-          fio: "",
-          email: "",
-          text: ""
-        },
-        validationSchema,
-        onSubmit: (values, actions) => {
-          submitHandler(values, actions.resetForm);
-          console.log(values);
-        },
-        children: ({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur
-        }) => /* @__PURE__ */ (0,jsx_runtime.jsxs)(
-          formik_esm/* Form */.lV,
-          {
-            className: "RequestSuggest__form",
-            action: "#",
-            method: "post",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "text",
-                  name: "fio",
-                  label: "\u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044F",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0418\u043C\u044F \u0424\u0430\u043C\u0438\u043B\u0438\u044E",
-                  className: errors.fio && touched.fio ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Input/* default */.A,
-                {
-                  type: "email",
-                  name: "email",
-                  label: "E-mail",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 e-mail",
-                  className: errors.email && touched.email ? "Input--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__field RequestSuggest__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsx)(
-                Textarea/* default */.A,
-                {
-                  name: "text",
-                  label: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  isRequired: true,
-                  placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                  className: errors.text && touched.text ? "Textarea--error" : null
-                }
-              ) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__field", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("button", { className: "RequestSuggest__submit button", type: "submit", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C" }) }),
-              /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__field RequestSuggest__field--wide", children: /* @__PURE__ */ (0,jsx_runtime.jsx)("div", { className: "RequestSuggest__terms", children: /* @__PURE__ */ (0,jsx_runtime.jsxs)("p", { className: "RequestSuggest__legal", children: [
-                "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 ",
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/privacy-policy/", target: "_blank", children: "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438" }),
-                " \u0438 ",
-                /* @__PURE__ */ (0,jsx_runtime.jsx)("a", { href: "/about/terms-of-use/", target: "_blank", children: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u043C \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435\u043C" }),
-                "."
-              ] }) }) })
-            ]
-          }
-        )
-      }
-    )
-  ] });
-};
-/* harmony default export */ const RequestSuggest_RequestSuggest = (RequestSuggest);
-
-// EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 48 modules
-var axios = __webpack_require__(1083);
-;// ./src/api/RequestSuggestApi.js
-
-const RequestSuggestApi = axios/* default */.A.create({
-  baseURL: "/local/ajax",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  timeout: 5e3
-});
-const setStatus = (status) => {
-  switch (status) {
-    case "success":
-      return "alert--green";
-    case "error":
-      return "alert--red";
-    default:
-      return "";
-  }
-};
-const container = document.querySelector("#RequestSuggestProvider");
-const sendRequestSuggest = (values, reset) => {
-  window.Corners5ProjectLayout.addLoading(container);
-  RequestSuggestApi.post("/feedback.php", values).then((response) => {
-    if (response.status === 200) {
-      const alert = document.querySelector("#alert--request").content.querySelector(".alert");
-      alert.classList.add(setStatus(response.data.status));
-      const container2 = document.querySelector("#alert--request").content.querySelector(".alert__container");
-      container2.innerHTML = response.data.text;
-      window.Corners5ProjectLayout.removeLoading();
-      window.Corners5ProjectLayout.summonAlert("#alert--request");
-      reset();
-    }
-  }).catch(() => {
-    window.Corners5ProjectLayout.removeLoading();
-    window.Corners5ProjectLayout.summonAlert("#alert--error");
-  });
-};
-
-;// ./src/react/providers/pages/main/RequestSuggestProvider/RequestSuggestProvider.js
-
-
-
-
-
-const requestSuggest = document.querySelector("#RequestSuggestProvider");
-if (requestSuggest) {
-  const { id } = requestSuggest.dataset;
-  const RequestSuggestProvider = () => /* @__PURE__ */ (0,jsx_runtime.jsx)(RequestSuggest_RequestSuggest, { submitHandler: sendRequestSuggest, id });
-  react_dom.render(/* @__PURE__ */ (0,jsx_runtime.jsx)(RequestSuggestProvider, {}), requestSuggest);
-}
 
 
 /***/ },
@@ -11026,36 +6571,6 @@ if (copy) {
 /******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/create fake namespace object */
-/******/ 	(() => {
-/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
-/******/ 		var leafPrototypes;
-/******/ 		// create a fake namespace object
-/******/ 		// mode & 1: value is a module id, require it
-/******/ 		// mode & 2: merge all properties of value into the ns
-/******/ 		// mode & 4: return value when already ns object
-/******/ 		// mode & 16: return value when it's Promise-like
-/******/ 		// mode & 8|1: behave like require
-/******/ 		__webpack_require__.t = function(value, mode) {
-/******/ 			if(mode & 1) value = this(value);
-/******/ 			if(mode & 8) return value;
-/******/ 			if(typeof value === 'object' && value) {
-/******/ 				if((mode & 4) && value.__esModule) return value;
-/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
-/******/ 			}
-/******/ 			var ns = Object.create(null);
-/******/ 			__webpack_require__.r(ns);
-/******/ 			var def = {};
-/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
-/******/ 			for(var current = mode & 2 && value; (typeof current == 'object' || typeof current == 'function') && !~leafPrototypes.indexOf(current); current = getProto(current)) {
-/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
-/******/ 			}
-/******/ 			def['default'] = () => (value);
-/******/ 			__webpack_require__.d(ns, def);
-/******/ 			return ns;
 /******/ 		};
 /******/ 	})();
 /******/ 	

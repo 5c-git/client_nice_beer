@@ -16,10 +16,9 @@ block main
   })
     +request-wrapper({})
       +request({
+        id: 'RequestContacts',
         name: true,
         phone: true,
         email: true,
         textarea: true, 
       })
-
-  include ../react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider

@@ -2,6 +2,8 @@ extends ../templates/default
 
 include ../components/watched/watched
 include ../components/empty/empty
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/breadcrumbs/breadcrumbs
@@ -14,7 +16,18 @@ block main
 
   +empty({})
 
-  include ../react/providers/pages/search-1/RequestSearchProvider/RequestSearchProvider
+  +layout({
+    title: 'Не нашли что искали?',
+  })
+    +request-wrapper({})
+      +request({
+        id: 'RequestSearch',
+        name: true,
+        phone: true,
+        email: true,
+        footer: true, 
+      })
+
   
   +watched({
     title: 'Вы смотрели',

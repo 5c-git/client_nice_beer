@@ -3,6 +3,8 @@ extends ../templates/default
 include ../components/article-card/article-card
 include ../components/tags/tags
 include ../components/category-card/category-card
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/breadcrumbs/breadcrumbs
@@ -12,10 +14,12 @@ block main
   })
   include ../components/novelties/novelties
   
+
   +tags({
     title: 'Популярные теги',
   })
   
+
   +layout({
     variant: 'layout--grid3',
     title: 'Категории',
@@ -45,7 +49,17 @@ block main
       title: 'Описание и характеристики самых популярных марок',
     })
 
-  include ../react/providers/common/SubscribeProvider/SubscribeProvider
+
+  +layout({})
+    +request-wrapper({
+      title: 'Подпишитесь на рассылку!',
+      text: 'Подпишитесь на новости и получайте самые свежие статьи и рекомендации от наших пивоваров!',
+    })
+      +request({
+        id: 'Subscribe',
+        email: true,
+      })
+
   
   +layout({
     variant: 'layout--grid3',

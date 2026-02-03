@@ -1,113 +1,133 @@
 div.corners-filter
   div.corners-filter__head
     form(action="#" method='post').corners-filter__form
+      div.corners-filter__fields
 
-      div.corners-filter__group
-        button(type='button').corners-filter__toggle Страна
-        div.corners-filter__dropdown
-          fieldset.corners-filter__fieldset
-            label.corners-filter__label
-              span Бельгия
-              input(type="checkbox" name="country" value='Бельгия') 
-            label.corners-filter__label
-              span Германия
-              input(type="checkbox" name="country" value='Германия') 
-            label.corners-filter__label
-              span Ирландия
-              input(type="checkbox" name="country" value='Ирландия') 
-            label.corners-filter__label
-              span Португалия
-              input(type="checkbox" name="country" value='Португалия') 
-
-
-      div.corners-filter__group
-        button(type='button').corners-filter__toggle Стиль
-        div.corners-filter__dropdown
-          fieldset.corners-filter__fieldset
-            label.corners-filter__label
-              span Barleywine
-              input(type="checkbox" name="sort" value='Barleywine') 
-
-            label.corners-filter__label
-              span Belgian
-              input(type="checkbox" name="sort" value='Belgian') 
-
-            label.corners-filter__label
-              span Brown ale
-              input(type="checkbox" name="sort" value='Brown ale') 
-
-            label.corners-filter__label
-              span Gose
-              input(type="checkbox" name="sort" value='Gose') 
-
-            label.corners-filter__label
-              span IPA
-              input(type="checkbox" name="sort" value='IPA') 
-
-            label.corners-filter__label
-              span Lager
-              input(type="checkbox" name="sort" value='Lager') 
-
-            label.corners-filter__label
-              span Non-Alcoholic - Cider
-              input(type="checkbox" name="sort" value='Non-Alcoholic - Cider') 
-
-            label.corners-filter__label
-              span Pale ale
-              input(type="checkbox" name="sort" value='Pale ale') 
+        div.corners-filter__group
+          button(type='button').corners-filter__toggle Страна
+          div.corners-filter__dropdown
+            div.corners-filter__dropdown-head
+              span Страна
+              button(type='button').corners-filter__dropdown-close
+                span
+            fieldset.corners-filter__fieldset
+              label.corners-filter__label
+                span Бельгия
+                input(type="checkbox" name="country" value='Бельгия') 
+              label.corners-filter__label
+                span Германия
+                input(type="checkbox" name="country" value='Германия') 
+              label.corners-filter__label
+                span Ирландия
+                input(type="checkbox" name="country" value='Ирландия') 
+              label.corners-filter__label
+                span Португалия
+                input(type="checkbox" name="country" value='Португалия') 
 
 
-      div.corners-filter__group
-        button(type='button').corners-filter__toggle Пивоварня
-        div.corners-filter__dropdown
-          fieldset.corners-filter__fieldset
-            label.corners-filter__label
-              span BREWLOK
-              input(type="checkbox" name="company" value='BREWLOK') 
+        div.corners-filter__group
+          button(type='button').corners-filter__toggle Стиль
+          div.corners-filter__dropdown
+            div.corners-filter__dropdown-head
+              span Стиль
+              button(type='button').corners-filter__dropdown-close
+                span
+            fieldset.corners-filter__fieldset
+              label.corners-filter__label
+                span Barleywine
+                input(type="checkbox" name="sort" value='Barleywine') 
 
-            label.corners-filter__label
-              span 4BREWERS
-              input(type="checkbox" name="company" value='4BREWERS') 
+              label.corners-filter__label
+                span Belgian
+                input(type="checkbox" name="sort" value='Belgian') 
 
-            label.corners-filter__label
-              span Brewmen Collaboration with Plague Brew
-              input(type="checkbox" name="company" value='Brewmen Collaboration with Plague Brew') 
+              label.corners-filter__label
+                span Brown ale
+                input(type="checkbox" name="sort" value='Brown ale') 
 
-            label.corners-filter__label
-              span ALASKA brewery
-              input(type="checkbox" name="company" value='ALASKA brewery') 
+              label.corners-filter__label
+                span Gose
+                input(type="checkbox" name="sort" value='Gose') 
 
-            label.corners-filter__label
-              span Ability Brewing Project
-              input(type="checkbox" name="company" value='Ability Brewing Project') 
+              label.corners-filter__label
+                span IPA
+                input(type="checkbox" name="sort" value='IPA') 
 
-            label.corners-filter__label
-              span Apple Way
-              input(type="checkbox" name="company" value='Apple Way') 
+              label.corners-filter__label
+                span Lager
+                input(type="checkbox" name="sort" value='Lager') 
 
-            label.corners-filter__label
-              span Plan B Brewery
-              input(type="checkbox" name="company" value='Plan B Brewery') 
+              label.corners-filter__label
+                span Non-Alcoholic - Cider
+                input(type="checkbox" name="sort" value='Non-Alcoholic - Cider') 
 
-            label.corners-filter__label
-              span White Stone
-              input(type="checkbox" name="company" value='White Stone') 
+              label.corners-filter__label
+                span Pale ale
+                input(type="checkbox" name="sort" value='Pale ale') 
 
-      div.corners-filter__group
-        button(type='button').corners-filter__toggle Объем
-        div.corners-filter__dropdown
-          fieldset.corners-filter__fieldset
-            label.corners-filter__label
-              span Ж\Б 0.5л
-              input(type="checkbox" name="value" value='Ж\Б 0.5л') 
 
-            label.corners-filter__label
-              span С\Б 0.5л
-              input(type="checkbox" name="value" value='С\Б 0.5л') 
+        div.corners-filter__group
+          button(type='button').corners-filter__toggle Пивоварня
+          div.corners-filter__dropdown
+            div.corners-filter__dropdown-head
+              span Пивоварня
+              button(type='button').corners-filter__dropdown-close
+                span
+            fieldset.corners-filter__fieldset
+              label.corners-filter__label
+                span BREWLOK
+                input(type="checkbox" name="company" value='BREWLOK') 
 
-            label.corners-filter__label
-              span Кега 12л
-              input(type="checkbox" name="value" value='Кега 12л') 
+              label.corners-filter__label
+                span 4BREWERS
+                input(type="checkbox" name="company" value='4BREWERS') 
+
+              label.corners-filter__label
+                span Brewmen Collaboration with Plague Brew
+                input(type="checkbox" name="company" value='Brewmen Collaboration with Plague Brew') 
+
+              label.corners-filter__label
+                span ALASKA brewery
+                input(type="checkbox" name="company" value='ALASKA brewery') 
+
+              label.corners-filter__label
+                span Ability Brewing Project
+                input(type="checkbox" name="company" value='Ability Brewing Project') 
+
+              label.corners-filter__label
+                span Apple Way
+                input(type="checkbox" name="company" value='Apple Way') 
+
+              label.corners-filter__label
+                span Plan B Brewery
+                input(type="checkbox" name="company" value='Plan B Brewery') 
+
+              label.corners-filter__label
+                span White Stone
+                input(type="checkbox" name="company" value='White Stone') 
+
+        div.corners-filter__group
+          button(type='button').corners-filter__toggle Объем
+          div.corners-filter__dropdown
+            div.corners-filter__dropdown-head
+              span Объем
+              button(type='button').corners-filter__dropdown-close
+                span
+            fieldset.corners-filter__fieldset
+              label.corners-filter__label
+                span Ж\Б 0.5л
+                input(type="checkbox" name="value" value='Ж\Б 0.5л') 
+
+              label.corners-filter__label
+                span С\Б 0.5л
+                input(type="checkbox" name="value" value='С\Б 0.5л') 
+
+              label.corners-filter__label
+                span Кега 12л
+                input(type="checkbox" name="value" value='Кега 12л') 
+
+      div.corners-filter__action
+        button(type='submit' style='display: none;').corners-filter__submit Применить
 
   div.corners-filter__result
     button(type='button').corners-filter__picked Страна: Бельгия

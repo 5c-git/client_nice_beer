@@ -5,8 +5,9 @@ mixin request-wrapper(props)
       div.request-wrapper__header
         h2.request-wrapper__title=props.title
         div.request-wrapper__content
-          div.article
-            p Возникли вопросы, замечания или предложения? Напишите нам, и мы ответим в кратчайшие сроки!
+          if props.text
+            div.article
+              p!=props.text
 
     div.request-wrapper__main
       block

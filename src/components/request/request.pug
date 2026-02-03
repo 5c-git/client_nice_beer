@@ -2,7 +2,7 @@ mixin request(props)
   include ../field/field
 
   div.request
-    form(action="#" method='post').request__form
+    form(action="#" method='post' id=props.id).request__form
       div.request__fields
         if props.name
           div.request__field 
@@ -13,6 +13,43 @@ mixin request(props)
               id: 'First name',
               placeholder: ' ',
               secondClass: 'validator__required',
+            })
+        if props.city
+          div.request__field 
+            +field({
+              label: 'Город',
+              type: 'text',
+              name: 'city',
+              id: 'city',
+              placeholder: ' ',
+              secondClass: 'validator__required',
+            })
+        if props.company
+          div.request__field 
+            +field({
+              label: 'Компания',
+              type: 'text',
+              name: 'Company name',
+              id: 'Company name',
+              placeholder: ' ',
+              secondClass: 'validator__required',
+            })
+        if props.company
+          div.request__field 
+            +field({
+              label: 'Сфера',
+              select: true,
+              options: [
+                { value: 'HoReCa', text: 'HoReCa' },
+                { value: 'Сетевые магазины', text: 'Сетевые магазины' },
+                { value: 'Традиционная торговля', text: 'Традиционная торговля' },
+                { value: 'МРП', text: 'МРП' },
+                { value: 'Производители / пивоварни', text: 'Производители / пивоварни' }
+              ],
+              name: 'Category',
+              id: 'Category',
+              secondClass: 'validator__choices',
+              placeholder: 'Причина обращения',
             })
         if props.phone
           div.request__field 
@@ -45,6 +82,9 @@ mixin request(props)
               placeholder: ' ',
               secondClass: 'validator__required',
             })
+        if props.file
+          div.request__field.request__field--wide
+            include ../file-loader/file-loader
 
       div.request__legal
         div.request__legal-check
@@ -57,3 +97,26 @@ mixin request(props)
           p Я соглашаюсь с #[a(href='#' target='_blank') политикой конфиденциальности] и #[a(href='#' target='_blank') пользовательским соглашением].
 
         button(type='submit').button.button--arrow Отправить
+
+    if props.footer
+      div.request__footer
+        a(href="tel:+79155428282").request__contact 
+          svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+            use(href='#icon-contacts-phone')
+          span +7 (915) 542-82-82
+          
+        a(href="mailto:brewery@brewlok.ru").request__contact 
+          svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+            use(href='#icon-contacts-mail')
+          span brewery@brewlok.ru
+          
+        a(href="https://vk.com/brewlokbrewery").request__contact 
+          svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+            use(href='#icon-contacts-vk')
+          span Написать в VKontakte
+          
+        a(href="https://t.me/brewlokbrewery").request__contact 
+          svg(width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
+            use(href='#icon-contacts-telegram')
+          span в Telegram
+

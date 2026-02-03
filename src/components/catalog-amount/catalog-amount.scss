@@ -4,22 +4,21 @@
   display: flex;
   flex-direction: column;
   background-color: $white-1;
-  // box-shadow: 0 10px 30px rgba($color: $dark-blue-1, $alpha: 5%);
   filter: drop-shadow(0 10px 30px rgba($color: $dark-blue-1, $alpha: 5%));
 
-  &:after {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: inherit;
-    /* stylelint-disable */
-    -webkit-mask-box-image: url("../assets/images/mask.svg") 30% repeat;
-    mask-border: url("../assets/images/mask.svg") 30% repeat;
-    /* stylelint-enable */
-    content: "";
-  }
+  // &:after {
+  //   position: absolute;
+  //   bottom: -8px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 20px;
+  //   background-color: inherit;
+  //   /* stylelint-disable */
+  //   -webkit-mask-box-image: url("../assets/images/mask.svg") 30% repeat;
+  //   mask-border: url("../assets/images/mask.svg") 30% repeat;
+  //   /* stylelint-enable */
+  //   content: "";
+  // }
 
   &--hide {
     .catalog-amount {

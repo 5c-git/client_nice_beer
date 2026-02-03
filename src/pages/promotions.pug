@@ -2,18 +2,33 @@ extends ../templates/default
 
 include ../components/watched/watched
 include ../components/promotion-card/promotion-card
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
+
 
 block main
   include ../components/breadcrumbs/breadcrumbs
-  
+
+
   +title({
     title: 'Акции и спец. предложения',
   })
 
+
   include ../components/banner/banner
 
-  include ../react/providers/common/SubscribeProvider/SubscribeProvider
+
+  +layout({})
+    +request-wrapper({
+      title: 'Подпишитесь на рассылку!',
+      text: 'Подпишитесь на новости и получайте самые свежие статьи и рекомендации от наших пивоваров!',
+    })
+      +request({
+        id: 'Subscribe',
+        email: true,
+      })
   
+
   +layout({
     variant: 'layout--grid3',
     title: 'Акции',

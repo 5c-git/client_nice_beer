@@ -1,67 +1,122 @@
 import { http, HttpResponse } from "msw";
+import {
+  ENV,
+} from '../env';
 
 // src/mocks/data/*.json
-import sendPhoneData from "./data/sendPhone.json";
-import sendCodeData from "./data/sendCode.json";
-import sendRegistrationData from "./data/sendRegistration.json";
+import Feedback from "./data/Feedback.json";
+import RequestContacts from "./data/RequestContacts.json";
+import Subscribe from "./data/Subscribe.json";
+import RequestService from "./data/RequestService.json";
+import RequestCooperation from './data/RequestCooperation.json';
+import RequestSearch from './data/RequestSearch.json';
+import updateProfile from './data/updateProfile.json';
 
-import getAddressesData from "./data/getAddresses.json";
-import updateAddressesData from "./data/updateAddresses.json";
-
-import getOrganizationsData from "./data/getOrganizations.json";
-import updateOrganizationsData from "./data/updateOrganizations.json";
-import deleteOrganizationsData from "./data/deleteOrganizations.json";
-
-import getProfileData from "./data/getProfile.json";
+import getProfile from "./data/getProfile.json";
 
 export const handlers = [
-  // LOGIN
-  http.post("/login/sendPhone", () =>
-    HttpResponse.json(sendPhoneData, { status: 200 })
-  ),
+  // FORMS
+  http.post(`${window.routes5.form.requests.Feedback[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
 
-  http.post("/login/sendCode", () =>
-    HttpResponse.json(sendCodeData, { status: 200 })
-  ),
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('Feedback POST:', data);
 
-  http.post("/login/sendRegistration", () =>
-    HttpResponse.json(sendRegistrationData, { status: 200 })
-  ),
-
-  // ADDRESSES
-  http.get("/addresses/getAddresses", () =>
-    HttpResponse.json(getAddressesData, { status: 200 })
-  ),
-
-  http.post("/addresses/updateAddresses", () =>
-    HttpResponse.json(updateAddressesData, { status: 200 })
-  ),
-
-  // ORGANIZATIONS
-  http.get("/organizations/getOrganizations", () =>
-    HttpResponse.json(getOrganizationsData, { status: 200 })
-  ),
-
-  http.post("/organizations/updateOrganizations", () =>
-    HttpResponse.json(updateOrganizationsData, { status: 200 })
-  ),
-
-  http.post("/organizations/deleteOrganizations", () =>
-    HttpResponse.json(deleteOrganizationsData, { status: 200 })
-  ),
-
-  // PROFILE
-  http.get("/mocks/data/getProfile.json", () =>
-    HttpResponse.json(getProfileData, { status: 200 })
-  ),
-
-  http.put("/mocks/data/getProfile.json", (req) => {
-    const updatedData = req.body; // Данные, которые пришли в PUT
-    console.log("PUT /mocks/data/getProfile.json", updatedData);
-
-    // Если нужно обновить моковый объект в памяти.
-    Object.assign(getProfileData, updatedData);
-
-    return HttpResponse.json({ status: "success", profile: getProfileData }, { status: 200 });
+    return HttpResponse.json(Feedback, {
+      status: 200,
+    });
   }),
+
+  http.post(`${window.routes5.form.requests.RequestContacts[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('RequestContacts POST:', data);
+
+    return HttpResponse.json(RequestContacts, {
+      status: 200,
+    });
+  }),
+
+  http.post(`${window.routes5.form.requests.Subscribe[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('Subscribe POST:', data);
+
+    return HttpResponse.json(Subscribe, {
+      status: 200,
+    });
+  }),
+
+  http.post(`${window.routes5.form.requests.RequestService[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('RequestService POST:', data);
+
+    return HttpResponse.json(RequestService, {
+      status: 200,
+    });
+  }),
+
+  http.post(`${window.routes5.form.requests.RequestCooperation[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('RequestCooperation POST:', data);
+
+    return HttpResponse.json(RequestCooperation, {
+      status: 200,
+    });
+  }),
+
+  http.post(`${window.routes5.form.requests.RequestSearch[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('RequestSearch POST:', data);
+
+    return HttpResponse.json(RequestSearch, {
+      status: 200,
+    });
+  }),
+
+
+  // Личный кабинет. 
+  http.put(`${window.routes5.profile.requests.updateProfile[`url${ENV}`]}`, async ({ request }) => {
+    const formData = await request.formData();
+
+    // если надо — читаем поля
+    const data = Object.fromEntries(formData.entries());
+    console.log('updateProfile PUT:', data);
+
+    return HttpResponse.json(updateProfile, {
+      status: 200,
+    });
+  }),
+
+
+  // Остатки от личных данных на Реакте. 
+  // // PROFILE
+  // http.get("/mocks/data/getProfile.json", () =>
+  //   HttpResponse.json(getProfile, { status: 200 })
+  // ),
+
+  // // (Сейчас сделано череp axios и возможно поэтому через put а не post)
+  // http.put("/mocks/data/getProfile.json", (req) => {
+  //   const updatedData = req.body; // Данные, которые пришли в PUT
+  //   console.log("getProfile PUT", updatedData);
+
+  //   // Если нужно обновить моковый объект в памяти.
+  //   Object.assign(getProfile, updatedData);
+
+  //   return HttpResponse.json({ status: "success", profile: getProfile }, { status: 200 });
+  // }),
 ];

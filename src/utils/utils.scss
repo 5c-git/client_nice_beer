@@ -23,7 +23,6 @@ $orange-1: #f8b814;
 $red-1: #ea4410;
 $light-red-1: #e45945;
 
-$green-1: #43626D;
 $light-green-1: #0077c5;
 
 $black-1: #212121;
@@ -36,6 +35,11 @@ $phone: 767px;
 
 $transition-time: 0.3s;
 $article-width: auto;
+$border-radius: 10px;
+
+@mixin border {
+  border-radius: 10px;
+}
 
 @mixin DЗаголовок50-Заголовок1 {
   font-family: $title-font;
@@ -504,33 +508,30 @@ $article-width: auto;
   .choices__list--single {
     @include DТекст16inter-reg;
     margin: 0;
-    padding: 0;
-    padding-top: 11px;
+    padding-top: 0;
     padding-right: 34px;
     padding-bottom: 12px;
-    padding-left: 14px;
-    border: 1px solid $grey-6;
+    padding-left: 0;
+    border: 0;
+    border-bottom: 1px solid $dark-blue-1;
     text-align: left;
     color: currentcolor;
-    background-color: $white-1;
+    background-color: transparent;
   }
 
   .choices__list--dropdown {
+    top: calc(100% - 1px);
     z-index: 1;
     min-width: 100%;
     margin: 0;
-    border: 1px solid $grey-6;
-    border-top: 0;
+    border: 1px solid $grey-8;
     border-radius: 0;
     background-color: $white-1;
     box-shadow: 0 30px 30px rgba($color: #000000, $alpha: 10%);
     word-break: initial;
 
     .choices__list {
-      padding-top: 4px;
-      padding-right: 4px;
-      padding-bottom: 4px;
-      padding-left: 4px;
+      padding: 0;
     }
 
     .choices__item {
@@ -571,11 +572,28 @@ $article-width: auto;
   }
 
   .choices__placeholder {
+    color: transparent;
     opacity: 1;
+  }
+
+  &[data-type*="select-one"] {
+    .choices__inner {
+      min-height: unset;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    .choices__button {
+      display: none;
+    }
   }
 
   &[data-type*="select-one"] .choices__inner {
     min-height: unset;
+    display: flex;
     margin: 0;
     padding: 0;
     border: 0;
@@ -625,5 +643,60 @@ $article-width: auto;
 
   &[data-type*="select-one"].is-open .choices__inner {
     border-radius: 0;
+  }
+
+  .choices__list--multiple {
+    .choices__item {
+      @include DТекст15inter-med;
+      position: relative;
+      align-items: center;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      padding-top: 4px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      border-radius: 50px;
+      border: 0;
+      color: #ffffff;
+      background-color: #212121;
+      transition: background-color 0.3s;
+      flex-shrink: 0;
+    }
+  }
+
+  &[data-type*="select-multiple"] {
+    .choices__inner {
+      @include DТекст16inter-reg;
+      margin: 0;
+      padding-top: 0;
+      padding-right: 34px;
+      padding-bottom: 5px;
+      padding-left: 0;
+      border: 0;
+      border-bottom: 1px solid $dark-blue-1;
+      text-align: left;
+      color: currentcolor;
+      background-color: transparent;
+    }
+
+    .choices__input {
+      @include DТекст16inter-reg;
+      display: none;
+      margin: 0;
+      padding: 0;
+      color: $grey-8;
+      border: 0;
+      text-align: left;
+      background-color: transparent;
+
+      @media (max-width: $phone) {
+        height: 29px;
+      }
+
+      &::placeholder {
+        color: inherit;
+      }
+    }
   }
 }

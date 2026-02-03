@@ -1,5 +1,6 @@
 .packaging {
   display: flex;
+  border: 1px solid $grey-4;
 
   button {
     @include DТекст18inter-med;
@@ -7,7 +8,7 @@
     margin: 0;
     padding: 0;
     background: 0;
-    border: 1px solid $grey-4;
+    border: 0;
     transition: color 0.3s;
     outline: none;
     cursor: pointer;
@@ -30,7 +31,9 @@
     padding-right: 10px;
     padding-bottom: 4px;
     padding-left: 10px;
-    border: 1px solid $grey-4;
+    border: 0;
+    border-right: 1px solid $grey-4;
+    border-left: 1px solid $grey-4;
     color: $dark-blue-1;
     background: 0;
     text-align: right;

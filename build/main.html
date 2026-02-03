@@ -12,12 +12,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
 <link rel="manifest" href="./assets/favicons/site.webmanifest">
-<link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#43626D">
 <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileColor" content="#43626D">
 <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-    <title>brew2b</title>
+    <title>Nice Bear</title>
   <link href="css/vendors.css" rel="stylesheet"><link href="css/bundle.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -436,6 +436,39 @@
                             </div>
                             <div class="request__field"> 
                               <div class="field">
+                                <label class="validator__description field__label" for="city">Город</label>
+                                <div class="field__inner">
+                                  <input class="validator__required field__input" type="text" name="city" id="city" autocomplete="off" autocapitalize="off" placeholder=" ">
+                                </div>
+                                <div class="validator__error-container field__error"></div>
+                              </div>
+                            </div>
+                            <div class="request__field"> 
+                              <div class="field">
+                                <label class="validator__description field__label" for="Company name">Компания</label>
+                                <div class="field__inner">
+                                  <input class="validator__required field__input" type="text" name="Company name" id="Company name" autocomplete="off" autocapitalize="off" placeholder=" ">
+                                </div>
+                                <div class="validator__error-container field__error"></div>
+                              </div>
+                            </div>
+                            <div class="request__field"> 
+                              <div class="field">
+                                <label class="validator__description field__label" for="Category">Сфера</label>
+                                <div class="field__inner">
+                                  <select class="validator__choices field__input field__input--select" name="Category" id="Category">
+                                    <option value="HoReCa">HoReCa</option>
+                                    <option value="Сетевые магазины">Сетевые магазины</option>
+                                    <option value="Традиционная торговля">Традиционная торговля</option>
+                                    <option value="МРП">МРП</option>
+                                    <option value="Производители / пивоварни">Производители / пивоварни</option>
+                                  </select>
+                                </div>
+                                <div class="validator__error-container field__error"></div>
+                              </div>
+                            </div>
+                            <div class="request__field"> 
+                              <div class="field">
                                 <label class="validator__description field__label" for="Email">Имейл</label>
                                 <div class="field__inner">
                                   <input class="validator__mail field__input" type="email" name="Email" id="Email" autocomplete="off" autocapitalize="off" placeholder=" ">
@@ -451,6 +484,12 @@
                                 </div>
                                 <div class="validator__error-container field__error"></div>
                               </div>
+                            </div>
+                            <div class="request__field request__field--wide">
+<div class="file-loader">
+  <label class="file-loader__label" for="document"></label>
+  <input class="file-loader__input" type="file" name="document" data-max-total-file-size="100MB" data-label-name="Прикрепить документ/ы или Attach file/s" accept="application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/rtf, application/pdf, image/jpeg, image/gif, image/png, video/quicktime, video/mp4, video/avi, video/x-flv, .flv" multiple required>
+</div>
                             </div>
                           </div>
                           <div class="request__legal">

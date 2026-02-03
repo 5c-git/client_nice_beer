@@ -2,17 +2,16 @@
   @include DЗаголовок25-Заголовок4;
   display: inline-grid;
   width: 100%;
-  max-width: 540px;
+  max-width: 300px;
   min-height: 60px;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 5px;
   padding-right: 5px;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
   padding-left: 5px;
   border: 1px solid transparent;
-  border-radius: 0;
   text-decoration: none;
   text-align: center;
   color: $dark-blue-1;
@@ -64,6 +63,11 @@
         border-color: $blue-1;
       }
     }
+  }
+
+  &--small {
+    @include DЗаголовок16-заголовоктовара;
+    min-height: 44px;
   }
 
   &--active {

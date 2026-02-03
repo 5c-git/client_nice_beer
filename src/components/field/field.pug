@@ -12,21 +12,11 @@ mixin field(props)
           data-search=props.search
           required=props.required
         ).field__input.field__input--select
-          option(value)=props.placeholder
-          option(value="1") 1 взрослый
-          option(value="2") Подача документов на открытие счёте в реестре
-          option(value="3") 3 взрослых
-          option(value="25") 25 взрослых
-          option(value="В работе") В работе
-          option(value="Москва") Подача документов на изменение анкетных данных по лицевому счёту в реестре
-          option(value="Рязань") Возврат
-          option(value="Норильск") Возврат
-          option(value="Челябинск") Возврат
-          option(value="Возврат") Возврат
-          option(value="Выпущен") Выпущен
-          option(value="Исполнено") Исполнено
-          option(value="Отмена") Отмена
-          option(value="Черновик") Черновик
+          each option in props.options
+            option(
+              value=option.value
+              selected=option.selected
+            )=option.text
 
       else if props.selectTime
         select(
@@ -70,6 +60,7 @@ mixin field(props)
           class=props.secondClass
           disabled=props.disabled
           required=props.required
+          readonly=props.readonly
         ).field__input=props.value
 
       else if props.checkbox
@@ -158,6 +149,7 @@ mixin field(props)
           data-min-time=props.mintime
           data-max-time=props.maxtime
           disabled=props.disabled
+          readonly=props.readonly
         ).field__input.field__input--time
 
       else
@@ -181,6 +173,7 @@ mixin field(props)
           data-max-date=props.maxdate
           disabled=props.disabled
           required=props.required
+          readonly=props.readonly
           data-bouncer-target=props.bouncerTarget
         ).field__input
 

@@ -11,6 +11,12 @@
     padding-top: 30px;
     border-top: 2px dotted $grey-8;
     gap: 30px;
+
+    @media(max-width: $phone) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 15px;
+    }
   }
 
   &__result {
@@ -22,17 +28,13 @@
   }
 
   &__sort {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: auto;
-    gap: 15px;
 
-    @media (max-width: $desktop) {
-      flex-direction: column;
-      align-items: initial;
-      gap: 10px;
+    @media(max-width: $phone) {
+      margin-left: unset;
     }
+
+
   }
 
   &__select {
@@ -41,15 +43,25 @@
 
   &__choices {
     @include select;
+
+    .choices__list--single {
+      @include DТекст18inter-med;
+      min-height: unset;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+      padding-right: 30px;
+    }
+
+    .choices__list--dropdown {
+      top: calc(100% + 5px);
+    }
   }
 
   &__view {
     display: flex;
-
-    @media (max-width: $phone) {
-      margin-bottom: 20px;
-      align-self: flex-end;
-    }
   }
 
   &__view-button {

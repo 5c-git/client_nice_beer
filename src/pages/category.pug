@@ -2,6 +2,8 @@ extends ../templates/default
 
 include ../components/article-card/article-card
 include ../components/category-card/category-card
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
 
 block main
   include ../components/breadcrumbs/breadcrumbs
@@ -11,6 +13,7 @@ block main
     back: true,
   })
   
+
   +layout({
     variant: 'layout--grid3',
     pagination: true,
@@ -64,7 +67,17 @@ block main
       title: 'Классификация сортов и видов пива.',
     })
 
-  include ../react/providers/common/SubscribeProvider/SubscribeProvider
+
+  +layout({})
+    +request-wrapper({
+      title: 'Подпишитесь на рассылку!',
+      text: 'Подпишитесь на новости и получайте самые свежие статьи и рекомендации от наших пивоваров!',
+    })
+      +request({
+        id: 'Subscribe',
+        email: true,
+      })
+
   
   +layout({
     variant: 'layout--grid3',

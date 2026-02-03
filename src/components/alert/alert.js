@@ -3,68 +3,89 @@ import './alert.scss';
 // Логика для отрисовки инф.сообщений
 const body = document.querySelector('.alert-wrapper');
 
-const removeAllAlert = () => {
-  const currentAlert = body.querySelectorAll('.alert');
-  currentAlert.forEach((el) => {
-    el.remove();
-  });
-};
-
-const removeAlert = (template) => {
+const removeAlert = ({
+  template,
+}) => {
   const templateContent = document.querySelector(`${template}`);
 
   templateContent.remove();
 };
 
-const summonAlert = (template) => {
-  const alertName = template.slice(1);
-  const templateContent = document.querySelector(`#${alertName}`).content.cloneNode(true);
-  const alert = templateContent.querySelector(`.${alertName}`);
-  const close = alert.querySelector('.alert__close');
+const summonAlert = (input) => {
+  let template;
+  let text;
+  let className;
 
-  const hideAlert = () => {
-    alert.classList.add('alert--back-bounce');
-  };
+  // Проверка на данные, которые передаём, старая логика принимала строку, новая - объект.
+  if (typeof input === 'string') {
+    template = input;
+  } else if (typeof input === 'object' && input !== null) {
+    template = input.template;
+    text = input.text;
+    className = input.className;
+  } else {
+    console.log('Неверный тип данных для summonAlert. Ожидается строка (template) или объект { template, text }.');
+    return;
+  }
+
+  // Проверка: template должен начинаться с #
+  if (typeof template !== 'string' || !template.startsWith('#')) {
+    console.log('Неверный шаблон. Ожидается строка, начинающаяся с "#", например "#alert--request".');
+    return;
+  }
+
+  const alertName = template.slice(1); // удаляем '#' из id
+  const alertTemplate = document.querySelector(`#${alertName}`);
+
+  if (!alertTemplate) {
+    console.log(`#${alertName} системного окна не существует.`);
+    return;
+  }
+
+  const oldAlert = document.querySelector(`.${alertName}`);
+  if (oldAlert) {
+    oldAlert.remove();
+  }
+
+  const templateContent = alertTemplate.content.cloneNode(true);
+  const alert = templateContent.querySelector(`.${alertName}`);
+
+  if (!alert) {
+    console.log(`В шаблоне #${alertName} отсутствует корневой элемент .${alertName}`);
+
+    return;
+  }
+
+  if (className) {
+    if (typeof className === 'string') {
+      alert.classList.add(className);
+    } else {
+      console.log('className должен быть строкой или массивом строк');
+    }
+  }
+
+  const close = alert.querySelector('.alert__close');
+  const textContainer = alert.querySelector('.alert__container');
+
+  if (text && textContainer) {
+    textContainer.innerHTML = text;
+  }
 
   const closeAlert = () => {
     alert.remove();
   };
 
   if (close) {
-    close.addEventListener('click', () => {
-      closeAlert();
-    });
+    close.addEventListener('click', closeAlert);
   }
 
-  removeAllAlert(); // Перед тем как показать новое сообщение, закрываем последнее.
   body.append(templateContent);
   alert.classList.add('alert--bounce');
 
-  let h;
-  let c;
-  const hideAlertTimeout = setTimeout(() => {
-    hideAlert();
-  }, 10000);
-  const closeAlertTimeout = setTimeout(() => {
-    closeAlert();
-  }, 12500);
-
-  alert.addEventListener('mouseleave', () => {
-    h = setTimeout(() => {
-      hideAlert();
-    }, 3000);
-    c = setTimeout(() => {
-      closeAlert();
-    }, 5500);
-  });
-
-  alert.addEventListener('mouseenter', () => {
-    clearTimeout(hideAlertTimeout);
-    clearTimeout(closeAlertTimeout);
-    clearTimeout(h);
-    clearTimeout(c);
-    alert.classList.remove('alert--back-bounce');
-  });
+  return alert;
 };
 
-export { summonAlert, removeAlert };
+export {
+  summonAlert,
+  removeAlert,
+};

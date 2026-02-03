@@ -1,0 +1,63 @@
+include ../field/field
+
+div.personal-data
+  form(action="#" method='post' id='perosnal-name').personal-data__form 
+    div.personal-data__fields
+      div.personal-data__field-wrapper
+        div.personal-data__field
+          +field({
+            label: 'Имя',
+            type: 'text',
+            name: 'name',
+            id: 'name',
+            placeholder: ' ',
+            value: 'Владимир Кормишин',
+            readonly: true,
+            secondClass: 'validator__required',
+          })
+        div.personal-data__field-action
+          button(type='button').button.button--small.personal-data__change Изменить
+          button(type='submit').button.button--small.personal-data__save ✓ Сохранить
+          button(type='button').button.button--small.personal-data__cancel ✗ Отменить
+
+
+div.personal-data
+  form(action="#" method='post' id='perosnal-phone').personal-data__form 
+    div.personal-data__fields
+      div.personal-data__field-wrapper
+        div.personal-data__field
+          +field({
+            label: 'Телефон',
+            type: 'tel',
+            name: 'phone',
+            id: 'phone',
+            placeholder: ' ',
+            value: '+7 (892) 902-90-55',
+            readonly: true,
+            secondClass: 'validator__phone',
+          })
+        div.personal-data__field-action
+          button(type='button').button.button--small.personal-data__change Изменить
+          button(type='submit').button.button--small.personal-data__save ✓ Сохранить
+          button(type='button').button.button--small.personal-data__cancel ✗ Отменить
+
+
+div.personal-data
+  form(action="#" method='post' id='perosnal-email').personal-data__form 
+    div.personal-data__fields
+      div.personal-data__field-wrapper
+        div.personal-data__field
+          +field({
+            label: 'Имейл',
+            type: 'email',
+            name: 'email',
+            id: 'email',
+            placeholder: ' ',
+            value: 'vkormishin@5corners.ru',
+            readonly: true,
+            secondClass: 'validator__mail',
+          })
+        div.personal-data__field-action
+          button(type='button').button.button--small.personal-data__change Изменить
+          button(type='submit').button.button--small.personal-data__save ✓ Сохранить
+          button(type='button').button.button--small.personal-data__cancel ✗ Отменить

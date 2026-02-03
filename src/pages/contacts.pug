@@ -1,5 +1,8 @@
 extends ../templates/default
 
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
+
 block main
   include ../components/breadcrumbs/breadcrumbs
   
@@ -13,4 +16,14 @@ block main
 
   include ../components/contacts/contacts
 
-  include ../react/providers/pages/contacts/RequestContactsProvider/RequestContactsProvider
+  +layout({
+    title: 'Обратная связь',
+  })
+    +request-wrapper({})
+      +request({
+        id: 'RequestContacts',
+        name: true,
+        phone: true,
+        email: true,
+        textarea: true, 
+      })

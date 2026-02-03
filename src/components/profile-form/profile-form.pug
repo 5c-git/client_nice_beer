@@ -5,19 +5,19 @@ mixin profile-form(props)
       fieldset.profile-form__fieldset
 
         div.profile-form__field.profile-form__field--wide
-          //- label(for='point-name').validator__description.profile-form__label Название торговой точки
-          input(type='text' name='point-name' id='point-name' placeholder='Введите название торговой точки' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
+          label(for='point-name').validator__description.profile-form__label Название торговой точки
+          input(type='text' name='point-name' id='point-name' placeholder='' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
           label(for='egais').validator__description.profile-form__label Код ЕГАИС
-          input(type='text' inputmod='numeric' name='egais' id='egais' placeholder='Введите код ЕГАИС для алкогольных заказов' autocomplete='nani' autocapitalize='off' minlength='12' maxlength='12' data-pattern="9{12}").profile-form__input
+          input(type='text' inputmod='numeric' name='egais' id='egais' placeholder='' autocomplete='nani' autocapitalize='off' minlength='12' maxlength='12' data-pattern="9{12}").profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
-          //- label(for='address').validator__description.profile-form__label Адрес компании
-          input(type='text' id='address' name='address' placeholder='Введите адрес' autocomplete='nani' autocapitalize='off' tabindex='-1').visually-hidden
-          textarea(id='fake-address' placeholder='Введите адрес' autocomplete='nani' autocapitalize='off' maxlength='1000').validator__required.profile-form__input
+          label(for='address').validator__description.profile-form__label Адрес компании
+          input(type='text' id='address' name='address' placeholder='' autocomplete='nani' autocapitalize='off' tabindex='-1').visually-hidden
+          textarea(id='fake-address' placeholder=' ' autocomplete='nani' autocapitalize='off' maxlength='1000').validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
@@ -36,10 +36,10 @@ mixin profile-form(props)
           div.profile-form__fields-inner
             div.profile-form__field-inner
               label(for='start-time').validator__description.profile-form__label От
-              input(type='time' name='start' id='start-time' placeholder='От' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
+              input(type='time' name='start' id='start-time' placeholder='' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
             div.profile-form__field-inner
               label(for='finish-time').validator__description.profile-form__label До
-              input(type='time' name='finish' id='finish-time' placeholder='До' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
+              input(type='time' name='finish' id='finish-time' placeholder='' autocomplete='nani' autocapitalize='off').validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
@@ -57,12 +57,12 @@ mixin profile-form(props)
 
         div.profile-form__field
           label(for='email').validator__description.profile-form__label E-mail компании
-          input(type='email' name='email' id='email' placeholder='Введите e-mail компании' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
+          input(type='email' name='email' id='email' placeholder='' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='phone').validator__description.profile-form__label Телефон компании
-          input(type='tel' inputmode="tel" name='phone' id='phone' placeholder='Введите телефон компании' autocomplete='nani' autocapitalize='off').validator__phone.profile-form__input
+          input(type='tel' inputmode="tel" name='phone' id='phone' placeholder='' autocomplete='nani' autocapitalize='off').validator__phone.profile-form__input
           div.validator__error-container
             
       div.profile-form__action
@@ -77,37 +77,37 @@ mixin profile-form(props)
 
         div.profile-form__field
           label(for='inn').validator__description.profile-form__label ИНН компании
-          input(type='text' id='inn' name='inn' minlength='10' placeholder='Введите ИНН' autocomplete="off" autocapitalize="off" inputmode='numeric' required).validator__required.profile-form__input
+          input(type='text' id='inn' name='inn' minlength='10' placeholder='' autocomplete="off" autocapitalize="off" inputmode='numeric' required).validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='kpp').validator__description.profile-form__label КПП компании
-          input(type='number' id='kpp' name='kpp' placeholder='Введите КПП' autocomplete="off" autocapitalize="off" tabindex="-1").profile-form__input
+          input(type='number' id='kpp' name='kpp' placeholder='' autocomplete="off" autocapitalize="off" tabindex="-1").profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='ogrn').validator__description.profile-form__label ОГРН компании
-          input(type='number' id='ogrn' name='ogrn' placeholder='Введите ОГРН' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
+          input(type='number' id='ogrn' name='ogrn' placeholder='' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='short-name').validator__description.profile-form__label Краткое наименование компании
-          input(type='text' id='short-name' name='short-name' placeholder='Введите наименование компании' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
+          input(type='text' id='short-name' name='short-name' placeholder='' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
           label(for='name').validator__description.profile-form__label Полное наименование компании
-          textarea(id='name' name='name' placeholder='Введите наименование компании' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
+          textarea(id='name' name='name' placeholder=' ' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
           label(for='address').validator__description.profile-form__label Юридический адрес компании
-          textarea(id='address' name='address' placeholder='Введите юридический адрес компании' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
+          textarea(id='address' name='address' placeholder=' ' autocomplete="off" autocapitalize="off" tabindex="-1" required).validator__required.profile-form__input
           div.validator__error-container
 
         div.profile-form__field.profile-form__field--wide
           label(for='post-address').validator__description.profile-form__label Почтовый адрес компании
-          textarea(id='post-address' name='post-address' autocomplete="off" autocapitalize="off" placeholder='Введите почтовый адрес').validator__required.profile-form__input
+          textarea(id='post-address' name='post-address' autocomplete="off" autocapitalize="off" placeholder=' ').validator__required.profile-form__input
           div.validator__error-container
             
       div.profile-form__action
@@ -133,27 +133,27 @@ mixin profile-form(props)
               
         div.profile-form__field
           label(for='surname').validator__description.profile-form__label Фамилия
-          input(type='text' name="surname" id='surname' placeholder='Введите фамилию' autocomplete='off' autocapitalize='off').validator__text.profile-form__input
+          input(type='text' name="surname" id='surname' placeholder='' autocomplete='off' autocapitalize='off').validator__text.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='name').validator__description.profile-form__label Имя
-          input(type='text' name="name" id='name' placeholder='Введите имя' autocomplete='off' autocapitalize='off').validator__text.profile-form__input
+          input(type='text' name="name" id='name' placeholder='' autocomplete='off' autocapitalize='off').validator__text.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='patronymic').validator__description.profile-form__label Отчество
-          input(type='text' name="patronymic" id='patronymic' placeholder='Введите отчество' autocomplete='off' autocapitalize='off').profile-form__input
+          input(type='text' name="patronymic" id='patronymic' placeholder='' autocomplete='off' autocapitalize='off').profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='email').validator__description.profile-form__label E-mail
-          input(type='email' name='email' id='email' placeholder='Введите e-mail' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
+          input(type='email' name='email' id='email' placeholder='' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='phone').validator__description.profile-form__label Телефон
-          input(type='tel' inputmode="tel" name='phone' id='phone' placeholder='Введите телефон' autocomplete='nani' autocapitalize='off').validator__phone.profile-form__input
+          input(type='tel' inputmode="tel" name='phone' id='phone' placeholder='' autocomplete='nani' autocapitalize='off').validator__phone.profile-form__input
           div.validator__error-container
             
       div.profile-form__action
@@ -167,7 +167,7 @@ mixin profile-form(props)
 
         div.profile-form__field
           label(for='email').validator__description.profile-form__label E-mail
-          input(type='email' name='email' id='email' placeholder='Введите E-mail' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
+          input(type='email' name='email' id='email' placeholder='' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
           div.validator__error-container
             
         div.profile-form__field
@@ -180,18 +180,18 @@ mixin profile-form(props)
 
         div.profile-form__field
           label(for='email').validator__description.profile-form__label Логин
-          input(type='email' name='email' id='email' placeholder='Введите логин' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
+          input(type='email' name='email' id='email' placeholder='' autocomplete='nani' autocapitalize='off').validator__mail.profile-form__input
           div.validator__error-container
 
         div.profile-form__field
           label(for='password').validator__description.profile-form__label Пароль
-          input(type='password' name='password' id='password' placeholder='Введите пароль' autocomplete='nani' autocapitalize='off' data-bouncer-target='#password1').validator__password.profile-form__input
+          input(type='password' name='password' id='password' placeholder='' autocomplete='nani' autocapitalize='off' data-bouncer-target='#password1').validator__password.profile-form__input
           button(type='button' tabindex='-1').validator__eye.profile-form__eye
           div#password1.validator__error-container
 
         div.profile-form__field
           label(for='confirm-password').validator__description.profile-form__label Пароль
-          input(type='password' name='confirm-password' id='confirm-password' placeholder='Повторите пароль' autocomplete='nani' autocapitalize='off' data-bouncer-match='#password' data-bouncer-target='#password2').validator__password.profile-form__input
+          input(type='password' name='confirm-password' id='confirm-password' placeholder='' autocomplete='nani' autocapitalize='off' data-bouncer-match='#password' data-bouncer-target='#password2').validator__password.profile-form__input
           button(type='button' tabindex='-1').validator__eye.profile-form__eye
           div#password2.validator__error-container
             

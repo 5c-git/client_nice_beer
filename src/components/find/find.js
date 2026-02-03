@@ -3,6 +3,8 @@ import Choices from 'choices.js';
 import { ENV } from '../../env';
 
 const multiMapInit = (data) => {
+  if (!data) return;
+
   const find = document.querySelector('.find');
 
   if (find) {

@@ -55,8 +55,41 @@ const ROUTES = {
   profile: {
     requests: {
       getProfile: {
-        urlLocal: "/mocks/data/getProfile.json",
+        urlLocal: "/mocks/data/updateProfile.json",
         urlRemote: "/local/ajax/personal_data.php",
+      },
+      updateProfile: {
+        urlLocal: "/mocks/data/updateProfile.json",
+        urlRemote: "/local/ajax/personal_data.php",
+      },
+    },
+  },
+
+  form: {
+    requests: {
+      Feedback: {
+        urlLocal: "/mocks/data/Feedback.json",
+        urlRemote: "",
+      },
+      RequestContacts: {
+        urlLocal: "/mocks/data/RequestContacts.json",
+        urlRemote: "/local/ajax/feedback.php",
+      },
+      Subscribe: {
+        urlLocal: "/mocks/data/Subscribe.json",
+        urlRemote: "/local/ajax/subscribe.php",
+      },
+      RequestService: {
+        urlLocal: "/mocks/data/RequestService.json",
+        urlRemote: "/local/ajax/feedback_services.php",
+      },
+      RequestCooperation: {
+        urlLocal: "/mocks/data/RequestCooperation.json",
+        urlRemote: "/local/ajax/feedback_partner.php",
+      },
+      RequestSearch: {
+        urlLocal: "/mocks/data/RequestSearch.json",
+        urlRemote: "/local/ajax/search_notfound.php",
       },
     },
   },

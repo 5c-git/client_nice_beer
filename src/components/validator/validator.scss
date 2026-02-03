@@ -2,6 +2,7 @@
   &__error {
     @include DТекст14inter-reg;
     display: none;
+    color: $red-1 !important;
     visibility: visible;
     pointer-events: none;
   }
