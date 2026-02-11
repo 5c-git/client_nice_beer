@@ -1007,11 +1007,14 @@ if (payment) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8019);
 /* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
-const initTopFilterSelect = () => {
+const initTopFilterSelect = (func) => {
   const select = document.querySelector(".top-filters__select");
   if (select) {
     const choicesNolint = new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, {
@@ -1030,7 +1033,7 @@ const initTopFilterSelect = () => {
     select.choicesInstance = choicesNolint;
   }
 };
-initTopFilterSelect();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initTopFilterSelect);
 
 
 /***/ },
@@ -4825,6 +4828,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cart_card_cart_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(1409);
 /* harmony import */ var _modal_product_modal_product__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(9705);
 /* harmony import */ var _catalog_catalog__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(6433);
+/* harmony import */ var _corners_filter_corners_filter__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(9237);
+
 
 
 
@@ -4875,11 +4880,10 @@ window.Corners5ProjectLayout = {
   activateItemCard: _item_card_item_card__WEBPACK_IMPORTED_MODULE_14__["default"],
   activateCartCard: _cart_card_cart_card__WEBPACK_IMPORTED_MODULE_15__["default"],
   activateModalProduct: _modal_product_modal_product__WEBPACK_IMPORTED_MODULE_16__["default"],
-  // catalogAmountInit,
   filterInit: _catalog_catalog__WEBPACK_IMPORTED_MODULE_17__["default"],
-  // viewToggleInit,
   setStatus: _utils_utils__WEBPACK_IMPORTED_MODULE_9__/* .setStatus */ .Lx,
-  activateRequestButtons: _utils_utils__WEBPACK_IMPORTED_MODULE_9__/* .activateRequestButtons */ .Qs
+  activateRequestButtons: _utils_utils__WEBPACK_IMPORTED_MODULE_9__/* .activateRequestButtons */ .Qs,
+  cornersFilterInit: _corners_filter_corners_filter__WEBPACK_IMPORTED_MODULE_18__["default"]
 };
 
 
@@ -6099,12 +6103,22 @@ buttons.forEach((button) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3670);
+/* harmony import */ var _top_filters_top_filters__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1729);
 
 
-const form = document.querySelector(".corners-filter__form");
-const resultBlock = document.querySelector(".corners-filter__result");
-if (form) {
+
+const cornersFilterInit = ({
+  submitSelects,
+  submitSort
+} = {}) => {
+  const form = document.querySelector(".corners-filter__form");
+  const resultBlock = document.querySelector(".corners-filter__result");
+  if (!form)
+    return;
   const groups = [...form.querySelectorAll(".corners-filter__group")];
   const submitButton = form.querySelector(".corners-filter__submit");
   const closeAll = () => {
@@ -6127,7 +6141,6 @@ if (form) {
       if (!isActive) {
         group.classList.add("corners-filter__group--active");
         toggle.setAttribute("aria-expanded", "true");
-        console.log(window.innerWidth);
         if (window.innerWidth < 768) {
           (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getPaddingOnBody */ .rP)();
         }
@@ -6149,53 +6162,87 @@ if (form) {
       closeAll();
     }
   });
-  if (resultBlock) {
-    const renderPickedFilters = (state) => {
-      resultBlock.innerHTML = "";
-      for (const key in state) {
-        const values = state[key];
-        if (!values || !values.length)
-          continue;
-        const text = values.length === 1 ? `${key}: ${values[0]}` : `${key}: ${values.length} \u0437\u043D\u0430\u0447.`;
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "corners-filter__picked";
-        btn.textContent = text;
-        btn.dataset.name = key;
-        resultBlock.appendChild(btn);
+  form.addEventListener("change", (evt) => {
+    if (evt.target.matches('input[type="checkbox"]')) {
+      submitButton == null ? void 0 : submitButton.removeAttribute("style");
+    }
+  });
+  if (!resultBlock)
+    return;
+  const renderPickedFilters = (uiState) => {
+    resultBlock.innerHTML = "";
+    for (const key in uiState) {
+      const values = uiState[key];
+      if (!values || !values.length)
+        continue;
+      const text = values.length === 1 ? `${key}: ${values[0]}` : `${key}: ${values.length} \u0437\u043D\u0430\u0447.`;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "corners-filter__picked";
+      btn.textContent = text;
+      btn.dataset.name = key;
+      resultBlock.appendChild(btn);
+    }
+  };
+  const updateUiState = () => {
+    const state = {};
+    form.querySelectorAll('input[type="checkbox"]:checked').forEach((input) => {
+      const groupName = input.dataset.name;
+      const valueLabel = input.dataset.value;
+      if (!state[groupName]) {
+        state[groupName] = [];
       }
-    };
-    const updateState = () => {
-      const state = (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getFormState */ .Ai)(form);
-      renderPickedFilters(state);
-      return state;
-    };
-    updateState();
-    form.addEventListener("submit", (evt) => {
-      evt.preventDefault();
-      const state = updateState();
-      form.dispatchEvent(
-        new CustomEvent("filter:change", {
-          detail: state
-        })
-      );
-      submitButton.setAttribute("style", "display: none;");
+      state[groupName].push(valueLabel);
     });
-    form.addEventListener("change", (evt) => {
-      if (evt.target.matches('input[type="checkbox"]')) {
-        console.log("\u041A\u043B\u0438\u043A\u043D\u0443\u043B\u0438");
-        submitButton.removeAttribute("style");
-      }
+    renderPickedFilters(state);
+    return state;
+  };
+  (0,_top_filters_top_filters__WEBPACK_IMPORTED_MODULE_1__["default"])(submitSort);
+  const select = document.querySelector(".top-filters__select");
+  const updateFormState = () => {
+    const state = (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getFormState */ .Ai)(form);
+    if (select && select.name) {
+      state[select.name] = select.value;
+    }
+    return state;
+  };
+  updateUiState();
+  form.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    updateUiState();
+    const state = updateFormState();
+    form.dispatchEvent(
+      new CustomEvent("filter:change", {
+        detail: state
+      })
+    );
+    submitButton == null ? void 0 : submitButton.setAttribute("style", "display: none;");
+    if (submitSelects) {
+      submitSelects(form);
+    }
+  });
+  resultBlock.addEventListener("click", (evt) => {
+    const btn = evt.target.closest(".corners-filter__picked");
+    if (!btn)
+      return;
+    const name = btn.dataset.name;
+    form.querySelectorAll(`input[data-name="${name}"]`).forEach((input) => {
+      input.checked = false;
     });
-    resultBlock.addEventListener("click", (evt) => {
-      const btn = evt.target.closest(".corners-filter__picked");
-      if (!btn)
-        return;
-      const name = btn.dataset.name;
-      form.querySelectorAll(`input[name="${name}"]`).forEach((input) => {
-        input.checked = false;
-      });
-      const state = updateState();
+    updateUiState();
+    const state = updateFormState();
+    form.dispatchEvent(
+      new CustomEvent("filter:change", {
+        detail: state
+      })
+    );
+    if (submitSelects) {
+      submitSelects(form);
+    }
+  });
+  if (select) {
+    select.addEventListener("addItem", () => {
+      const state = updateFormState();
       form.dispatchEvent(
         new CustomEvent("filter:change", {
           detail: state
@@ -6203,13 +6250,8 @@ if (form) {
       );
     });
   }
-}
-const filterForm = document.querySelector(".corners-filter__form");
-if (filterForm) {
-  filterForm.addEventListener("filter:change", (evt) => {
-    console.log("\u0424\u0438\u043B\u044C\u0442\u0440 \u0438\u0437\u043C\u0435\u043D\u0438\u043B\u0441\u044F:", evt.detail);
-  });
-}
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cornersFilterInit);
 
 
 /***/ },

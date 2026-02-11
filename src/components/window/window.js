@@ -31,7 +31,7 @@ import activateCartCard from '../cart-card/cart-card';
 import activateModalProduct from '../modal-product/modal-product';
 // import catalogAmountInit from '../catalog-amount/catalog-amount';
 import filterInit from '../catalog/catalog';
-// import viewToggleInit from '../top-filters/top-filters';
+import cornersFilterInit from '../corners-filter/corners-filter';
 
 window.Corners5ProjectLayout = {
   setTextareaAutoHeight,
@@ -65,9 +65,8 @@ window.Corners5ProjectLayout = {
   activateItemCard,
   activateCartCard,
   activateModalProduct,
-  // catalogAmountInit,
   filterInit,
-  // viewToggleInit,
   setStatus,
   activateRequestButtons,
+  cornersFilterInit,
 };

@@ -8,12 +8,12 @@ mixin top-filters(props)
         p Найдено 1043 результатов
 
       div.top-filters__sort
-        select(name="city").top-filters__select
-          option(value='1') По возрастанию рейтинга
-          option(value='2') По убыванию рейтинга
-          option(value='3') По возрастанию цены
-          option(value='4') По убыванию цены
-          option(value='5') По новизне
+        select(name="sortirovka").top-filters__select
+          option(value='rating up') По возрастанию рейтинга
+          option(value='rating down') По убыванию рейтинга
+          option(value='price up') По возрастанию цены
+          option(value='price down') По убыванию цены
+          option(value='new up') По новизне
 
       if props.view
         div.top-filters__view

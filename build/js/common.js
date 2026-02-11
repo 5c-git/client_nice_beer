@@ -423,23 +423,23 @@ const activateRequestButtonsInit = () => window.Corners5ProjectLayout.activateRe
           if (data.status == 'success') {
             if (data.type == 'reload') {
               window.location.reload();
-  
+
               return;
             }
-  
+
             if (data.type == 'redirect') {
               window.location.href = '/authorization/';
-  
+
               return;
             }
           }
-  
+
           document.querySelector("#alert--request").content.querySelector(".alert__container").innerHTML = data.text;
           window.Corners5ProjectLayout.summonAlert("#alert--request");
           if (data.status) {
             document.querySelector(".alert").classList.add(window.Corners5ProjectLayout.setStatus(data.status));
           }
-  
+
           return data;
         }
       },
@@ -479,3 +479,46 @@ const viewToggleInit = () => {
 };
 
 viewToggleInit();
+
+
+
+const activateCornersFilterInit = () => {
+  // window.Corners5ProjectLayout.cornersFilterInit({
+  //   submitSelects: (form) => {
+
+  //     const fd = new FormData(form);
+  //     return $.ajax({
+  //       type: 'POST',
+  //       data: fd,
+  //       url: 'https://run.mocky.io/v3/59531f4b-6f78-43cb-9acc-766963fe2512',
+  //       contentType: false,
+  //       processData: false,
+  //       cache: false,
+  //       async: false,
+  //       dataType: 'json',
+  //       success(data) {
+  //       },
+  //       error(data) {
+  //       },
+  //       complete(data) {
+  //       },
+  //     });
+  //   },
+  //   submitSort: (evt) => {
+  //     console.log(`id = ${evt.detail.id}`);
+  //     console.log(`value = ${evt.detail.value}`);
+  //     console.log(`label = ${evt.detail.label}`);
+  //   },
+  // });
+
+  window.Corners5ProjectLayout.cornersFilterInit();
+
+  const filterForm = document.querySelector('.corners-filter__form');
+  if (filterForm) {
+    filterForm.addEventListener('filter:change', (evt) => {
+      console.log('Фильтр изменился:', evt.detail);
+    });
+  }
+}
+
+activateCornersFilterInit();

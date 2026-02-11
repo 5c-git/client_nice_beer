@@ -1,7 +1,7 @@
 import './top-filters.scss';
 import Choices from 'choices.js';
 
-const initTopFilterSelect = () => {
+const initTopFilterSelect = (func) => {
   const select = document.querySelector('.top-filters__select');
   if (select) {
     const choicesNolint = new Choices(select, {
@@ -24,4 +24,4 @@ const initTopFilterSelect = () => {
   }
 };
 
-initTopFilterSelect();
+export default initTopFilterSelect;
