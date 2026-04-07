@@ -6497,12 +6497,7 @@ input:-webkit-autofill:active {
   content: "✓";
 }
 .corners-filter__label input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  font-size: 0;
-  clip: rect(0 0 0 0);
+  display: none;
 }
 .corners-filter__result {
   display: flex;

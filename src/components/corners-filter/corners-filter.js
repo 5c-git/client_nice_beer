@@ -18,6 +18,63 @@ const cornersFilterInit = ({
   const groups = [...form.querySelectorAll('.corners-filter__group')];
   const submitButton = form.querySelector('.corners-filter__submit');
 
+  // Только применённые чекбоксы.
+  let appliedState = {};
+
+  // --- HELPERS ---
+
+  const getCheckboxState = () => {
+    const state = {};
+
+    form.querySelectorAll('input[type="checkbox"]:checked').forEach((input) => {
+      const groupName = input.dataset.name;
+      const valueLabel = input.dataset.value;
+
+      if (!state[groupName]) {
+        state[groupName] = [];
+      }
+
+      state[groupName].push(valueLabel);
+    });
+
+    return state;
+  };
+
+  const renderPickedFilters = (state) => {
+    if (!resultBlock) return;
+
+    resultBlock.innerHTML = '';
+
+    for (const key in state) {
+      const values = state[key];
+      if (!values || !values.length) continue;
+
+      const text =
+        values.length === 1
+          ? `${key}: ${values[0]}`
+          : `${key}: ${values.length} знач.`;
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'corners-filter__picked';
+      btn.textContent = text;
+      btn.dataset.name = key;
+
+      resultBlock.appendChild(btn);
+    }
+  };
+
+  const buildFullState = () => {
+    const state = getFormState(form);
+
+    if (select && select.name) {
+      state[select.name] = select.value;
+    }
+
+    return state;
+  };
+
+  // --- DROPDOWNS ---
 
   const closeAll = () => {
     groups.forEach((group) => {
@@ -69,6 +126,7 @@ const cornersFilterInit = ({
     }
   });
 
+  // --- CHANGE (показываем кнопку применить) ---
 
   form.addEventListener('change', (evt) => {
     if (evt.target.matches('input[type="checkbox"]')) {
@@ -76,74 +134,39 @@ const cornersFilterInit = ({
     }
   });
 
-
-  if (!resultBlock) return;
-
-  const renderPickedFilters = (uiState) => {
-    resultBlock.innerHTML = '';
-
-    for (const key in uiState) {
-      const values = uiState[key];
-      if (!values || !values.length) continue;
-
-      const text =
-        values.length === 1
-          ? `${key}: ${values[0]}`
-          : `${key}: ${values.length} знач.`;
-
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'corners-filter__picked';
-      btn.textContent = text;
-      btn.dataset.name = key;
-
-      resultBlock.appendChild(btn);
-    }
-  };
-
-
-  const updateUiState = () => {
-    const state = {};
-
-    form.querySelectorAll('input[type="checkbox"]:checked').forEach((input) => {
-      const groupName = input.dataset.name;
-      const valueLabel = input.dataset.value;
-
-      if (!state[groupName]) {
-        state[groupName] = [];
-      }
-
-      state[groupName].push(valueLabel);
-    });
-
-    renderPickedFilters(state);
-    return state;
-  };
-
+  // --- SELECT (сортировка) ---
 
   initTopFilterSelect(submitSort);
   const select = document.querySelector('.top-filters__select');
 
-  const updateFormState = () => {
-    // Собираем name + value чекбоксов.
-    const state = getFormState(form);
+  if (select) {
+    select.addEventListener('addItem', () => {
+      const state = {
+        ...appliedState,
+        [select.name]: select.value,
+      };
 
-    if (select && select.name) {
-      state[select.name] = select.value;
-    }
+      form.dispatchEvent(
+        new CustomEvent('filter:change', {
+          detail: state,
+        })
+      );
+    });
+  }
 
-    return state;
-  };
+  // --- SUBMIT (применение фильтров) ---
 
-  updateUiState();
-
-
-  // Логика для кнопки Применить.
   form.addEventListener('submit', (evt) => {
     evt.preventDefault();
 
-    updateUiState();
-    const state = updateFormState();
+    // Фиксируем только чекбоксы.
+    appliedState = getCheckboxState();
+
+    // Рисуем UI.
+    renderPickedFilters(appliedState);
+
+    // Отправляем полный state.
+    const state = buildFullState();
 
     form.dispatchEvent(
       new CustomEvent('filter:change', {
@@ -158,44 +181,43 @@ const cornersFilterInit = ({
     }
   });
 
+  // --- CLICK по CHIP ---
 
-  // Логика для клика по выбранным пунктам.
-  resultBlock.addEventListener('click', (evt) => {
-    const btn = evt.target.closest('.corners-filter__picked');
-    if (!btn) return;
+  if (resultBlock) {
+    resultBlock.addEventListener('click', (evt) => {
+      const btn = evt.target.closest('.corners-filter__picked');
+      if (!btn) return;
 
-    const name = btn.dataset.name;
+      const name = btn.dataset.name;
 
-    form.querySelectorAll(`input[data-name="${name}"]`).forEach((input) => {
-      input.checked = false;
-    });
+      // удаляем только из appliedState
+      delete appliedState[name];
 
-    updateUiState();
+      // синхронизируем чекбоксы UI
+      form.querySelectorAll(`input[data-name="${name}"]`).forEach((input) => {
+        input.checked = false;
+      });
 
-    const state = updateFormState();
+      renderPickedFilters(appliedState);
 
-    form.dispatchEvent(
-      new CustomEvent('filter:change', {
-        detail: state,
-      })
-    );
+      // Отправляем state.
+      const state = {
+        ...appliedState,
+      };
 
-    if (submitSelects) {
-      submitSelects(form);
-    }
-  });
-
-
-  // Событие выбора пункта библиотеки choices.js .
-  if (select) {
-    select.addEventListener('addItem', () => {
-      const state = updateFormState();
+      if (select && select.name) {
+        state[select.name] = select.value;
+      }
 
       form.dispatchEvent(
         new CustomEvent('filter:change', {
           detail: state,
         })
       );
+
+      if (submitSelects) {
+        submitSelects(form);
+      }
     });
   }
 };

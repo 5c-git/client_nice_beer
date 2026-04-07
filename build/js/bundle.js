@@ -6108,6 +6108,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3670);
 /* harmony import */ var _top_filters_top_filters__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1729);
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 
 
 
@@ -6121,6 +6140,43 @@ const cornersFilterInit = ({
     return;
   const groups = [...form.querySelectorAll(".corners-filter__group")];
   const submitButton = form.querySelector(".corners-filter__submit");
+  let appliedState = {};
+  const getCheckboxState = () => {
+    const state = {};
+    form.querySelectorAll('input[type="checkbox"]:checked').forEach((input) => {
+      const groupName = input.dataset.name;
+      const valueLabel = input.dataset.value;
+      if (!state[groupName]) {
+        state[groupName] = [];
+      }
+      state[groupName].push(valueLabel);
+    });
+    return state;
+  };
+  const renderPickedFilters = (state) => {
+    if (!resultBlock)
+      return;
+    resultBlock.innerHTML = "";
+    for (const key in state) {
+      const values = state[key];
+      if (!values || !values.length)
+        continue;
+      const text = values.length === 1 ? `${key}: ${values[0]}` : `${key}: ${values.length} \u0437\u043D\u0430\u0447.`;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "corners-filter__picked";
+      btn.textContent = text;
+      btn.dataset.name = key;
+      resultBlock.appendChild(btn);
+    }
+  };
+  const buildFullState = () => {
+    const state = (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getFormState */ .Ai)(form);
+    if (select && select.name) {
+      state[select.name] = select.value;
+    }
+    return state;
+  };
   const closeAll = () => {
     groups.forEach((group) => {
       group.classList.remove("corners-filter__group--active");
@@ -6167,50 +6223,25 @@ const cornersFilterInit = ({
       submitButton == null ? void 0 : submitButton.removeAttribute("style");
     }
   });
-  if (!resultBlock)
-    return;
-  const renderPickedFilters = (uiState) => {
-    resultBlock.innerHTML = "";
-    for (const key in uiState) {
-      const values = uiState[key];
-      if (!values || !values.length)
-        continue;
-      const text = values.length === 1 ? `${key}: ${values[0]}` : `${key}: ${values.length} \u0437\u043D\u0430\u0447.`;
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "corners-filter__picked";
-      btn.textContent = text;
-      btn.dataset.name = key;
-      resultBlock.appendChild(btn);
-    }
-  };
-  const updateUiState = () => {
-    const state = {};
-    form.querySelectorAll('input[type="checkbox"]:checked').forEach((input) => {
-      const groupName = input.dataset.name;
-      const valueLabel = input.dataset.value;
-      if (!state[groupName]) {
-        state[groupName] = [];
-      }
-      state[groupName].push(valueLabel);
-    });
-    renderPickedFilters(state);
-    return state;
-  };
   (0,_top_filters_top_filters__WEBPACK_IMPORTED_MODULE_1__["default"])(submitSort);
   const select = document.querySelector(".top-filters__select");
-  const updateFormState = () => {
-    const state = (0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__/* .getFormState */ .Ai)(form);
-    if (select && select.name) {
-      state[select.name] = select.value;
-    }
-    return state;
-  };
-  updateUiState();
+  if (select) {
+    select.addEventListener("addItem", () => {
+      const state = __spreadProps(__spreadValues({}, appliedState), {
+        [select.name]: select.value
+      });
+      form.dispatchEvent(
+        new CustomEvent("filter:change", {
+          detail: state
+        })
+      );
+    });
+  }
   form.addEventListener("submit", (evt) => {
     evt.preventDefault();
-    updateUiState();
-    const state = updateFormState();
+    appliedState = getCheckboxState();
+    renderPickedFilters(appliedState);
+    const state = buildFullState();
     form.dispatchEvent(
       new CustomEvent("filter:change", {
         detail: state
@@ -6221,33 +6252,29 @@ const cornersFilterInit = ({
       submitSelects(form);
     }
   });
-  resultBlock.addEventListener("click", (evt) => {
-    const btn = evt.target.closest(".corners-filter__picked");
-    if (!btn)
-      return;
-    const name = btn.dataset.name;
-    form.querySelectorAll(`input[data-name="${name}"]`).forEach((input) => {
-      input.checked = false;
-    });
-    updateUiState();
-    const state = updateFormState();
-    form.dispatchEvent(
-      new CustomEvent("filter:change", {
-        detail: state
-      })
-    );
-    if (submitSelects) {
-      submitSelects(form);
-    }
-  });
-  if (select) {
-    select.addEventListener("addItem", () => {
-      const state = updateFormState();
+  if (resultBlock) {
+    resultBlock.addEventListener("click", (evt) => {
+      const btn = evt.target.closest(".corners-filter__picked");
+      if (!btn)
+        return;
+      const name = btn.dataset.name;
+      delete appliedState[name];
+      form.querySelectorAll(`input[data-name="${name}"]`).forEach((input) => {
+        input.checked = false;
+      });
+      renderPickedFilters(appliedState);
+      const state = __spreadValues({}, appliedState);
+      if (select && select.name) {
+        state[select.name] = select.value;
+      }
       form.dispatchEvent(
         new CustomEvent("filter:change", {
           detail: state
         })
       );
+      if (submitSelects) {
+        submitSelects(form);
+      }
     });
   }
 };
