@@ -1,0 +1,26 @@
+div.product-documents
+  div.product-documents__block
+    h2.product-documents__title Документы
+    include ../document-card/document-card
+    include ../document-card/document-card
+    include ../document-card/document-card
+
+    a(href="#")
+      span Какая-то ссылка без иконки
+
+    a(href="#" download) 
+      svg(width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg")
+        use(href='#icon-download')
+      span Какая-то ссылка 
+
+    a(href="#")
+      svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
+        use(href='#icon-document')
+      svg(width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg")
+        use(href='#icon-document-arrow')
+      span Какая-то ссылка с длинным названием
+
+  div.product-documents__block
+    h2.product-documents__title Дополнительные материалы
+    include ../document-card/document-card
+    include ../document-card/document-card

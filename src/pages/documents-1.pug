@@ -1,0 +1,11 @@
+extends ../templates/default
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Документы Nice Bear Group',
+  })
+
+  +layout({})
+    include ../components/product-documents/product-documents

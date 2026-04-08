@@ -89,6 +89,7 @@ var map = {
 	"./contacts/contacts.js": 9961,
 	"./cookie/cookie.js": 11,
 	"./corners-filter/corners-filter.js": 9237,
+	"./document-card/document-card.js": 7126,
 	"./empty/empty.js": 1865,
 	"./field/field.js": 4205,
 	"./file-loader/file-loader.js": 8669,
@@ -129,6 +130,7 @@ var map = {
 	"./popUp/popUp.js": 9417,
 	"./post-title/post-title.js": 5169,
 	"./privacy/privacy.js": 9025,
+	"./product-documents/product-documents.js": 8521,
 	"./profile-accordion/profile-accordion.js": 3609,
 	"./profile-center/profile-center.js": 4817,
 	"./profile-form/profile-form.js": 2431,
@@ -202,6 +204,7 @@ var map = {
 	"components/contacts/contacts.js": 9961,
 	"components/cookie/cookie.js": 11,
 	"components/corners-filter/corners-filter.js": 9237,
+	"components/document-card/document-card.js": 7126,
 	"components/empty/empty.js": 1865,
 	"components/field/field.js": 4205,
 	"components/file-loader/file-loader.js": 8669,
@@ -242,6 +245,7 @@ var map = {
 	"components/popUp/popUp.js": 9417,
 	"components/post-title/post-title.js": 5169,
 	"components/privacy/privacy.js": 9025,
+	"components/product-documents/product-documents.js": 8521,
 	"components/profile-accordion/profile-accordion.js": 3609,
 	"components/profile-center/profile-center.js": 4817,
 	"components/profile-form/profile-form.js": 2431,
@@ -4950,6 +4954,16 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ },
 
+/***/ 7126
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+
+/***/ },
+
 /***/ 7157
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -5440,6 +5454,16 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
+
+/***/ },
+
+/***/ 8521
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
 
 /***/ },
 
