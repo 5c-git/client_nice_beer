@@ -139,7 +139,7 @@
     &:hover {
       @media(min-width: $desktop-only) {
 
-        .header {
+        &>.header {
 
           &__sub {
             visibility: visible;
@@ -161,6 +161,19 @@
     }
   }
 
+  &__sub-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 33%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+
+    .header__sub-wrapper {
+      max-width: 100%;
+    }
+  }
+
   &__sub {
     position: absolute;
     top: 80px;
@@ -168,8 +181,6 @@
     left: 0;
     z-index: 5;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 20px;
     border-top: 1px solid $grey-6;
     border-bottom: 1px solid $grey-6;
     background-color: $white-1;
@@ -186,7 +197,7 @@
       &:before {
         position: absolute;
         right: 8px;
-        width: 6px;
+        width: 7px;
         height: 2px;
         background-color: currentColor;
         transform: rotate(45deg);
@@ -197,7 +208,7 @@
       &:after {
         position: absolute;
         right: 4px;
-        width: 6px;
+        width: 7px;
         height: 2px;
         background-color: currentColor;
         transform: rotate(-45deg);
@@ -205,16 +216,70 @@
         content: "";
       }
     }
+
+    .header {
+
+      &__sub {
+
+        &~a {
+
+          &:before {
+            right: 6px;
+            transform: rotate(45deg) translateY(-3px) !important;
+          }
+
+          &:after {
+            right: 6px;
+            transform: rotate(-45deg) translateY(3px) !important;
+          }
+        }
+      }
+    }
   }
 
   &__sub-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     margin: 0;
     padding: 0;
     list-style: none;
     column-gap: 30px;
-    row-gap: 10px
+    row-gap: 10px;
+  }
+
+  &__sub-item {
+    padding-right: 20px;
+
+    &>.header__sub {
+      top: 0;
+      left: 100%;
+      border: 0;
+    }
+
+    &:hover {
+      @media(min-width: $desktop-only) {
+
+        &>.header {
+
+          &__sub {
+            visibility: visible;
+            opacity: 1;
+
+            &~a {
+
+              &:before {
+                transform: rotate(-45deg);
+              }
+
+              &:after {
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   &__link {

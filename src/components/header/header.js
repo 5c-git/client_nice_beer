@@ -63,3 +63,25 @@ if (search) {
 //     window.LoginProvider.setOpenPhone(true);
 //   });
 // }
+
+
+const mainNav = document.querySelector('.header__sub-wrapper');
+if (mainNav) {
+  // Находим самый большой список и считываем его высоту.
+  const subList = mainNav.querySelectorAll('.header__sub-wrapper');
+  let maxHeight = 0;
+  const getMaxHeightOnMenu = () => {
+    subList.forEach((item) => {
+      const newHeight = item.offsetHeight;
+      if (newHeight > maxHeight) {
+        maxHeight = newHeight;
+      }
+    });
+
+    mainNav.style.height = `${maxHeight}px`;
+  };
+
+  if (window.innerWidth > 991) {
+    getMaxHeightOnMenu();
+  }
+}

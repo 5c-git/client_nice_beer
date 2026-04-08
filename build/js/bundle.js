@@ -4756,6 +4756,23 @@ const search = document.querySelector(".header-search");
 if (search) {
   (0,_validator_validator__WEBPACK_IMPORTED_MODULE_0__.validateForm)(".header-search__form");
 }
+const mainNav = document.querySelector(".header__sub-wrapper");
+if (mainNav) {
+  const subList = mainNav.querySelectorAll(".header__sub-wrapper");
+  let maxHeight = 0;
+  const getMaxHeightOnMenu = () => {
+    subList.forEach((item) => {
+      const newHeight = item.offsetHeight;
+      if (newHeight > maxHeight) {
+        maxHeight = newHeight;
+      }
+    });
+    mainNav.style.height = `${maxHeight}px`;
+  };
+  if (window.innerWidth > 991) {
+    getMaxHeightOnMenu();
+  }
+}
 
 
 /***/ },
@@ -6081,16 +6098,57 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 
 const buttons = document.querySelectorAll(".mobile-nav__sub-toggle");
+function setParentsAuto(element) {
+  let parent = element.parentElement;
+  while (parent) {
+    if (parent.classList.contains("mobile-nav__sub-list")) {
+      parent.style.maxHeight = "none";
+    }
+    parent = parent.parentElement;
+  }
+}
+function setParentsFixedHeight(element) {
+  let parent = element.parentElement;
+  while (parent) {
+    if (parent.classList.contains("mobile-nav__sub-list")) {
+      parent.style.maxHeight = `${parent.scrollHeight}px`;
+    }
+    parent = parent.parentElement;
+  }
+}
+function openAccordion(container, parentItem) {
+  parentItem.classList.add("mobile-nav__item--active");
+  if (container.style.maxHeight === "none") {
+    container.style.maxHeight = `${container.scrollHeight}px`;
+  }
+  container.style.maxHeight = `${container.scrollHeight}px`;
+  container.addEventListener(
+    "transitionend",
+    () => {
+      container.style.maxHeight = "none";
+      setParentsAuto(container);
+    },
+    { once: true }
+  );
+}
+function closeAccordion(container, parentItem) {
+  setParentsFixedHeight(container);
+  if (container.style.maxHeight === "none") {
+    container.style.maxHeight = `${container.scrollHeight}px`;
+  }
+  container.offsetHeight;
+  container.style.maxHeight = "0px";
+  parentItem.classList.remove("mobile-nav__item--active");
+}
 buttons.forEach((button) => {
-  const parent = button.parentElement;
+  const parentItem = button.parentElement;
   const container = button.nextElementSibling;
   button.addEventListener("click", () => {
-    if (!parent.classList.contains("mobile-nav__item--active")) {
-      parent.classList.add("mobile-nav__item--active");
-      container.style.maxHeight = `${container.scrollHeight}px`;
+    const isOpen = parentItem.classList.contains("mobile-nav__item--active");
+    if (isOpen) {
+      closeAccordion(container, parentItem);
     } else {
-      parent.classList.remove("mobile-nav__item--active");
-      container.style.maxHeight = null;
+      openAccordion(container, parentItem);
     }
   });
 });
