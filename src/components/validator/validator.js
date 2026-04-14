@@ -216,7 +216,7 @@ const validateForm = (form) => {
 
         const container = field.parentElement;
         const description = container
-          .closest('.validator__field')
+          .closest('.choices').parentElement
           ?.querySelector('.validator__description');
 
         container.classList.toggle('validator__input--error', !isValid);

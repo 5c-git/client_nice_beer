@@ -103,8 +103,8 @@
   &__field {
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     // 1. Поднятие label если есть значение в input
     &:has(input:not(:placeholder-shown)) .profile-form,
@@ -223,7 +223,7 @@
 
   &__eye {
     position: absolute;
-    top: 35px;
+    top: 0;
     right: 15px;
     width: 30px;
     height: 30px;

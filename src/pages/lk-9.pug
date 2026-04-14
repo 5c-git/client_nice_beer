@@ -1,0 +1,17 @@
+extends ../templates/default
+
+include ../components/request-wrapper/request-wrapper
+include ../components/request/request
+
+block main
+  include ../components/breadcrumbs/breadcrumbs
+  
+  +title({
+    title: 'Регистрация',
+  })
+
+  +layout({
+    variant: 'layout--tight',
+  })
+    include ../components/sign/sign
+

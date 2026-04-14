@@ -51,3 +51,32 @@ const initFieldSelect = (func) => {
 };
 
 initFieldSelect();
+
+
+const initPasswordEye = () => {
+  // Находим все кнопки "глаз".
+  const eyes = document.querySelectorAll('.field__eye');
+
+  eyes.forEach((eye) => {
+    // Родительский контейнер, в котором лежат input и eye.
+    const container = eye.closest('.field');
+    if (!container) return;
+
+    // Ищем связанное поле пароля внутри этого контейнера.
+    const input = container.querySelector('.field__input');
+    if (!input) return;
+
+    // Обработчик клика по "глазу".
+    eye.addEventListener('click', () => {
+      const isPassword = input.type === 'password';
+
+      // Переключаем тип поля.
+      input.type = isPassword ? 'text' : 'password';
+
+      // Переключаем визуальное состояние кнопки.
+      eye.classList.toggle('field__eye--open', isPassword);
+    });
+  });
+};
+
+initPasswordEye();

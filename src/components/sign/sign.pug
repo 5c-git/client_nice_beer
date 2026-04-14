@@ -1,0 +1,101 @@
+include ../field/field
+
+div.sign
+  div.sign__wrapper
+    form(action="#" method='post').sign__form
+      div.sign__fields
+        div.sign__field
+          +field({
+            label: 'Имейл',
+            type: 'email',
+            name: 'Email',
+            id: 'Email',
+            placeholder: ' ',
+            secondClass: 'validator__mail',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Пароль',
+            type: 'password',
+            name: 'password',
+            id: 'password',
+            placeholder: ' ',
+            secondClass: 'validator__password',
+            eye: true,
+            bouncerTarget: '#password-target',
+            target: 'password-target',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Подтверждение пароля',
+            type: 'password',
+            name: 'confirm-password',
+            id: 'confirm-password',
+            placeholder: ' ',
+            secondClass: 'validator__password',
+            match: '#password',
+            eye: true,
+            bouncerTarget: '#confirm-password-target',
+            target: 'confirm-password-target',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Имя',
+            type: 'text',
+            name: 'First name',
+            id: 'First name',
+            placeholder: ' ',
+            secondClass: 'validator__required',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Фамилия',
+            type: 'text',
+            name: 'Second name',
+            id: 'Second name',
+            placeholder: ' ',
+            secondClass: 'validator__required',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Телефон',
+            type: 'tel',
+            name: 'Phone Number',
+            id: 'Phone Number',
+            placeholder: ' ',
+            secondClass: 'validator__phone',
+          })
+
+        div.sign__field
+          +field({
+            label: 'Город',
+            type: 'text',
+            name: 'city',
+            id: 'city',
+            placeholder: ' ',
+            secondClass: 'validator__required',
+          })
+
+        div.sign__field
+          +field({
+            checkbox: true,
+            text: 'Бар',
+            name: 'Bar',
+            id: 'Bar',
+          })
+
+        div.sign__field
+          +field({
+            checkbox: true,
+            text: 'Магазин',
+            name: 'Shop',
+            id: 'Shop',
+          })
+
+        div.sign__field
+          button(type='submit').button Регистрация

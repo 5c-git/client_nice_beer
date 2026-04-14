@@ -220,6 +220,9 @@ const cornersFilterInit = ({
       }
     });
   }
+
+  appliedState = getCheckboxState();
+  renderPickedFilters(appliedState);
 };
 
 export default cornersFilterInit;

@@ -271,4 +271,34 @@
       opacity: 1;
     }
   }
+
+  &__eye {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    background-image: url("../assets/images/icon-eye.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: contain;
+    cursor: pointer;
+
+    @media (max-width: $phone) {
+      top: 4px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &--open {
+      background-image: url("../assets/images/icon-eye--open.svg");
+    }
+  }
 }

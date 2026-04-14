@@ -7598,6 +7598,35 @@ input:-webkit-autofill:active {
   visibility: visible;
   opacity: 1;
 }
+.field__eye {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  background-image: url("../assets/images/icon-eye.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .field__eye {
+    top: 4px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
+.field__eye--open {
+  background-image: url("../assets/images/icon-eye--open.svg");
+}
 .filepond--panel-root {
   background: 0;
 }
@@ -14888,8 +14917,6 @@ input:-webkit-autofill:active {
 .profile-form__field {
   position: relative;
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 .profile-form__field:has(input:not(:placeholder-shown)) .profile-form__label, .profile-form__field:has(textarea:not(:placeholder-shown)) .profile-form__label {
   font-family: "IBM Plex Sans";
@@ -15020,7 +15047,7 @@ input:-webkit-autofill:active {
 }
 .profile-form__eye {
   position: absolute;
-  top: 35px;
+  top: 0;
   right: 15px;
   width: 30px;
   height: 30px;
@@ -17768,6 +17795,21 @@ input:-webkit-autofill:active {
 }
 .sidebar-nav--active .sidebar-nav__header:after {
   transform: rotate(-135deg);
+}
+.sign__fields {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin: 0;
+  padding: 0;
+  border: none;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .sign__fields {
+    grid-template-columns: 1fr;
+  }
 }
 .site-nav {
   margin-top: 60px;

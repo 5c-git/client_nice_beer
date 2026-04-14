@@ -152,6 +152,7 @@ var map = {
 	"./services/services.js": 1335,
 	"./share/share.js": 5273,
 	"./sidebar-nav/sidebar-nav.js": 5141,
+	"./sign/sign.js": 4977,
 	"./site-nav/site-nav.js": 8761,
 	"./slider/slider.js": 5073,
 	"./socials/socials.js": 4741,
@@ -267,6 +268,7 @@ var map = {
 	"components/services/services.js": 1335,
 	"components/share/share.js": 5273,
 	"components/sidebar-nav/sidebar-nav.js": 5141,
+	"components/sign/sign.js": 4977,
 	"components/site-nav/site-nav.js": 8761,
 	"components/slider/slider.js": 5073,
 	"components/socials/socials.js": 4741,
@@ -2604,6 +2606,7 @@ var map = {
 	"./icon-dropdown-cart.svg": 2597,
 	"./icon-dropdown-compare.svg": 7660,
 	"./icon-dropdown-favorites.svg": 9518,
+	"./icon-eye--open.svg": 9406,
 	"./icon-eye.svg": 4476,
 	"./icon-fb--black.svg": 9240,
 	"./icon-fb--white.svg": 8294,
@@ -2672,6 +2675,7 @@ var map = {
 	"assets/icons/icon-dropdown-cart.svg": 2597,
 	"assets/icons/icon-dropdown-compare.svg": 7660,
 	"assets/icons/icon-dropdown-favorites.svg": 9518,
+	"assets/icons/icon-eye--open.svg": 9406,
 	"assets/icons/icon-eye.svg": 4476,
 	"assets/icons/icon-fb--black.svg": 9240,
 	"assets/icons/icon-fb--white.svg": 8294,
@@ -2830,6 +2834,23 @@ const initFieldSelect = (func) => {
   }
 };
 initFieldSelect();
+const initPasswordEye = () => {
+  const eyes = document.querySelectorAll(".field__eye");
+  eyes.forEach((eye) => {
+    const container = eye.closest(".field");
+    if (!container)
+      return;
+    const input = container.querySelector(".field__input");
+    if (!input)
+      return;
+    eye.addEventListener("click", () => {
+      const isPassword = input.type === "password";
+      input.type = isPassword ? "text" : "password";
+      eye.classList.toggle("field__eye--open", isPassword);
+    });
+  });
+};
+initPasswordEye();
 
 
 /***/ },
@@ -3412,7 +3433,7 @@ const validateForm = (form) => {
           return false;
         const isValid = field.hasAttribute("multiple") ? field.selectedIndex !== -1 : field.value !== "";
         const container = field.parentElement;
-        const description = (_a = container.closest(".validator__field")) == null ? void 0 : _a.querySelector(".validator__description");
+        const description = (_a = container.closest(".choices").parentElement) == null ? void 0 : _a.querySelector(".validator__description");
         container.classList.toggle("validator__input--error", !isValid);
         description == null ? void 0 : description.classList.toggle("validator__description--error", !isValid);
         description == null ? void 0 : description.classList.toggle("validator__description--valid", isValid);
@@ -3821,6 +3842,25 @@ const selectCityInit = () => {
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (selectCityInit);
+
+
+/***/ },
+
+/***/ 4977
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3670);
+/* harmony import */ var _validator_validator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4489);
+
+
+
+const profileForm = document.querySelector(".sign__form");
+if (profileForm) {
+  (0,_validator_validator__WEBPACK_IMPORTED_MODULE_1__.validateForm)(".sign__form");
+  (0,_validator_validator__WEBPACK_IMPORTED_MODULE_1__.maskPhone)(".sign__form");
+}
 
 
 /***/ },
@@ -6359,6 +6399,8 @@ const cornersFilterInit = ({
       }
     });
   }
+  appliedState = getCheckboxState();
+  renderPickedFilters(appliedState);
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cornersFilterInit);
 
@@ -6409,6 +6451,31 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
   "use": "icon-vk-usage",
   "viewBox": "0 0 40 40",
   "content": "<symbol viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-vk\">\n<rect width=\"40\" height=\"40\" rx=\"8\" fill=\"#EEEFF0\" />\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.4796 25.5738C20.4796 25.5738 20.7924 25.5399 20.9527 25.3723C21.0993 25.2188 21.0942 24.929 21.0942 24.929C21.0942 24.929 21.0747 23.5759 21.7199 23.3761C22.3557 23.1796 23.1721 24.6846 24.0386 25.2633C24.693 25.7009 25.1898 25.6051 25.1898 25.6051L27.5051 25.5738C27.5051 25.5738 28.7157 25.5011 28.1418 24.574C28.0943 24.498 27.8069 23.8879 26.4208 22.6347C24.9686 21.3229 25.1636 21.5351 26.9117 19.2656C27.9765 17.8836 28.4021 17.0399 28.269 16.6791C28.1426 16.334 27.3593 16.4256 27.3593 16.4256L24.7532 16.4413C24.7532 16.4413 24.5599 16.4157 24.4167 16.4991C24.2768 16.5808 24.1861 16.7716 24.1861 16.7716C24.1861 16.7716 23.7741 17.8407 23.2239 18.7504C22.0633 20.6691 21.5995 20.7706 21.4096 20.6517C20.9679 20.3735 21.0781 19.5356 21.0781 18.9403C21.0781 17.0803 21.3681 16.3051 20.5144 16.1045C20.2312 16.0376 20.0227 15.9939 19.2978 15.9864C18.3678 15.9774 17.5811 15.9897 17.1351 16.2019C16.8384 16.3431 16.6095 16.6585 16.7494 16.6766C16.9215 16.6989 17.3115 16.779 17.5183 17.0531C17.7854 17.4072 17.7761 18.2014 17.7761 18.2014C17.7761 18.2014 17.9295 20.3908 17.4175 20.6625C17.0665 20.849 16.5849 20.4684 15.5498 18.7273C15.0199 17.8357 14.6198 16.85 14.6198 16.85C14.6198 16.85 14.5426 16.6659 14.4045 16.5668C14.2375 16.4471 14.0043 16.41 14.0043 16.41L11.528 16.4256C11.528 16.4256 11.1558 16.4355 11.0193 16.5932C10.8981 16.7328 11.01 17.0225 11.01 17.0225C11.01 17.0225 12.9488 21.4401 15.1446 23.6667C17.158 25.7075 19.4436 25.5738 19.4436 25.5738H20.4796Z\" fill=\"#212F4E\" />\n</symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
+
+/***/ },
+
+/***/ 9406
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-eye--open",
+  "use": "icon-eye--open-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-eye--open\">\r\n<path d=\"M12 14C12.5304 14 13.0391 13.7893 13.4142 13.4142C13.7893 13.0391 14 12.5304 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12C10 12.5304 10.2107 13.0391 10.5858 13.4142C10.9609 13.7893 11.4696 14 12 14Z\" stroke=\"#223344\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\r\n<path d=\"M21 12C19.111 14.991 15.718 18 12 18C8.282 18 4.889 14.991 3 12C5.299 9.158 7.992 6 12 6C16.008 6 18.701 9.158 21 12Z\" stroke=\"#223344\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\r\n</symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
